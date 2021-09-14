@@ -39,7 +39,7 @@ if (isset($_GET['all_players'])) {
 
 if (isset($_GET['team_id'])) {
 	$team_id = $_GET['team_id'];
-	$sql = "SELECT `player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`
+	$sql = "SELECT `player_id`,`player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`
 				FROM player_details , teams
 				WHERE teams.id = player_country and player_country = $team_id";
 	$res = mysqli_query($con, $sql);
@@ -47,9 +47,10 @@ if (isset($_GET['team_id'])) {
 	header('Content-Type:application/json');
 	if ($count > 0) {
 		while ($row = mysqli_fetch_assoc($res)) {
+			$country = $row['country_name'];
 			$arr[] = $row;
 		}
-		echo json_encode(['status' => true, 'data' => $arr, 'result' => true]);
+		echo json_encode(['status' => true, 'data' => $arr, 'result' => true, 'country' => $country]);
 	} else {
 		echo json_encode(['status' => true, 'msg' => "No Data", 'result' => false]);
 	}
