@@ -1,7 +1,23 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+}
+
+.timeline > .timeline__event > .timeline__event__date > img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.timeline > .timeline__event > .timeline__event__content > .timeline__event__description > p {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.timeline > .timeline__event > .timeline__event__date > img:hover {
+  transform: scale(1.5);
+}
+
+.timeline > .timeline__event > .timeline__event__content > .timeline__event__description > p:hover {
+  text-decoration: underline;
 }
 
 html {
@@ -36,19 +52,19 @@ h2 {
   align-self: center;
   width: 50vw;
 }
-.timeline__event:nth-child(2n + 1) {
+.timeline__event:nth-child(2n+1) {
   flex-direction: row-reverse;
 }
-.timeline__event:nth-child(2n + 1) .timeline__event__date {
+.timeline__event:nth-child(2n+1) .timeline__event__date {
   border-radius: 0 6px 6px 0;
 }
-.timeline__event:nth-child(2n + 1) .timeline__event__content {
+.timeline__event:nth-child(2n+1) .timeline__event__content {
   border-radius: 6px 0 0 6px;
 }
-.timeline__event:nth-child(2n + 1) .timeline__event__icon:before {
+.timeline__event:nth-child(2n+1) .timeline__event__icon:before {
   content: "";
   width: 2px;
-  height: 170px;
+  height: 100%;
   background: #f6a4ec;
   position: absolute;
   top: 0%;
@@ -57,9 +73,9 @@ h2 {
   z-index: -1;
   transform: translateX(-50%);
   -webkit-animation: fillTop 1s forwards 1s ease-in-out;
-  animation: fillTop 1s forwards 1s ease-in-out;
+          animation: fillTop 1s forwards 1s ease-in-out;
 }
-.timeline__event:nth-child(2n + 1) .timeline__event__icon:after {
+.timeline__event:nth-child(2n+1) .timeline__event__icon:after {
   content: "";
   width: 100%;
   height: 2px;
@@ -71,7 +87,7 @@ h2 {
   left: auto;
   transform: translateY(-50%);
   -webkit-animation: fillLeft 1s forwards 1s ease-in-out;
-  animation: fillLeft 1s forwards 1s ease-in-out;
+          animation: fillLeft 1s forwards 1s ease-in-out;
 }
 .timeline__event__title {
   font-size: 1.2rem;
@@ -80,11 +96,11 @@ h2 {
   font-weight: 600;
   color: #9251ac;
   letter-spacing: 1.5px;
+  text-align: center;
 }
 .timeline__event__content {
   padding: 20px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   background: #fff;
   width: calc(40vw - 84px);
   border-radius: 0 6px 6px 0;
@@ -98,8 +114,12 @@ h2 {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  padding: 60px 75px;
+  padding: 0px 50px;
+  width: 160%;
+  height: 250px;
   border-radius: 6px 0 0 6px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 .timeline__event__icon {
   display: flex;
@@ -112,9 +132,8 @@ h2 {
   background: #f6a4ec;
   border-radius: 100%;
   width: 40px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  padding: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  padding: 55px;
   height: 40px;
   position: relative;
 }
@@ -124,7 +143,7 @@ h2 {
 .timeline__event__icon:before {
   content: "";
   width: 2px;
-  height: 155px;
+  height: 100%;
   background: #f6a4ec;
   position: absolute;
   top: 0%;
@@ -132,7 +151,7 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   -webkit-animation: fillTop 1s forwards 1s ease-in-out;
-  animation: fillTop 1s forwards 1s ease-in-out;
+          animation: fillTop 1s forwards 1s ease-in-out;
 }
 .timeline__event__icon:after {
   content: "";
@@ -145,10 +164,12 @@ h2 {
   top: 50%;
   transform: translateY(-50%);
   -webkit-animation: fillLeftOdd 1s forwards 1s ease-in-out;
-  animation: fillLeftOdd 1s forwards 1s ease-in-out;
+          animation: fillLeftOdd 1s forwards 1s ease-in-out;
 }
 .timeline__event__description {
   flex-basis: 60%;
+  text-align: center;
+  margin-top: 30px;
 }
 .timeline__event--type2:after {
   background: #555ac0;
@@ -157,16 +178,14 @@ h2 {
   color: #87bbfe;
   background: #555ac0;
 }
-.timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:before,
-.timeline__event--type2:nth-child(2n + 1) .timeline__event__icon:after {
+.timeline__event--type2:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type2:nth-child(2n+1) .timeline__event__icon:after {
   background: #87bbfe;
 }
 .timeline__event--type2 .timeline__event__icon {
   background: #87bbfe;
   color: #555ac0;
 }
-.timeline__event--type2 .timeline__event__icon:before,
-.timeline__event--type2 .timeline__event__icon:after {
+.timeline__event--type2 .timeline__event__icon:before, .timeline__event--type2 .timeline__event__icon:after {
   background: #87bbfe;
 }
 .timeline__event--type2 .timeline__event__title {
@@ -179,16 +198,14 @@ h2 {
   color: #aff1b6;
   background-color: #24b47e;
 }
-.timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:before,
-.timeline__event--type3:nth-child(2n + 1) .timeline__event__icon:after {
+.timeline__event--type3:nth-child(2n+1) .timeline__event__icon:before, .timeline__event--type3:nth-child(2n+1) .timeline__event__icon:after {
   background: #aff1b6;
 }
 .timeline__event--type3 .timeline__event__icon {
   background: #aff1b6;
   color: #24b47e;
 }
-.timeline__event--type3 .timeline__event__icon:before,
-.timeline__event--type3 .timeline__event__icon:after {
+.timeline__event--type3 .timeline__event__icon:before, .timeline__event--type3 .timeline__event__icon:after {
   background: #aff1b6;
 }
 .timeline__event--type3 .timeline__event__title {
@@ -212,23 +229,22 @@ h2 {
     margin: 0;
     box-shadow: none;
   }
-  .timeline__event__icon:before,
-  .timeline__event__icon:after {
+  .timeline__event__icon:before, .timeline__event__icon:after {
     display: none;
   }
   .timeline__event__date {
     border-radius: 0;
-    padding: 20px;
+    padding: 75px;
   }
-  .timeline__event:nth-child(2n + 1) {
+  .timeline__event:nth-child(2n+1) {
     flex-direction: column;
     align-self: center;
   }
-  .timeline__event:nth-child(2n + 1) .timeline__event__date {
+  .timeline__event:nth-child(2n+1) .timeline__event__date {
     border-radius: 0;
-    padding: 20px;
+    padding: 60px;
   }
-  .timeline__event:nth-child(2n + 1) .timeline__event__icon {
+  .timeline__event:nth-child(2n+1) .timeline__event__icon {
     border-radius: 6px 6px 0 0;
     margin: 0;
   }
