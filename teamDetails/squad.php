@@ -23,17 +23,6 @@
 </head>
 
 <body>
-    <?php
-        $team_id = $_GET['team_id'];
-        $url = "http://localhost/evenCricket/apitest/index.php?team_id=$team_id";
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $result = curl_exec($ch);
-        curl_close($ch);
-        $result = json_decode($result, true);
-    ?>
-    
     <!-- ========================= preloader start ========================= -->
     <div class="preloader">
         <div class="loader">
@@ -125,31 +114,50 @@
     <div style="height:150px;"></div>
     <!-- ========================= Spacer ========================= -->
 
-    <div class="container">
-        <h2><?php echo $result['country'];?> Players</h2>
-        <hr>
-        <div class="row">
-                <?php
-                    foreach ($result['data'] as $data) {
-                ?>
-                        <br><br><br><br><br><br><br><br><br>
-                        <div class="col-md-6">
-                            <a href="./playerDetails.php?player_id=<?php echo $data["player_id"];?>">
-                                <div style="display:inline-block;">
-                                    <img src="https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/302300/302377.jpg" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
-                                </div>
-                                <div style="display:inline-block;">
-                                    <h3><?php echo $data["player_name"];?></h3>
-                                    <p><?php echo $data["player_name"];?></p>
-                                    <p>Age: <?php echo $data["player_age"];?></p>
-                                </div>
-                            </a>
-                        </div>
-                <?php
-                    }
-                ?>
+    <?php
+    $team_id = $_GET['team_id'];
+    $url = "http://localhost/evenCricket/apitest/index.php?team_id=$team_id";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $result = curl_exec($ch);
+    curl_close($ch);
+    $result = json_decode($result, true);
+    if ($result['result']) { ?>
+        <div class="container">
+            <h2><?php echo $result['country']; ?> Players</h2>
+            <hr>
+            <div class="row">
+                    <?php foreach ($result['data'] as $data) { ?>
+                            <br><br><br><br><br><br><br><br><br>
+                            <div class="col-md-6">
+                                <a href="./playerDetails.php?player_id=<?php echo $data[
+                                    'player_id'
+                                ]; ?>">
+                                    <div style="display:inline-block;">
+                                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/302300/302377.jpg" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
+                                    </div>
+                                    <div style="display:inline-block;">
+                                        <h3><?php echo $data[
+                                            'player_name'
+                                        ]; ?></h3>
+                                        <p><?php echo $data[
+                                            'player_name'
+                                        ]; ?></p>
+                                        <p>Age: <?php echo $data[
+                                            'player_age'
+                                        ]; ?></p>
+                                    </div>
+                                </a>
+                            </div>
+                    <?php } ?>
+            </div>
         </div>
-    </div>
+    <?php } else { ?>
+        <h1 class="text-center">404</h1>
+    <?php }
+    ?>
+    
     <!-- ========================= JS here ========================= -->
     <script src="../assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
     <script src="../assets/js/contact-form.js"></script>
