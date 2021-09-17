@@ -51,9 +51,7 @@
                         <a class="navbar-brand" href="index.html">
                             <img src="../assets/img/ec1-removebg-preview.png" />
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
@@ -71,10 +69,7 @@
                                     <a class="page-scroll" href="./teams.html">Teams</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">Rankings</a>
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Rankings</a>
 
                                     <ul class="sub-menu collapse" id="submenu-1-3">
                                         <li class="nav-item"><a href="#0">Team Ranking</a></li>
@@ -84,10 +79,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">More</a>
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">More</a>
 
                                     <ul class="sub-menu collapse" id="submenu-1-4">
                                         <li class="nav-item"><a href="#0">About EC</a></li>
@@ -128,36 +120,28 @@
             <h2><?php echo $result['country']; ?> Players</h2>
             <hr>
             <div class="row">
-                    <?php foreach ($result['data'] as $data) { ?>
-                            <br><br><br><br><br><br><br><br><br>
-                            <div class="col-md-6">
-                                <a href="./playerDetails.php?player_id=<?php echo $data[
-                                    'player_id'
-                                ]; ?>">
-                                    <div style="display:inline-block;">
-                                        <img src="https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/302300/302377.jpg" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
-                                    </div>
-                                    <div style="display:inline-block;">
-                                        <h3><?php echo $data[
-                                            'player_name'
-                                        ]; ?></h3>
-                                        <p><?php echo $data[
-                                            'player_name'
-                                        ]; ?></p>
-                                        <p>Age: <?php echo $data[
-                                            'player_age'
-                                        ]; ?></p>
-                                    </div>
-                                </a>
+                <?php foreach ($result['data'] as $data) { ?>
+                    <br><br><br><br><br><br><br><br><br>
+                    <div class="col-md-6">
+                        <a href="./playerDetails.php?player_id=<?php echo $data['player_id']; ?>">
+                            <div style="display:inline-block;">
+                                <img src="<?php echo $data['images']; ?>" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
                             </div>
-                    <?php } ?>
+                            <div style="display:inline-block;">
+                                <h3><?php echo $data['player_name']; ?></h3>
+                                <p><?php echo $data['player_name']; ?></p>
+                                <p>Age: <?php echo $data['player_age']; ?></p>
+                            </div>
+                        </a>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     <?php } else { ?>
         <h1 class="text-center">404</h1>
     <?php }
     ?>
-    
+
     <!-- ========================= JS here ========================= -->
     <script src="../assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
     <script src="../assets/js/contact-form.js"></script>

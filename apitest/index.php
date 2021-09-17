@@ -3,7 +3,7 @@ include('db.php');
 
 if (isset($_GET['player_id'])) {
 	$player_id = $_GET['player_id'];
-	$sql = "SELECT `player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`
+	$sql = "SELECT `player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`, `images`
 				FROM player_details , teams
 				WHERE teams.id = player_country and player_id = $player_id";
 	$res = mysqli_query($con, $sql);
@@ -19,7 +19,7 @@ if (isset($_GET['player_id'])) {
 	}
 }
 if (isset($_GET['all_players'])) {
-	$sql = "SELECT `player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`
+	$sql = "SELECT `player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`,`images`
 				FROM player_details , teams
 					WHERE teams.id = player_country";
 	$res = mysqli_query($con, $sql);
@@ -39,7 +39,7 @@ if (isset($_GET['all_players'])) {
 
 if (isset($_GET['team_id'])) {
 	$team_id = $_GET['team_id'];
-	$sql = "SELECT `player_id`,`player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`
+	$sql = "SELECT `player_id`,`player_name`, `country_name`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`,`images`
 				FROM player_details , teams
 				WHERE teams.id = player_country and player_country = $team_id";
 	$res = mysqli_query($con, $sql);

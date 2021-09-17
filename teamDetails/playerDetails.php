@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    
+
     <!-- ========================= preloader start ========================= -->
     <div class="preloader">
         <div class="loader">
@@ -52,9 +52,7 @@
                         <a class="navbar-brand" href="index.html">
                             <img src="../assets/img/ec1-removebg-preview.png" />
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
@@ -72,10 +70,7 @@
                                     <a class="page-scroll" href="./teams.html">Teams</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">Rankings</a>
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Rankings</a>
 
                                     <ul class="sub-menu collapse" id="submenu-1-3">
                                         <li class="nav-item"><a href="#0">Team Ranking</a></li>
@@ -85,10 +80,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">More</a>
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">More</a>
 
                                     <ul class="sub-menu collapse" id="submenu-1-4">
                                         <li class="nav-item"><a href="#0">About EC</a></li>
@@ -135,30 +127,30 @@
                 <br><br><br>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="https://timesofindia.indiatimes.com/photo/69257289.cms" alt="" style="width:350px; height:300px;">
+                        <img src="<?php echo $data['images']; ?>" alt="" style="width:350px; height:300px;">
                         <br><br><br>
                         <div class="general-detail">
                             <h3>General Stat</h3>
                             <table class="table table-borderless">
                                 <tr>
                                     <th scope="row">Nation</th>
-                                    <td><?php echo $data[
-                                        'country_name'
-                                    ]; ?></td>
+                                    <td><?php echo $data['country_name']; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Matches</th>
-                                    <td><?php echo $data[
-                                        'matches_played'
-                                    ]; ?></td>
+                                    <td><?php echo $data['matches_played']; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Player Type</th>
                                     <td><?php echo $data['player_type']; ?></td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">Debut</th>
+                                    <td><?php echo $data['debut_year'] != null ? $data['debut_year'] : '-'; ?></td>
                                 </tr>
+
                             </table>
-                        <br><br>
+                            <br><br>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -179,9 +171,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Highest Score</th>
-                                    <td><?php echo $data[
-                                        'highest_score'
-                                    ]; ?></td>
+                                    <td><?php echo $data['highest_score']; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Batting Average</th>
@@ -203,9 +193,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Best Figures</th>
-                                    <td><?php echo $data[
-                                        'best_figures'
-                                    ]; ?></td>
+                                    <td><?php echo $data['best_figures']; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Economy</th>
@@ -218,14 +206,14 @@
             </div>
             <!-- ========================= Player ========================= -->
 
-    <?php }
+        <?php }
     } else {
-         ?>
+        ?>
         <h1 class="text-center">404</h1>
     <?php
     }
     ?>
-    
+
 
 
 
