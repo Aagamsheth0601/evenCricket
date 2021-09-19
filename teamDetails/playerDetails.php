@@ -127,18 +127,24 @@
                 <br><br><br>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="<?php echo $data['images']; ?>" alt="" style="width:350px; height:300px;">
-                        <br><br><br>
+                        <img src="<?php echo $data[
+                            'images'
+                        ]; ?>" alt="" style="width:350px; height:300px;">
+                        <br><br>
                         <div class="general-detail">
                             <h3>General Stat</h3>
                             <table class="table table-borderless">
                                 <tr>
                                     <th scope="row">Nation</th>
-                                    <td><?php echo $data['country_name']; ?></td>
+                                    <td><?php echo $data[
+                                        'country_name'
+                                    ]; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Matches</th>
-                                    <td><?php echo $data['matches_played']; ?></td>
+                                    <td><?php echo $data[
+                                        'matches_played'
+                                    ]; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Player Type</th>
@@ -146,15 +152,17 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Debut</th>
-                                    <td><?php echo $data['debut_year'] != null ? $data['debut_year'] : '-'; ?></td>
+                                    <td><?php echo $data['debut_year'] != null
+                                        ? $data['debut_year']
+                                        : '-'; ?></td>
                                 </tr>
 
                             </table>
-                            <br><br>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="batting-detail">
+                            <br>
                             <h3>Batting Stat</h3>
                             <table class="table table-borderless">
                                 <tr>
@@ -171,7 +179,9 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Highest Score</th>
-                                    <td><?php echo $data['highest_score']; ?></td>
+                                    <td><?php echo $data[
+                                        'highest_score'
+                                    ]; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Batting Average</th>
@@ -193,7 +203,9 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">Best Figures</th>
-                                    <td><?php echo $data['best_figures']; ?></td>
+                                    <td><?php echo $data[
+                                        'best_figures'
+                                    ]; ?></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Economy</th>
@@ -208,7 +220,7 @@
 
         <?php }
     } else {
-        ?>
+         ?>
         <h1 class="text-center">404</h1>
     <?php
     }

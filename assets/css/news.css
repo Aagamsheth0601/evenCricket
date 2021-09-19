@@ -1,0 +1,13 @@
+.news-image {
+  padding: 0;
+}
+.news-text {
+  background-color: #3763eb;
+  display: flex;
+  align-items: center;
+}
+.news-text p,
+.news-text h5 {
+  color: white;
+  padding: 5px;
+}
