@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2021 at 01:41 PM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 5.6.24
+-- Generation Time: Sep 17, 2021 at 10:16 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -114,96 +115,76 @@ CREATE TABLE `player_details` (
 --
 
 INSERT INTO `player_details` (`player_id`, `player_name`, `player_country`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`, `images`) VALUES
-(1, 'Rohit Sharma', 1, 34, 'Batsman', 111, 2864, 22, 4, 118, 32.18, 1, '1/22', 9.97, 138.96, 2007, ''),
-(2, 'KL Rahul', 1, 29, 'Batsman', 49, 1557, 12, 2, 110, 39.92, 0, '0/0', 0, 142.19, 2016, ''),
+(1, 'Rohit Sharma', 1, 34, 'Batsman', 111, 2864, 22, 4, 118, 32.18, 1, '1/22', 9.97, 138.96, 2007, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316500/316584.png'),
+(2, 'KL Rahul', 1, 29, 'Batsman', 49, 1557, 12, 2, 110, 39.92, 0, '0/0', 0, 142.19, 2016, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319900/319942.png'),
 (3, 'Virat Kohli', 1, 32, 'Batsman', 89, 3159, 28, 0, 94, 52.65, 4, '1/13', 8.14, 139.04, 2010, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c170661/virat-kohli.jpg'),
-(4, 'Shikhar Dhawan', 1, 35, 'Batsman', 65, 1673, 11, 0, 92, 27.88, 0, '0/0', 0, 127.42, 2011, ''),
-(5, 'Shreyas Iyer', 1, 26, 'Batsman', 28, 550, 3, 0, 67, 31.43, 0, '0/0', 0, 133.82, 2017, ''),
-(6, 'Suryakumar Yadav', 1, 30, 'Batsman', 3, 89, 1, 0, 57, 44.5, 0, '0/0', 0, 135.28, 2021, ''),
-(7, 'Hardik Pandya', 1, 27, 'Allrounder', 48, 474, 0, 0, 42, 19.75, 41, '4/38', 8.17, 147.66, 2016, ''),
-(8, 'Rishabh Pant', 1, 23, 'WK-Batsman', 32, 512, 2, 0, 65, 21.33, 0, '0/0', 0, 123.37, 2017, ''),
-(9, 'Ishan Kishan', 1, 22, 'WK-Batsman', 2, 60, 1, 0, 56, 30, 0, '0/0', 0, 131.96, 2021, ''),
-(10, 'Yuzvendra Chahal', 1, 30, 'Bowler', 48, 5, 0, 0, 3, 2.5, 62, '6/25', 8.4, 45.45, 2016, ''),
-(11, 'Varun Chakravarthy', 1, 29, 'Bowler', 0, 0, 0, 0, 0, 0, 0, '0/0', 0, 0, NULL, ''),
-(12, 'Axar Patel', 1, 27, 'Allrounder', 12, 75, 0, 0, 20, 18.75, 9, '3/17', 6.88, 131.58, 2015, ''),
-(13, 'Washington Sundar', 1, 21, 'Bowler', 30, 47, 0, 0, 14, 6.71, 25, '3/22', 7.25, 146.88, 2017, ''),
-(14, 'Rahul Tewatia', 1, 28, 'Bowler', 0, 0, 0, 0, 0, 0, 0, '0/0', 0, 0, NULL, ''),
-(15, 'Thangarasu Natarajan', 1, 30, 'Bowler', 4, 0, 0, 0, 0, 0, 7, '3/30', 7.62, 0, 2020, ''),
-(16, 'Bhuvneshwar Kumar', 1, 31, 'Bowler', 48, 23, 0, 0, 9, 5, 45, '5/24', 6.98, 79.31, 2012, ''),
-(17, 'Deepak Chahar', 1, 28, 'Bowler', 13, 1, 0, 0, 1, 0, 18, '6/7', 7.57, 100, 2018, ''),
-(18, 'Navdeep Saini', 1, 28, 'Bowler', 9, 11, 0, 0, 11, 0, 13, '3/17', 7.16, 110, 2016, ''),
-(19, 'Shardul Thakur', 1, 29, 'Bowler', 21, 69, 0, 0, 22, 34.5, 31, '4/27', 9.11, 197.14, 2018, ''),
-(20, 'Sanju Samson', 1, 26, 'WK-Batsman', 7, 83, 0, 0, 23, 28.9, 0, '0/0', 0, 134.83, 2015, ''),
-(21, 'Jasprit Bumrah', 1, 27, 'Bowler', 49, 8, 0, 0, 7, 4, 59, '3/11', 6.67, 61.54, 2016, ''),
-(22, 'Mohammed Shami', 1, 30, 'Bowler', 12, 0, 0, 0, 0, 0, 12, '3/38', 9.8, 0, 2014, ''),
-(23, 'Ravindra Jadeja', 1, 32, 'Allrounder', 50, 217, 0, 0, 44, 15.5, 39, '3/48	', 7.1, 112.44, 2009, ''),
-(24, 'Kane Williamson', 2, 30, 'Batsman', 67, 1805, 13, 0, 95, 31.67, 6, '2/16', 8.34, 124.91, 2011, ''),
-(25, 'Martin Guptill', 2, 34, 'Batsman', 102, 2939, 17, 2, 105, 32.3, 0, '0/11', 11, 137.76, 2009, ''),
-(26, 'Mark Chapman', 2, 27, 'Allrounder', 30, 535, 1, 0, 63, 22.29, 4, '1/9', 7.31, 117.32, 2014, ''),
-(27, 'James Neesham', 2, 30, 'Allrounder', 29, 324, 0, 0, 48, 21.6, 18, '3/16', 9.45, 157.28, 2013, ''),
-(28, 'Mitchell Santner', 2, 29, 'Allrounder', 52, 335, 0, 0, 37, 15.23, 60, '4/11', 7.38, 126.89, 2015, ''),
-(29, 'Tim Seifert', 2, 26, 'WK-Batsman', 35, 695, 5, 0, 84, 24.82, 0, '0/0', 0, 133.14, 2018, ''),
-(30, 'Devon Conway', 2, 29, 'WK-Batsman', 14, 473, 4, 0, 99, 59.12, 0, '0/0', 0, 151.12, 2020, ''),
-(31, 'Glenn Phillips', 2, 24, 'WK-Batsman', 25, 505, 2, 1, 108, 28.06, 2, '1/11', 7.6, 149.41, 2017, ''),
-(34, 'Ish Sodhi', 2, 28, 'Bowler', 57, 76, 0, 0, 16, 12.67, 73, '4/28', 8.07, 108.57, 2014, ''),
-(35, 'Kyle Jamieson', 2, 26, 'Bowler', 8, 41, 0, 0, 30, 20.5, 4, '2/15', 9.8, 151.85, 2020, ''),
-(36, 'Tim Southee', 2, 32, 'Bowler', 82, 249, 0, 0, 39, 11.32, 99, '5/18', 8.39, 127.78, 2008, ''),
-(37, 'Trent Boult', 2, 31, 'Bowler', 34, 28, 0, 0, 8, 5.6, 46, '4/34', 8.54, 73.68, 2013, ''),
-(38, 'Hamish Bennett', 2, 34, 'Bowler', 9, 1, 0, 0, 1, 0, 9, '3/54', 9.78, 50, 2020, ''),
-(39, 'Ross Taylor', 2, 37, 'Batsman', 102, 1909, 7, 0, 63, 25.45, 0, '0', 0, 122.37, 2006, ''),
-(40, 'Henry Nicholls', 2, 29, 'Batsman', 5, 19, 0, 0, 7, 4.75, 0, '0', 0, 67.86, 2016, ''),
-(41, 'Colin De Grandhomme', 2, 34, 'Allrounder', 36, 485, 3, 0, 59, 17.96, 11, '2/22', 8.93, 134.67, 2012, ''),
-(42, 'Colin Munro', 2, 34, 'Batsman', 65, 1724, 11, 3, 109, 31.35, 0, '0', 0, 156.44, 2012, ''),
-(43, 'Tom Latham', 2, 29, 'WK_Batsman', 13, 163, 0, 0, 39, 16.3, 0, '0', 0, 103.82, 2012, ''),
-(44, 'Tom Blundell', 2, 30, 'WK_Batsman', 3, 17, 0, 0, 14, 17, 0, '0', 0, 80.95, 2017, ''),
-(45, 'Matt Henry', 2, 29, 'Bowler', 6, 10, 0, 0, 10, 10, 7, '3/44', 8.68, 200, 2014, ''),
-(46, 'Lockie Ferguson', 2, 30, 'Bowler', 13, 1, 0, 0, 1, 1, 24, '5/21', 6.87, 33.33, 2017, ''),
-(47, 'Aaron Finch', 3, 34, 'Batsman', 71, 2346, 14, 2, 172, 38.46, 0, '0/9', 13.5, 152.14, 2011, ''),
-(48, 'David Warner', 3, 34, 'Batsman', 81, 2265, 18, 1, 100, 31.46, 0, '0', 0, 139.73, 2011, ''),
-(49, 'Steven Smith', 3, 32, 'Batsman', 45, 794, 4, 0, 90, 27.38, 17, '3/20', 7.77, 129.53, 2010, ''),
-(50, ' Matthew Wade', 3, 33, 'WK-Batsman', 38, 526, 3, 0, 80, 21.92, 0, '0', 0, 126.75, 2012, ''),
-(51, 'Glenn Maxwell', 3, 32, 'Allrounder', 72, 1780, 9, 3, 145, 31.79, 31, '3/10', 7.51, 158.93, 2012, ''),
-(52, 'Marcus Stoinis', 3, 31, 'Allrounder', 73, 1482, 7, 1, 146, 29.64, 43, '3/16', 6.47, 100.14, 2015, ''),
-(53, 'Mitchell Marsh', 3, 29, 'Allrounder', 20, 325, 0, 0, 45, 21.67, 7, '2/6', 7.95, 116.07, 2011, ''),
-(54, 'Josh Philippe', 3, 24, 'WK_Batsman', 5, 105, 0, 0, 45, 21, 0, 'N/A', 0, 0, 2021, ''),
-(55, 'Moises Henriques', 3, 34, 'Allrounder', 14, 220, 2, 0, 62, 31.43, 7, '3/22', 8.64, 135.8, 2009, ''),
-(56, 'Mitchell Starc', 3, 31, 'Bowler', 35, 24, 0, 0, 7, 4.8, 47, '3/11', 6.95, 92.31, 2012, ''),
-(57, 'Pat Cummins', 3, 28, 'Bowler', 30, 48, 0, 0, 13, 6.86, 37, '3/15', 6.93, 114.29, 2014, ''),
-(58, 'Josh Hazlewood', 3, 30, 'Bowler', 9, 0, 0, 0, 0, 0, 9, '4/30', 9.19, 0, 2013, ''),
-(59, 'Jhye Richardson', 3, 24, 'Bowler', 14, 36, 0, 0, 11, 12, 13, '2/31', 8.52, 116.13, 2017, ''),
-(60, 'Kane Richardson', 3, 30, 'Bowler', 26, 16, 0, 0, 9, 5.33, 29, '3/18', 7.92, 106.67, 2014, ''),
-(61, 'Adam Zampa', 3, 29, 'Bowler', 41, 36, 0, 0, 13, 18, 43, '3/14', 6.92, 105.88, 2016, ''),
-(62, 'Ashton Agar', 3, 27, 'Bowler', 32, 176, 0, 0, 29, 13.54, 38, '6/30', 6.88, 112.82, 2016, ''),
-(63, 'Mitchell Swepson', 3, 27, 'Bowler', 4, 15, 0, 0, 12, 3, 7, '3/33', 7.57, 166.67, 2018, ''),
-(64, ' Chris Lynn', 3, 31, 'Batsman', 18, 291, 0, 0, 44, 19.4, 0, 'N/A', 0, 131.67, 2014, ''),
-(65, 'Usman Khawaja', 3, 34, 'Batsman', 9, 241, 1, 0, 58, 26.78, 0, 'N/A', 0, 132.42, 2016, ''),
-(66, 'Peter Handscomb ', 3, 30, 'WK-Batsman', 2, 33, 0, 0, 20, 33, 0, 'N/A', 0, 100, 2019, ''),
-(67, ' D''Arcy Short', 3, 30, 'Allrounder', 23, 642, 4, 0, 76, 30.57, 3, '1/13', 7.95, 118.89, 2018, ''),
-(68, 'Nathan Coulter-Nile', 3, 33, 'Bowler', 28, 150, 0, 0, 34, 13.64, 34, '4/30', 8.26, 125, 2013, ''),
-(69, 'Andrew Tye', 3, 34, 'Bowler', 28, 61, 0, 0, 20, 10.17, 39, '4/23', 8.94, 110.91, 2016, ''),
-(70, 'Quinton de Kock', 7, 28, 'WK-Batsman', 49, 1366, 6, 0, 76, 31.05, 0, 'N/A', 0, 136.87, 2012, ''),
-(71, 'Temba Bavuma', 7, 31, 'Batsman', 10, 317, 0, 0, 49, 35.22, 0, 'N/A', 0, 132.08, 2019, ''),
-(72, 'Faf du Plessis', 7, 36, 'Batsman', 50, 1528, 10, 1, 119, 35.33, 0, '0/0', 2.25, 134.39, 2012, ''),
-(73, 'David Miller', 7, 32, 'Batsman', 83, 1545, 3, 1, 101, 30.29, 0, 'N/A', 0, 138.81, 2010, ''),
-(74, 'Janneman Malan', 7, 25, 'Batsman', 9, 237, 1, 0, 55, 26.33, 0, 'N/A', 0, 132.4, 2019, ''),
-(75, 'Aiden Markram', 7, 26, 'Batsman', 6, 197, 3, 0, 63, 32.83, 0, 'N/A', 0, 171.3, 2019, ''),
-(76, 'Van Biljon', 7, 35, 'Batsman', 10, 125, 0, 0, 42, 20.83, 0, 'N/A', 0, 123.76, 2020, ''),
-(77, 'Heinrich Klaasen', 7, 29, 'Batsman', 22, 427, 3, 0, 69, 23.72, 0, '0/14', 14, 145.24, 2018, ''),
-(78, 'George Linde', 7, 29, 'Allrounder', 9, 95, 0, 0, 29, 13.57, 7, '3/23', 7.03, 153.23, 2020, ''),
-(79, 'Andile Phehlukwayo', 7, 25, 'Allrounder', 34, 127, 0, 0, 27, 9.07, 39, '4/24', 8.42, 113.39, 2017, ''),
-(80, 'Kagiso Rabada', 7, 26, 'Bowler', 28, 50, 0, 0, 22, 12.5, 34, '3/30', 8.61, 102.04, 2014, ''),
-(81, 'Lungi Ngidi', 7, 25, 'Bowler', 18, 7, 0, 0, 4, 2.33, 29, '4/19', 9.48, 46.67, 2017, ''),
-(82, 'Anrich Nortje', 7, 27, 'Bowler', 7, 2, 0, 0, 2, 2, 4, '1/24', 7.68, 25, 2019, ''),
-(83, 'Tabraiz Shamsi,', 7, 31, 'Bowler', 34, 4, 0, 0, 2, 2, 33, '4/25', 7.26, 25, 2017, ''),
-(84, 'Rassi Van Der Dussen', 7, 32, 'Batsman', 22, 686, 5, 0, 74, 42.88, 0, 'N/A', 0, 138.59, 2018, ''),
-(85, 'Imran Tahir', 7, 42, 'Bowler', 38, 19, 0, 0, 9, 19, 63, '5/23', 6.73, 105.56, 2013, ''),
-(86, 'Chris Morris', 7, 34, 'Allrounder', 23, 133, 1, 0, 55, 14.78, 34, '4/27', 8.4, 130.39, 2012, ''),
-(87, 'Kyle Abbott ', 7, 34, 'Bowler', 21, 23, 0, 0, 9, 11.5, 26, '3/20', 7.97, 115, 2013, ''),
-(88, 'Dale Steyn', 7, 38, 'Bowler', 47, 21, 0, 0, 5, 3.5, 64, '4/9', 6.95, 80.77, 2017, ''),
-(89, 'Reeza Hendricks', 7, 31, 'Batsman', 30, 793, 5, 0, 74, 26.43, 0, '0/21', 21, 121.25, 2014, ''),
-(90, 'Bjorn Fortuin', 7, 26, 'Bowler', 7, 35, 0, 0, 17, 11.67, 6, '2/19', 8.05, 125, 2019, ''),
-(91, 'Sisanda Magala', 7, 30, 'Bowler', 4, 16, 0, 0, 9, 16, 3, '2/33', 9.86, 123.08, 2021, ''),
-(92, 'Dwaine Pretorius', 7, 32, 'Allrounder', 14, 159, 1, 0, 77, 31.8, 13, '5/17', 8.08, 165.63, 2017, ''),
+(4, 'Suryakumar Yadav', 1, 30, 'Batsman', 3, 89, 1, 0, 57, 44.5, 0, '0/0', 0, 135.28, 2021, 'https://images.indianexpress.com/2021/03/Suryakumar_Yadav_Twitter.jpg'),
+(5, 'Ravindra Jadeja', 1, 32, 'Allrounder', 50, 217, 0, 0, 44, 15.5, 39, '3/48	', 7.1, 112.44, 2009, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316600.png'),
+(6, 'Ravichandran Ashwin', 1, 35, 'Allrounder', 46, 123, 0, 0, 31, 30.75, 52, '4/8', 6.98, 19.73, 2010, 'https://pbs.twimg.com/media/E8wvIJFVEAgRXcM.jpg'),
+(7, 'Hardik Pandya', 1, 27, 'Allrounder', 48, 474, 0, 0, 42, 19.75, 41, '4/38', 8.17, 147.66, 2016, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319900/319938.png'),
+(8, 'Rishabh Pant', 1, 23, 'WK-Batsman', 32, 512, 2, 0, 65, 21.33, 0, '0/0', 0, 123.37, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/323000/323036.png'),
+(9, 'Ishan Kishan', 1, 22, 'WK-Batsman', 2, 60, 1, 0, 56, 30, 0, '0/0', 0, 131.96, 2021, 'https://img.mensxp.com/media/content/2019/Feb/eight-4s-amp-seven-6s-help-ishan-kishan-become-indias-wicket-keeper-captain-to-score-a-t20-ton-1200x900-1550839740_1200x900.jpg'),
+(10, 'Axar Patel', 1, 27, 'Allrounder', 12, 75, 0, 0, 20, 18.75, 9, '3/17', 6.88, 131.58, 2015, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316700/316705.png'),
+(11, 'Varun Chakravarthy', 1, 29, 'Bowler', 0, 0, 0, 0, 0, 0, 0, '0/0', 0, 0, 2021, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c196703/varun-chakravarthy.jpg'),
+(12, 'Jasprit Bumrah', 1, 27, 'Bowler', 49, 8, 0, 0, 7, 4, 59, '3/11', 6.67, 61.54, 2016, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319900/319940.png'),
+(13, 'Mohammed Shami', 1, 30, 'Bowler', 12, 0, 0, 0, 0, 0, 12, '3/38', 9.8, 0, 2014, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c170684/mohammed-shami.jpg'),
+(14, 'Rahul Chahar', 1, 22, 'Bowler', 5, 5, 0, 0, 5, 5, 7, '3/15', 7.61, 15.43, 2021, 'https://currentnewsbox.com/wp-content/uploads/2021/04/Rahul-Chahar-Girlfreind.jpg'),
+(15, 'Bhuvneshwar Kumar', 1, 31, 'Bowler', 48, 23, 0, 0, 9, 5, 45, '5/24', 6.98, 79.31, 2012, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316658.png'),
+(16, 'Deepak Chahar*', 1, 28, 'Bowler', 13, 1, 0, 0, 1, 0, 18, '6/7', 7.57, 100, 2018, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322700/322704.png'),
+(17, 'Shreyas Iyer*', 1, 26, 'Batsman', 28, 550, 3, 0, 67, 31.43, 0, '0/0', 0, 133.82, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/323000/323035.png'),
+(18, 'Shardul Thakur*', 1, 29, 'Bowler', 21, 69, 0, 0, 22, 34.5, 31, '4/27', 9.11, 197.14, 2018, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322600/322696.png'),
+(24, 'Kane Williamson', 2, 30, 'Batsman', 67, 1805, 13, 0, 95, 31.67, 6, '2/16', 8.34, 124.91, 2011, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316618.png'),
+(25, 'Martin Guptill', 2, 34, 'Batsman', 102, 2939, 17, 2, 105, 32.3, 0, '0/11', 11, 137.76, 2009, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316500/316591.png'),
+(26, 'Mark Chapman', 2, 27, 'Allrounder', 30, 535, 1, 0, 63, 22.29, 4, '1/9', 7.31, 117.32, 2014, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321200/321241.png'),
+(27, 'James Neesham', 2, 30, 'Allrounder', 29, 324, 0, 0, 48, 21.6, 18, '3/16', 9.45, 157.28, 2013, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319700/319781.png'),
+(28, 'Mitchell Santner', 2, 29, 'Allrounder', 52, 335, 0, 0, 37, 15.23, 60, '4/11', 7.38, 126.89, 2015, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319700/319792.png'),
+(29, 'Tim Seifert', 2, 26, 'WK-Batsman', 35, 695, 5, 0, 84, 24.82, 0, '0/0', 0, 133.14, 2018, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321300/321313.png'),
+(30, 'Devon Conway', 2, 29, 'WK-Batsman', 14, 473, 4, 0, 99, 59.12, 0, '0/0', 0, 151.12, 2020, 'https://cdn.primedia.co.za/primedia-broadcasting/image/upload/c_fill,h_436,w_700/gedamyncu25piwzrqrw7'),
+(31, 'Glenn Phillips', 2, 24, 'WK-Batsman', 25, 505, 2, 1, 108, 28.06, 2, '1/11', 7.6, 149.41, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321200/321223.png'),
+(32, 'Todd Astle', 2, 34, 'Bowler', 4, 4, 0, 0, 3, 2, 7, '4/13', 8.2, 11.71, 2016, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c154932/todd-astle.jpg'),
+(33, 'Daryl Mitchell', 2, 30, 'Allrounder', 15, 148, 0, 0, 34, 16.44, 5, '2/27', 9.85, 137.04, 2019, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321200/321212.png'),
+(34, 'Ish Sodhi', 2, 28, 'Bowler', 57, 76, 0, 0, 16, 12.67, 73, '4/28', 8.07, 108.57, 2014, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/319700/319778.png'),
+(35, 'Kyle Jamieson', 2, 26, 'Bowler', 8, 41, 0, 0, 30, 20.5, 4, '2/15', 9.8, 151.85, 2020, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321200/321236.png'),
+(36, 'Tim Southee', 2, 32, 'Bowler', 82, 249, 0, 0, 39, 11.32, 99, '5/18', 8.39, 127.78, 2008, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316500/316596.png'),
+(37, 'Trent Boult', 2, 31, 'Bowler', 34, 28, 0, 0, 8, 5.6, 46, '4/34', 8.54, 73.68, 2013, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316619.png'),
+(38, 'Lockie Ferguson', 2, 30, 'Bowler', 13, 1, 0, 0, 1, 1, 24, '5/21', 6.87, 33.33, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321200/321239.png'),
+(39, 'Adam Milne*', 2, 29, 'Bowler', 23, 21, 0, 0, 10, 0, 28, '4/37', 7.7, 16.88, 2010, 'https://resources.pulse.icc-cricket.com/players/champions-trophy-2017/284/434.png'),
+(47, 'Aaron Finch', 3, 34, 'Batsman', 71, 2346, 14, 2, 172, 38.46, 0, '0/9', 13.5, 152.14, 2011, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316500/316533.png'),
+(48, 'David Warner', 3, 34, 'Batsman', 81, 2265, 18, 1, 100, 31.46, 0, '0', 0, 139.73, 2011, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316500/316589.png'),
+(49, 'Steven Smith', 3, 32, 'Batsman', 45, 794, 4, 0, 90, 27.38, 17, '3/20', 7.77, 129.53, 2010, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316609.png'),
+(50, ' Matthew Wade', 3, 33, 'WK-Batsman', 38, 526, 3, 0, 80, 21.92, 0, '0', 0, 126.75, 2012, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316500/316594.png'),
+(51, 'Glenn Maxwell', 3, 32, 'Allrounder', 72, 1780, 9, 3, 145, 31.79, 31, '3/10', 7.51, 158.93, 2012, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316657.png'),
+(52, 'Marcus Stoinis', 3, 31, 'Allrounder', 73, 1482, 7, 1, 146, 29.64, 43, '3/16', 6.47, 100.14, 2015, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321500/321596.png'),
+(53, 'Mitchell Marsh', 3, 29, 'Allrounder', 20, 325, 0, 0, 45, 21.67, 7, '2/6', 7.95, 116.07, 2011, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316612.png'),
+(54, 'Josh Inglis', 3, 26, 'Batsman', 0, 0, 0, 0, 0, 0, 0, '0', 0, 0, NULL, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/324200/324232.png'),
+(55, 'Mitchell Starc', 3, 31, 'Bowler', 35, 24, 0, 0, 7, 4.8, 47, '3/11', 6.95, 92.31, 2012, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316644.png'),
+(56, 'Pat Cummins', 3, 28, 'Bowler', 30, 48, 0, 0, 13, 6.86, 37, '3/15', 6.93, 114.29, 2014, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316692.png'),
+(57, 'Josh Hazlewood', 3, 30, 'Bowler', 9, 0, 0, 0, 0, 0, 9, '4/30', 9.19, 0, 2013, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316622.png'),
+(58, 'Kane Richardson', 3, 30, 'Bowler', 26, 16, 0, 0, 9, 5.33, 29, '3/18', 7.92, 106.67, 2014, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321500/321594.png'),
+(59, 'Adam Zampa', 3, 29, 'Bowler', 41, 36, 0, 0, 13, 18, 43, '3/14', 6.92, 105.88, 2016, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321500/321549.png'),
+(60, 'Ashton Agar', 3, 27, 'Bowler', 32, 176, 0, 0, 29, 13.54, 38, '6/30', 6.88, 112.82, 2016, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321500/321559.png'),
+(61, 'Mitchell Swepson', 3, 27, 'Bowler', 4, 15, 0, 0, 12, 3, 7, '3/33', 7.57, 166.67, 2018, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321600/321605.png'),
+(62, 'Dan Christian*', 3, 38, 'Allrounder', 23, 118, 0, 0, 39, 14.75, 13, '3/27', 8.56, 30.62, 2010, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321500/321572.png'),
+(63, 'Nathan Ellis*', 3, 27, 'Bowler', 2, 1, 0, 0, 1, 1, 5, '3/34', 6.25, 10, 2021, 'https://p.imgci.com/db/PICTURES/CMS/325400/325475.6.jpg'),
+(64, 'Daniel Sams*', 3, 28, 'Allrounder', 5, 6, 0, 0, 3, 3, 4, '2/40', 11.41, 20.5, 2020, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/321500/321573.png'),
+(70, 'Quinton de Kock', 7, 28, 'WK-Batsman', 49, 1366, 6, 0, 76, 31.05, 0, 'N/A', 0, 136.87, 2012, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316668.png'),
+(71, 'Temba Bavuma', 7, 31, 'Batsman', 10, 317, 0, 0, 49, 35.22, 0, 'N/A', 0, 132.08, 2019, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/320300/320389.png'),
+(72, 'David Miller', 7, 32, 'Batsman', 83, 1545, 3, 1, 101, 30.29, 0, 'N/A', 0, 138.81, 2010, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316655.png'),
+(73, 'Aiden Markram', 7, 26, 'Batsman', 6, 197, 3, 0, 63, 32.83, 0, 'N/A', 0, 171.3, 2019, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322067.png'),
+(74, 'Heinrich Klaasen', 7, 29, 'Batsman', 22, 427, 3, 0, 69, 23.72, 0, '0/14', 14, 145.24, 2018, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322073.png'),
+(75, 'Keshav Maharaj', 7, 31, 'Bowler', 3, 0, 0, 0, 0, 0, 1, '1/10', 4.23, 20.33, 2021, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322072.png'),
+(76, 'Wiaan Mulder', 7, 23, 'Allrounder', 5, 51, 0, 0, 36, 25.5, 5, '2/10', 8.18, 18, 2021, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322086.png'),
+(77, 'Kagiso Rabada', 7, 26, 'Bowler', 28, 50, 0, 0, 22, 12.5, 34, '3/30', 8.61, 102.04, 2014, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/320300/320376.png'),
+(78, 'Lungi Ngidi', 7, 25, 'Bowler', 18, 7, 0, 0, 4, 2.33, 29, '4/19', 9.48, 46.67, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322069.png'),
+(79, 'Anrich Nortje', 7, 27, 'Bowler', 7, 2, 0, 0, 2, 2, 4, '1/24', 7.68, 25, 2019, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322080.png'),
+(80, 'Tabraiz Shamsi', 7, 31, 'Bowler', 34, 4, 0, 0, 2, 2, 33, '4/25', 7.26, 25, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322068.png'),
+(81, 'Rassi Van Der Dussen', 7, 32, 'Batsman', 22, 686, 5, 0, 74, 42.88, 0, 'N/A', 0, 138.59, 2018, 'https://p.imgci.com/db/PICTURES/CMS/322000/322070.square.png'),
+(82, 'Reeza Hendricks', 7, 31, 'Batsman', 30, 793, 5, 0, 74, 26.43, 0, '0/21', 21, 121.25, 2014, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322071.png'),
+(83, 'Bjorn Fortuin', 7, 26, 'Bowler', 7, 35, 0, 0, 17, 11.67, 6, '2/19', 8.05, 125, 2019, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322400/322461.png'),
+(84, 'Dwaine Pretorius', 7, 32, 'Allrounder', 14, 159, 1, 0, 77, 31.8, 13, '5/17', 8.08, 165.63, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322000/322077.png'),
+(85, 'Andile Phehlukwayo*', 7, 25, 'Allrounder', 34, 127, 0, 0, 27, 9.07, 39, '4/24', 8.42, 113.39, 2017, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/320300/320334.png'),
+(86, 'George Linde*', 7, 29, 'Allrounder', 9, 95, 0, 0, 29, 13.57, 7, '3/23', 7.03, 153.23, 2020, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322100/322109.png'),
+(87, 'Lizaad Williams*', 7, 27, 'Bowler', 6, 4, 0, 0, 2, 0, 9, '3/35', 8.79, 15.78, 2021, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c157325/lizaad-williams.jpg'),
 (93, 'Eoin Morgan', 5, 34, 'Batsman', 105, 2323, 14, 0, 91, 29.04, 0, '0', 0, 138.27, 2009, ''),
 (94, 'Jos Buttler', 5, 30, 'WK_Batsman', 80, 1791, 13, 0, 83, 31.42, 0, '0', 0, 140.25, 2011, ''),
 (95, 'Jonny Bairstow', 5, 31, 'WK_Batsman', 54, 1114, 7, 0, 86, 29.32, 0, '0', 0, 137.19, 2011, ''),
@@ -397,26 +378,31 @@ ALTER TABLE `teams`
 --
 ALTER TABLE `head_to_head`
   MODIFY `uid` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
 --
 -- AUTO_INCREMENT for table `heat_of_the_game`
 --
 ALTER TABLE `heat_of_the_game`
   MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `player_details`
 --
 ALTER TABLE `player_details`
-  MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=193;
+  MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
+
 --
 -- AUTO_INCREMENT for table `schedule`
 --
 ALTER TABLE `schedule`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
 -- Constraints for dumped tables
 --
@@ -447,6 +433,7 @@ ALTER TABLE `player_details`
 ALTER TABLE `schedule`
   ADD CONSTRAINT `schedule_ibfk_1` FOREIGN KEY (`team_1`) REFERENCES `teams` (`id`),
   ADD CONSTRAINT `schedule_ibfk_2` FOREIGN KEY (`team_2`) REFERENCES `teams` (`id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
