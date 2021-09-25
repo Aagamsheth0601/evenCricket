@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/ec1-removebg-preview.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -62,9 +63,7 @@
                         <a class="navbar-brand" href="index.html">
                             <img src="../assets/img/ec1-removebg-preview.png" />
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
                             <span class="toggler-icon"></span>
@@ -82,10 +81,7 @@
                                     <a class="page-scroll" href="./teams.html">Teams</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">Rankings</a>
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Rankings</a>
 
                                     <ul class="sub-menu collapse" id="submenu-1-3">
                                         <li class="nav-item"><a href="#0">Team Ranking</a></li>
@@ -95,10 +91,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                        data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
-                                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                                        aria-label="Toggle navigation">More</a>
+                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">More</a>
 
                                     <ul class="sub-menu collapse" id="submenu-1-4">
                                         <li class="nav-item"><a href="./aboutEC.html">About EC</a></li>
@@ -128,195 +121,193 @@
     <!-- ========================= Main start ========================= -->
     <section>
         <div class="container">
-        <?php
-        if (isset($_GET['playerone'])) {
-            $player_id1 = $_GET['playerone'];
-            $url1 = "http://localhost/evenCricket/apitest/index.php?player_id=$player_id1";
-            $ch1 = curl_init();
-            curl_setopt($ch1, CURLOPT_URL, $url1);
-            curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
-            $result1 = curl_exec($ch1);
-            curl_close($ch1);
-            $result1 = json_decode($result1, true);
-            $result1 = $result1['data'];
-            $result1 = $result1[0];
-        }
+            <?php
+            if (isset($_GET['playerone'])) {
+                $player_id1 = $_GET['playerone'];
+                $url1 = "http://localhost/evenCricket/apitest/index.php?player_id=$player_id1";
+                $ch1 = curl_init();
+                curl_setopt($ch1, CURLOPT_URL, $url1);
+                curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
+                $result1 = curl_exec($ch1);
+                curl_close($ch1);
+                $result1 = json_decode($result1, true);
+                $result1 = $result1['data'];
+                $result1 = $result1[0];
+            }
 
-        if (isset($_GET['playertwo'])) {
-            $player_id2 = $_GET['playertwo'];
-            $url2 = "http://localhost/evenCricket/apitest/index.php?player_id=$player_id2";
-            $ch2 = curl_init();
-            curl_setopt($ch2, CURLOPT_URL, $url2);
-            curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
-            $result2 = curl_exec($ch2);
-            curl_close($ch2);
-            $result2 = json_decode($result2, true);
-            $result2 = $result2['data'];
-            $result2 = $result2[0];
-        }
-        ?>
+            if (isset($_GET['playertwo'])) {
+                $player_id2 = $_GET['playertwo'];
+                $url2 = "http://localhost/evenCricket/apitest/index.php?player_id=$player_id2";
+                $ch2 = curl_init();
+                curl_setopt($ch2, CURLOPT_URL, $url2);
+                curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
+                $result2 = curl_exec($ch2);
+                curl_close($ch2);
+                $result2 = json_decode($result2, true);
+                $result2 = $result2['data'];
+                $result2 = $result2[0];
+            }
+            ?>
             <table class="table text-center">
-                    <tr>
-                        <td><?php echo isset($result1['images'])
-                            ? '<img src="' .
-                                $result1['images'] .
-                                '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
-                            : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
-                        <td></td>
-                        <td><?php echo isset($result2['images'])
-                            ? '<img src="' .
-                                $result2['images'] .
-                                '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
-                            : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal1" data-bs-whatever="@playerone">Search</button>
-                        </td>
-                        <td></td>
-                        <td>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal2" data-bs-whatever="@playertwo">Search</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['player_name'])
+                <tr>
+                    <td title="Player One"><?php echo isset($result1['images'])
+                                                ? '<img src="' .
+                                                $result1['images'] .
+                                                '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
+                                                : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
+                    <td></td>
+                    <td title="Player Two"><?php echo isset($result2['images'])
+                                                ? '<img src="' .
+                                                $result2['images'] .
+                                                '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
+                                                : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button>
+                    </td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@playertwo" title="Player Two"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['player_name'])
                             ? $result1['player_name']
                             : '-'; ?></td>
-                        <td>Name</td>
-                        <td><?php echo isset($result2['player_name'])
+                    <td> <b>Name</b> </td>
+                    <td><?php echo isset($result2['player_name'])
                             ? $result2['player_name']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['country_name'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['country_name'])
                             ? $result1['country_name']
                             : '-'; ?></td>
-                        <td>Country</td>
-                        <td><?php echo isset($result2['country_name'])
+                    <td><b>Country</b></td>
+                    <td><?php echo isset($result2['country_name'])
                             ? $result2['country_name']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['player_age'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['player_age'])
                             ? $result1['player_age']
                             : '-'; ?></td>
-                        <td>Age</td>
-                        <td><?php echo isset($result2['player_age'])
+                    <td><b>Age</b></td>
+                    <td><?php echo isset($result2['player_age'])
                             ? $result2['player_age']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['player_type'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['player_type'])
                             ? $result1['player_type']
                             : '-'; ?></td>
-                        <td>Type</td>
-                        <td><?php echo isset($result2['player_type'])
+                    <td><b>Type</b></td>
+                    <td><?php echo isset($result2['player_type'])
                             ? $result2['player_type']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['debut_year']) &&
-                        $result1['debut_year'] != null
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['debut_year']) &&
+                            $result1['debut_year'] != null
                             ? $result1['debut_year']
                             : '-'; ?></td>
-                        <td>Debut</td>
-                        <td><?php echo isset($result2['debut_year']) &&
-                        $result2['debut_year'] != null
+                    <td><b>Debut</b></td>
+                    <td><?php echo isset($result2['debut_year']) &&
+                            $result2['debut_year'] != null
                             ? $result2['debut_year']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['matches_played'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['matches_played'])
                             ? $result1['matches_played']
                             : '-'; ?></td>
-                        <td>Matches</td>
-                        <td><?php echo isset($result2['matches_played'])
+                    <td><b>Matches</b></td>
+                    <td><?php echo isset($result2['matches_played'])
                             ? $result2['matches_played']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['total_runs'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['total_runs'])
                             ? $result1['total_runs']
                             : '-'; ?></td>
-                        <td>Runs</td>
-                        <td><?php echo isset($result2['total_runs'])
+                    <td><b>Runs</b></td>
+                    <td><?php echo isset($result2['total_runs'])
                             ? $result2['total_runs']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['50'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['50'])
                             ? $result1['50']
                             : '-'; ?></td>
-                        <td>50</td>
-                        <td><?php echo isset($result2['50'])
+                    <td><b>50s</b></td>
+                    <td><?php echo isset($result2['50'])
                             ? $result2['50']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['100'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['100'])
                             ? $result1['100']
                             : '-'; ?></td>
-                        <td>100</td>
-                        <td><?php echo isset($result2['100'])
+                    <td><b>100s</b></td>
+                    <td><?php echo isset($result2['100'])
                             ? $result2['100']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['highest_score'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['highest_score'])
                             ? $result1['highest_score']
                             : '-'; ?></td>
-                        <td>Highest Score</td>
-                        <td><?php echo isset($result2['highest_score'])
+                    <td><b>Highest Score</b></td>
+                    <td><?php echo isset($result2['highest_score'])
                             ? $result2['highest_score']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['average'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['average'])
                             ? $result1['average']
                             : '-'; ?></td>
-                        <td>Average</td>
-                        <td><?php echo isset($result2['average'])
+                    <td><b>Average</b></td>
+                    <td><?php echo isset($result2['average'])
                             ? $result2['average']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['strike_rate'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['strike_rate'])
                             ? $result1['strike_rate']
                             : '-'; ?></td>
-                        <td>Strike Rate</td>
-                        <td><?php echo isset($result2['strike_rate'])
+                    <td><b>Strike Rate</b></td>
+                    <td><?php echo isset($result2['strike_rate'])
                             ? $result2['strike_rate']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['wickets'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['wickets'])
                             ? $result1['wickets']
                             : '-'; ?></td>
-                        <td>Wickets</td>
-                        <td><?php echo isset($result2['wickets'])
+                    <td><b>Wickets</b></td>
+                    <td><?php echo isset($result2['wickets'])
                             ? $result2['wickets']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['best_figures'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['best_figures'])
                             ? $result1['best_figures']
                             : '-'; ?></td>
-                        <td>Best Figures</td>
-                        <td><?php echo isset($result2['best_figures'])
+                    <td><b>Best Figures</b></td>
+                    <td><?php echo isset($result2['best_figures'])
                             ? $result2['best_figures']
                             : '-'; ?></td>
-                    </tr>
-                    <tr>
-                        <td><?php echo isset($result1['economy'])
+                </tr>
+                <tr>
+                    <td><?php echo isset($result1['economy'])
                             ? $result1['economy']
                             : '-'; ?></td>
-                        <td>Economy</td>
-                        <td><?php echo isset($result2['economy'])
+                    <td><b>Economy</b></td>
+                    <td><?php echo isset($result2['economy'])
                             ? $result2['economy']
                             : '-'; ?></td>
-                    </tr>
+                </tr>
             </table>
         </div>
     </section>
@@ -331,12 +322,12 @@
                 <div class="modal-body">
                     <form id="formone">
                         <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Player Name:</label>
+                            <label for="recipient-name" class="col-form-label"><b>Player Name:</b></label>
                             <input type="text" class="form-control" name="query" id="recipient-name">
                             <input type="hidden" name="link" value="<?php echo 'http://' .
-                                $_SERVER['HTTP_HOST'] .
-                                $_SERVER['REQUEST_URI']; ?>">
-                            <input type="hidden" name="player" value = '1'>
+                                                                        $_SERVER['HTTP_HOST'] .
+                                                                        $_SERVER['REQUEST_URI']; ?>">
+                            <input type="hidden" name="player" value='1'>
                         </div>
                         <button type="submit" class="btn btn-primary">Search</button>
                     </form>
@@ -345,7 +336,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Modal Team Two -->
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -360,9 +351,9 @@
                             <label for="recipient-name" class="col-form-label">Player Name:</label>
                             <input type="text" class="form-control" name="query" id="recipient-name">
                             <input type="hidden" name="link" value="<?php echo 'http://' .
-                                $_SERVER['HTTP_HOST'] .
-                                $_SERVER['REQUEST_URI']; ?>">
-                            <input type="hidden" name="player" value = '2'>
+                                                                        $_SERVER['HTTP_HOST'] .
+                                                                        $_SERVER['REQUEST_URI']; ?>">
+                            <input type="hidden" name="player" value='2'>
                         </div>
                         <button type="submit" class="btn btn-primary">Search</button>
                     </form>
@@ -390,36 +381,36 @@
     <script src="../assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-            $(document).ready(function (e) {
-                $("#formone").on('submit',(function(e) {
-                    e.preventDefault();
-                    $.ajax({
-                        url: "search.php",
-                        type: "POST",
-                        data:  new FormData(this),
-                        contentType: false,
-                        cache: false,
-                        processData:false,
-                        success: function(data){
-                            $("#list-of-players1").html(data);
-                        }        
-                    });
-                }));
-                $("#formtwo").on('submit',(function(e) {
-                    e.preventDefault();
-                    $.ajax({
-                        url: "search.php",
-                        type: "POST",
-                        data:  new FormData(this),
-                        contentType: false,
-                        cache: false,
-                        processData:false,
-                        success: function(data){
-                            $("#list-of-players2").html(data);
-                        }        
-                    });
-                }));
-            });
+        $(document).ready(function(e) {
+            $("#formone").on('submit', (function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "search.php",
+                    type: "POST",
+                    data: new FormData(this),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        $("#list-of-players1").html(data);
+                    }
+                });
+            }));
+            $("#formtwo").on('submit', (function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "search.php",
+                    type: "POST",
+                    data: new FormData(this),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        $("#list-of-players2").html(data);
+                    }
+                });
+            }));
+        });
     </script>
 </body>
 
