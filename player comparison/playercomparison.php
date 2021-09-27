@@ -151,162 +151,177 @@
             <table class="table text-center">
                 <tr>
                     <td title="Player One"><?php echo isset($result1['images'])
-                                                ? '<img src="' .
-                                                $result1['images'] .
-                                                '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
-                                                : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
-                    <td></td>
+                        ? '<img src="' .
+                            $result1['images'] .
+                            '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
+                        : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
+                    <!-- <td> -->
+                        <td>
+                            <?php echo isset($result1['flag'])
+                                ? '<img src="' .
+                                    $result1['flag'] .
+                                    '"style="height:9rem;width:14rem;display:block;margin:auto;">'
+                                : '-'; ?>
+                        </td>
+                        <td>
+                            <?php echo isset($result2['flag'])
+                                ? '<img src="' .
+                                    $result2['flag'] .
+                                    '"style="height:9rem;width:14rem;display:block;margin:auto;">'
+                                : '-'; ?>
+                        </td>
+                    <!-- </td> -->
                     <td title="Player Two"><?php echo isset($result2['images'])
-                                                ? '<img src="' .
-                                                $result2['images'] .
-                                                '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
-                                                : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
+                        ? '<img src="' .
+                            $result2['images'] .
+                            '" style = "height:200px;width:auto;border-radius:50%;margin:auto;">'
+                        : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
                 </tr>
                 <tr>
                     <td>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button>
                     </td>
-                    <td></td>
+                    <td colspan="2"></td>
                     <td>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@playertwo" title="Player Two"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button>
                     </td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['player_name'])
-                            ? $result1['player_name']
-                            : '-'; ?></td>
-                    <td> <b>Name</b> </td>
+                        ? $result1['player_name']
+                        : '-'; ?></td>
+                    <td colspan="2"> <b>Name</b> </td>
                     <td><?php echo isset($result2['player_name'])
-                            ? $result2['player_name']
-                            : '-'; ?></td>
+                        ? $result2['player_name']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['country_name'])
-                            ? $result1['country_name']
-                            : '-'; ?></td>
-                    <td><b>Country</b></td>
+                        ? $result1['country_name']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Country</b></td>
                     <td><?php echo isset($result2['country_name'])
-                            ? $result2['country_name']
-                            : '-'; ?></td>
+                        ? $result2['country_name']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['player_age'])
-                            ? $result1['player_age']
-                            : '-'; ?></td>
-                    <td><b>Age</b></td>
+                        ? $result1['player_age']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Age</b></td>
                     <td><?php echo isset($result2['player_age'])
-                            ? $result2['player_age']
-                            : '-'; ?></td>
+                        ? $result2['player_age']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['player_type'])
-                            ? $result1['player_type']
-                            : '-'; ?></td>
-                    <td><b>Type</b></td>
+                        ? $result1['player_type']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Type</b></td>
                     <td><?php echo isset($result2['player_type'])
-                            ? $result2['player_type']
-                            : '-'; ?></td>
+                        ? $result2['player_type']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['debut_year']) &&
-                            $result1['debut_year'] != null
-                            ? $result1['debut_year']
-                            : '-'; ?></td>
-                    <td><b>Debut</b></td>
+                    $result1['debut_year'] != null
+                        ? $result1['debut_year']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Debut</b></td>
                     <td><?php echo isset($result2['debut_year']) &&
-                            $result2['debut_year'] != null
-                            ? $result2['debut_year']
-                            : '-'; ?></td>
+                    $result2['debut_year'] != null
+                        ? $result2['debut_year']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['matches_played'])
-                            ? $result1['matches_played']
-                            : '-'; ?></td>
-                    <td><b>Matches</b></td>
+                        ? $result1['matches_played']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Matches</b></td>
                     <td><?php echo isset($result2['matches_played'])
-                            ? $result2['matches_played']
-                            : '-'; ?></td>
+                        ? $result2['matches_played']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['total_runs'])
-                            ? $result1['total_runs']
-                            : '-'; ?></td>
-                    <td><b>Runs</b></td>
+                        ? $result1['total_runs']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Runs</b></td>
                     <td><?php echo isset($result2['total_runs'])
-                            ? $result2['total_runs']
-                            : '-'; ?></td>
+                        ? $result2['total_runs']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['50'])
-                            ? $result1['50']
-                            : '-'; ?></td>
-                    <td><b>50s</b></td>
+                        ? $result1['50']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>50s</b></td>
                     <td><?php echo isset($result2['50'])
-                            ? $result2['50']
-                            : '-'; ?></td>
+                        ? $result2['50']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['100'])
-                            ? $result1['100']
-                            : '-'; ?></td>
-                    <td><b>100s</b></td>
+                        ? $result1['100']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>100s</b></td>
                     <td><?php echo isset($result2['100'])
-                            ? $result2['100']
-                            : '-'; ?></td>
+                        ? $result2['100']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['highest_score'])
-                            ? $result1['highest_score']
-                            : '-'; ?></td>
-                    <td><b>Highest Score</b></td>
+                        ? $result1['highest_score']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Highest Score</b></td>
                     <td><?php echo isset($result2['highest_score'])
-                            ? $result2['highest_score']
-                            : '-'; ?></td>
+                        ? $result2['highest_score']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['average'])
-                            ? $result1['average']
-                            : '-'; ?></td>
-                    <td><b>Average</b></td>
+                        ? $result1['average']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Average</b></td>
                     <td><?php echo isset($result2['average'])
-                            ? $result2['average']
-                            : '-'; ?></td>
+                        ? $result2['average']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['strike_rate'])
-                            ? $result1['strike_rate']
-                            : '-'; ?></td>
-                    <td><b>Strike Rate</b></td>
+                        ? $result1['strike_rate']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Strike Rate</b></td>
                     <td><?php echo isset($result2['strike_rate'])
-                            ? $result2['strike_rate']
-                            : '-'; ?></td>
+                        ? $result2['strike_rate']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['wickets'])
-                            ? $result1['wickets']
-                            : '-'; ?></td>
-                    <td><b>Wickets</b></td>
+                        ? $result1['wickets']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Wickets</b></td>
                     <td><?php echo isset($result2['wickets'])
-                            ? $result2['wickets']
-                            : '-'; ?></td>
+                        ? $result2['wickets']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['best_figures'])
-                            ? $result1['best_figures']
-                            : '-'; ?></td>
-                    <td><b>Best Figures</b></td>
+                        ? $result1['best_figures']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Best Figures</b></td>
                     <td><?php echo isset($result2['best_figures'])
-                            ? $result2['best_figures']
-                            : '-'; ?></td>
+                        ? $result2['best_figures']
+                        : '-'; ?></td>
                 </tr>
                 <tr>
                     <td><?php echo isset($result1['economy'])
-                            ? $result1['economy']
-                            : '-'; ?></td>
-                    <td><b>Economy</b></td>
+                        ? $result1['economy']
+                        : '-'; ?></td>
+                    <td colspan="2"><b>Economy</b></td>
                     <td><?php echo isset($result2['economy'])
-                            ? $result2['economy']
-                            : '-'; ?></td>
+                        ? $result2['economy']
+                        : '-'; ?></td>
                 </tr>
             </table>
         </div>
@@ -325,8 +340,8 @@
                             <label for="recipient-name" class="col-form-label"><b>Player Name:</b></label>
                             <input type="text" class="form-control" name="query" id="recipient-name">
                             <input type="hidden" name="link" value="<?php echo 'http://' .
-                                                                        $_SERVER['HTTP_HOST'] .
-                                                                        $_SERVER['REQUEST_URI']; ?>">
+                                $_SERVER['HTTP_HOST'] .
+                                $_SERVER['REQUEST_URI']; ?>">
                             <input type="hidden" name="player" value='1'>
                         </div>
                         <button type="submit" class="btn btn-primary">Search</button>
@@ -351,8 +366,8 @@
                             <label for="recipient-name" class="col-form-label">Player Name:</label>
                             <input type="text" class="form-control" name="query" id="recipient-name">
                             <input type="hidden" name="link" value="<?php echo 'http://' .
-                                                                        $_SERVER['HTTP_HOST'] .
-                                                                        $_SERVER['REQUEST_URI']; ?>">
+                                $_SERVER['HTTP_HOST'] .
+                                $_SERVER['REQUEST_URI']; ?>">
                             <input type="hidden" name="player" value='2'>
                         </div>
                         <button type="submit" class="btn btn-primary">Search</button>
