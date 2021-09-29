@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 26, 2021 at 08:45 PM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 8.0.9
+-- Generation Time: Sep 29, 2021 at 08:03 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -239,32 +239,43 @@ INSERT INTO `player_details` (`player_id`, `player_name`, `player_country`, `pla
 (154, 'Suranga Lakmal', 6, 34, 'Bowler', 11, 7, 0, 0, 5, 2.33, 8, '2/26', 9.52, 63.64, 2011, ''),
 (155, 'Nuwan Pradeep', 6, 34, 'Bowler', 16, 10, 0, 0, 8, 10, 15, '4/25', 9.41, 66.67, 2016, ''),
 (156, 'Jeffrey Vandersay', 6, 31, 'Bowler', 10, 15, 0, 0, 8, 15, 6, '2/26', 7.49, 88.24, 2015, ''),
-(157, 'Asghar Afghan', 8, 33, 'Batsman', 72, 1317, 4, 0, 62, 21.59, 0, '0', 0, 109.66, 2010, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316654.png'),
-(158, 'Usman Ghani', 8, 24, 'Batsman', 23, 551, 3, 0, 73, 26.24, 0, '0', 0, 111.09, 2015, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316700/316708.png'),
-(160, 'Hashmatullah Shahidi', 8, 26, 'Batsman', 3, 0, 0, 0, 0, 0, 0, '0', 0, 0, 2021, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/320400/320495.png'),
-(161, 'Najibullah Zadran', 8, 28, 'Batsman', 63, 1060, 4, 0, 72, 33.12, 0, '0', 0, 142.28, 2012, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316698.png'),
-(162, 'Mohammad Nabi', 8, 36, 'Allrounder', 80, 1336, 4, 0, 89, 21.68, 72, '4/10', 7.26, 146.25, 2010, 'https://www.cricket.com.au/-/media/Players/Men/International/Afghanistan/Mohammad-Nabi-CWC19.ashx');
+(157, 'Asghar Afghan', 8, 33, 'Batsman', 72, 1317, 4, 0, 62, 21.59, 0, '0', 0, 109.66, 2010, ''),
+(158, 'Usman Ghani', 8, 24, 'Batsman', 23, 551, 3, 0, 73, 26.24, 0, '0', 0, 111.09, 2015, ''),
+(159, 'Ibrahim Zadran', 8, 19, 'Batsman', 3, 14, 0, 0, 11, 4.67, 0, '0', 0, 53.85, 2019, ''),
+(160, 'Hashmatullah Shahidi', 8, 26, 'Batsman', 3, 0, 0, 0, 0, 0, 0, '0', 0, 0, 2021, ''),
+(161, 'Najibullah Zadran', 8, 28, 'Batsman', 63, 1060, 4, 0, 72, 33.12, 0, '0', 0, 142.28, 2012, ''),
+(162, 'Mohammad Nabi', 8, 36, 'Allrounder', 80, 1336, 4, 0, 89, 21.68, 72, '4/10', 7.26, 146.25, 2010, ''),
+(163, 'Sharafuddin Ashraf', 8, 26, 'Allrounder', 9, 28, 0, 0, 18, 7, 5, '3/27', 7.81, 93.33, 2015, ''),
+(164, 'Gulbadin Naib', 8, 30, 'Allrounder', 48, 492, 1, 0, 56, 17.57, 17, '2/24', 8.28, 124.24, 2012, ''),
+(165, 'Samiullah Shinwari', 8, 34, 'Allrounder', 63, 977, 2, 0, 61, 20.79, 25, '5/13', 6.71, 114.94, 2010, ''),
+(166, 'Noor Ali Zadran', 8, 33, 'Batsman', 19, 495, 3, 0, 63, 26.05, 0, '0', 0, 100.61, 2010, ''),
+(167, 'Aftab Alam', 8, 28, 'Bowler', 13, 2, 0, 0, 1, 1, 15, '4/25', 7.78, 22.22, 2012, '');
 INSERT INTO `player_details` (`player_id`, `player_name`, `player_country`, `player_age`, `player_type`, `matches_played`, `total_runs`, `50`, `100`, `highest_score`, `average`, `wickets`, `best_figures`, `economy`, `strike_rate`, `debut_year`, `images`) VALUES
-(163, 'Sharafuddin Ashraf', 8, 26, 'Allrounder', 9, 28, 0, 0, 18, 7, 5, '3/27', 7.81, 93.33, 2015, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/320500/320508.png'),
-(164, 'Gulbadin Naib', 8, 30, 'Allrounder', 48, 492, 1, 0, 56, 17.57, 17, '2/24', 8.28, 124.24, 2012, 'https://www.cricket.com.au/-/media/Players/Men/International/Afghanistan/Gulbadin-Naib-CWC19.ashx'),
-(168, 'Rehmanullah Gurbaz', 8, 19, 'WK_Batsman', 13, 446, 3, 0, 87, 34.31, 0, '0', 0, 143.87, 2019, 'https://www.espncricinfo.com/db/PICTURES/CMS/320500/320504.png'),
-(169, 'Afsar Zazai*', 8, 27, 'WK_Batsman', 1, 9, 0, 0, 9, 9, 0, '0', 0, 42.86, 2013, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316682.png'),
-(170, 'Dawlat Zadran', 8, 33, 'Bowler', 34, 72, 0, 0, 13, 7.2, 43, '4/44', 7.74, 163.64, 2012, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316643.png'),
-(171, 'Hamid Hassan', 8, 34, 'Bowler', 21, 50, 0, 0, 22, 16.67, 29, '4/22', 6.77, 108.7, 2010, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316696.png'),
-(172, 'Rashid Khan', 8, 22, 'Bowler', 51, 179, 0, 0, 33, 13.77, 95, '5/3', 6.22, 128.78, 2015, 'https://www.cricket.com.au/-/media/Players/Men/International/Afghanistan/Rashid-Khan-CWC19.ashx'),
-(173, 'Mujeeb Ur Rahman', 8, 20, 'Bowler', 19, 8, 0, 0, 8, 0, 25, '4/15', 6.15, 100, 2018, 'https://www.espncricinfo.com/db/PICTURES/CMS/320500/320501.png'),
-(174, 'Darren Bravo*', 9, 32, 'Batsman', 20, 340, 0, 0, 43, 20, 0, '0', 0, 107.26, 2010, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/316600/316616.png'),
-(175, 'Christopher Gayle', 9, 41, 'Batsman', 67, 1729, 13, 2, 117, 29.81, 19, '2/15', 7.03, 138.43, 2006, 'https://www.cricket.com.au/-/media/Players/Men/International/West%20Indies/ODIWC19/Chris-Gayle-CWC19.ashx'),
-(176, 'Evin Lewis', 9, 29, 'Batsman', 41, 1167, 8, 2, 125, 30.71, 0, '0', 0, 156.02, 2016, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c170785/evin-lewis.jpg'),
-(177, 'Shimron Hetmyer', 9, 24, 'Batsman', 32, 517, 2, 0, 61, 20.68, 0, '0', 0, 118.04, 2018, 'https://www.espncricinfo.com/db/PICTURES/CMS/320100/320116.png'),
-(178, 'Fabian Allen', 9, 26, 'Allrounder', 25, 220, 0, 0, 34, 18.33, 18, '2/18', 7.11, 135.8, 2018, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c170794/fabian-allen.jpg'),
-(179, 'Jason Holder*', 9, 29, 'Allrounder', 23, 199, 0, 0, 29, 16.58, 18, '2/23', 8.16, 119.16, 2014, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c170806/jason-holder.jpg'),
-(180, 'Andre Russell', 9, 33, 'Allrounder', 56, 677, 1, 0, 51, 21.16, 32, '2/10', 9.14, 155.99, 2011, 'https://m.cricbuzz.com/a/img/v1/192x192/i1/c170821/andre-russell.jpg'),
-(183, 'Nicholas Pooran', 9, 25, 'WK_Batsman', 34, 481, 2, 0, 58, 19.24, 0, '0', 0, 118.18, 2016, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/320100/320109.png'),
-(184, 'Sheldon Cottrell*', 9, 31, 'Bowler', 31, 17, 0, 0, 4, 4.25, 39, '4/28', 7.88, 60.71, 2014, 'https://admin.thecricketer.com/weblab/sites/96c8b790-b593-bfda-0ba4-ecd3a9fdefc2/resources/images/site/cottrell140701.jpg'),
-(187, 'Oshane Thomas', 9, 24, 'Bowler', 15, 8, 0, 0, 8, 4, 18, '5/28', 8.73, 72.73, 2018, 'https://www.espncricinfo.com/db/PICTURES/CMS/322000/322032.png'),
-(190, 'Keiron Pollard', 9, 34, 'Allrounder', 84, 1343, 6, 0, 75, 24.42, 38, '4/25', 8.42, 137.6, 2008, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/320100/320107.png'),
-(191, 'Dwayne Bravo', 9, 37, 'Allrounder', 81, 1222, 4, 0, 66, 23.5, 73, '4/19', 8.16, 115.83, 2006, 'https://www.espncricinfo.com/db/PICTURES/CMS/320000/320092.png'),
+(168, 'Rehmanullah Gurbaz', 8, 19, 'WK_Batsman', 13, 446, 3, 0, 87, 34.31, 0, '0', 0, 143.87, 2019, ''),
+(169, 'Afsar Zazai', 8, 27, 'WK_Batsman', 1, 9, 0, 0, 9, 9, 0, '0', 0, 42.86, 2013, ''),
+(170, 'Dawlat Zadran', 8, 33, 'Bowler', 34, 72, 0, 0, 13, 7.2, 43, '4/44', 7.74, 163.64, 2012, ''),
+(171, 'Hamid Hassan', 8, 34, 'Bowler', 21, 50, 0, 0, 22, 16.67, 29, '4/22', 6.77, 108.7, 2010, ''),
+(172, 'Rashid Khan', 8, 22, 'Bowler', 51, 179, 0, 0, 33, 13.77, 95, '5/3', 6.22, 128.78, 2015, ''),
+(173, 'Mujeeb Ur Rahman', 8, 20, 'Bowler', 19, 8, 0, 0, 8, 0, 25, '4/15', 6.15, 100, 2018, ''),
+(174, 'Darren Bravo', 9, 32, 'Batsman', 20, 340, 0, 0, 43, 20, 0, '0', 0, 107.26, 2010, ''),
+(175, 'Christopher Gayle', 9, 41, 'Batsman', 67, 1729, 13, 2, 117, 29.81, 19, '2/15', 7.03, 138.43, 2006, ''),
+(176, 'Evin Lewis', 9, 29, 'Batsman', 41, 1167, 8, 2, 125, 30.71, 0, '0', 0, 156.02, 2016, ''),
+(177, 'Shimron Hetmyer', 9, 24, 'Batsman', 32, 517, 2, 0, 61, 20.68, 0, '0', 0, 118.04, 2018, ''),
+(178, 'Fabian Allen', 9, 26, 'Allrounder', 25, 220, 0, 0, 34, 18.33, 18, '2/18', 7.11, 135.8, 2018, ''),
+(179, 'Jason Holder', 9, 29, 'Allrounder', 23, 199, 0, 0, 29, 16.58, 18, '2/23', 8.16, 119.16, 2014, ''),
+(180, 'Andre Russell', 9, 33, 'Allrounder', 56, 677, 1, 0, 51, 21.16, 32, '2/10', 9.14, 155.99, 2011, ''),
+(181, 'Carlos Braithwaite', 9, 32, 'Allrounder', 41, 310, 0, 0, 37, 14.76, 31, '3/20', 8.57, 113.14, 2011, ''),
+(182, 'Shai Hope', 9, 27, 'WK_Batsman', 13, 238, 2, 0, 55, 21.64, 0, '0', 0, 136, 2017, ''),
+(183, 'Nicholas Pooran', 9, 25, 'WK_Batsman', 34, 481, 2, 0, 58, 19.24, 0, '0', 0, 118.18, 2016, ''),
+(184, 'Sheldon Cottrell', 9, 31, 'Bowler', 31, 17, 0, 0, 4, 4.25, 39, '4/28', 7.88, 60.71, 2014, ''),
+(185, 'Shanon Gabriel', 9, 33, 'Bowler', 2, 0, 0, 0, 0, 0, 3, '3/34', 8, 0, 2013, ''),
+(186, 'Kemar Roach', 9, 33, 'Bowler', 11, 3, 0, 0, 3, 0, 10, '2/25', 7.28, 150, 2008, ''),
+(187, 'Oshane Thomas', 9, 24, 'Bowler', 15, 8, 0, 0, 8, 4, 18, '5/28', 8.73, 72.73, 2018, ''),
+(188, 'Ashley Nurse', 9, 32, 'Bowler', 13, 85, 0, 0, 20, 42.5, 8, '2/6', 7.29, 119.72, 2011, ''),
+(189, 'Fidel Edwards', 9, 39, 'Bowler', 26, 11, 0, 0, 7, 5.5, 20, '3/23', 8.24, 78.57, 2007, ''),
+(190, 'Keiron Pollard', 9, 34, 'Allrounder', 84, 1343, 6, 0, 75, 24.42, 38, '4/25', 8.42, 137.6, 2008, ''),
+(191, 'Dwayne Bravo', 9, 37, 'Allrounder', 81, 1222, 4, 0, 66, 23.5, 73, '4/19', 8.16, 115.83, 2006, ''),
+(192, 'Jason Mohammed', 9, 34, 'Batsman', 9, 90, 0, 0, 23, 18, 0, '0', 0, 87.38, 2017, ''),
 (195, 'Azam Khan', 4, 23, 'WK-Batsman', 3, 6, 0, 0, 5, 6, 0, '0', 0, 85.71, 2021, 'https://i.redd.it/tr25twux1t971.jpg'),
 (196, 'Haris Rauf', 4, 27, 'Bowler', 23, 6, 0, 0, 6, 3, 28, '3/29', 8.94, 85.71, 2020, 'https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/322200/322202.png'),
 (197, 'Khushdil Shah', 4, 26, 'Batsman', 9, 130, 0, 0, 36, 21.67, 0, '0/6', 6, 109.24, 2019, 'https://www.espncricinfo.com/db/PICTURES/CMS/322100/322168.png'),
@@ -276,21 +287,7 @@ INSERT INTO `player_details` (`player_id`, `player_name`, `player_country`, `pla
 (203, 'Sohaib Maqsood', 4, 34, 'Batsman', 26, 273, 0, 0, 37, 13.65, 0, '0', 0, 116.67, 2013, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c155526/sohaib-maqsood.jpg'),
 (204, 'Tymal Mills', 5, 29, 'Bowler', 5, 0, 0, 0, 0, 0, 3, '1/27', 0, 0, 2016, 'https://www.telegraph.co.uk/content/dam/cricket/2017/01/24/JS117202655_PA_Tymal-Mills-File-Photo_trans_NvBQzQNjv4BquE-7KYCIaKzbeo3sw3iG0Gchy1F8NiZZ7Ym45envgBk.jpg'),
 (205, 'Liam Dawson*', 5, 31, 'Allrounder', 6, 17, 0, 0, 10, 17, 5, '3/27', 7.6, 212.5, 2016, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c170968/liam-dawson.jpg'),
-(206, 'James Vince*', 5, 30, 'Batsman', 12, 340, 1, 0, 59, 28.3, 0, '0', 0, 123.6, 2015, 'https://resources.pulse.icc-cricket.com/players/284/831.png'),
-(207, 'Obed McCoy', 9, 24, 'Bowler', 12, 36, 0, 0, 23, 12, 19, '4/22', 7.7, 144, 2019, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn7818upqp5VKlOxOHUqupg3RBcYRxKXGyU2hcTVsDO8wv29VtXeh02hYgIJYefhiNHZs&usqp=CAU'),
-(208, 'Lendl Simmons', 9, 36, 'Batsman', 66, 1508, 9, 0, 91, 26.93, 6, '4/19', 10.05, 123.3, 2007, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c157836/lendl-simmons.jpg'),
-(209, 'Ravi Rampaul', 9, 36, 'Bowler', 23, 12, 0, 0, 8, 12, 29, '3/16', 8.51, 57.14, 2007, 'https://www.espncricinfo.com/db/PICTURES/CMS/320100/320111.png'),
-(210, 'Roston Chase', 9, 29, 'Allrounder', 0, 0, 0, 0, 0, 0, 0, '0', 0, 0, 0000, 'https://www.espncricinfo.com/db/PICTURES/CMS/322000/322039.square.png'),
-(211, 'Andre Fletcher', 9, 33, 'WK-Batsman', 54, 950, 6, 0, 84, 21.11, 0, '0', 0, 111.37, 2008, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c146338/andre-fletcher.jpg'),
-(212, 'Hayden Walsh Jr.', 9, 29, 'Bowler', 20, 41, 0, 0, 12, 13.67, 19, '3/23', 7.72, 93.18, 2019, 'https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/286800/286881.1.jpg'),
-(213, 'Akeal Hosein*', 9, 28, 'Bowler', 6, 2, 0, 0, 2, 0, 0, '0/24', 9.75, 66.67, 2021, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c157223/akeal-hosein.jpg'),
-(214, 'Mohammad Shehzad', 8, 33, 'WK-Batsman', 64, 1860, 11, 1, 118, 30.49, 0, '0', 0, 134.01, 2010, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c170855/mohammad-shahzad.jpg'),
-(215, 'Hazratullah Zazai', 8, 23, 'Batsman', 15, 570, 2, 1, 162, 40.71, 0, '0', 0, 155.31, 2016, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c170833/hazratullah-zazai.jpg'),
-(216, 'Karim Janat', 8, 23, 'Bowler', 27, 268, 1, 0, 53, 16.75, 29, '5/11', 8.22, 113.08, 2016, 'https://www.espncricinfo.com/db/PICTURES/CMS/296900/296909.14.jpg'),
-(217, 'Naveen-Ul-Haq', 8, 22, 'Bowler', 8, 7, 0, 0, 5, 7, 13, '3/21', 6.96, 100, 2019, 'https://cricfit.com/wp-content/uploads/2021/08/Afghanistan-cricketer-Naveen-Ul-Haq.jpg'),
-(218, 'Shapoor Zadran', 8, 36, 'Bowler', 35, 27, 0, 0, 13, 3.86, 36, '3/40', 7.91, 41.54, 2010, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c176658/shapoor-zadran.jpg'),
-(219, 'Qais Ahmed', 8, 21, 'Bowler', 21, 1, 0, 0, 0, 0, 3, '3/25', 6.25, 0, 2020, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c178321/qais-ahmad.jpg'),
-(220, 'Fareed Malik*', 8, 27, 'Bowler', 16, 24, 0, 0, 24, 0, 21, '3/35', 8.33, 160, 2016, 'https://www.cricbuzz.com/a/img/v1/152x152/i1/c165696/fareed-malik.jpg');
+(206, 'James Vince*', 5, 30, 'Batsman', 12, 340, 1, 0, 59, 28.3, 0, '0', 0, 123.6, 2015, 'https://resources.pulse.icc-cricket.com/players/284/831.png');
 
 -- --------------------------------------------------------
 
@@ -306,6 +303,24 @@ CREATE TABLE `schedule` (
   `time` time(6) NOT NULL,
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `schedule`
+--
+
+INSERT INTO `schedule` (`id`, `team_1`, `team_2`, `venue`, `time`, `date`) VALUES
+(1, 13, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-17'),
+(2, 10, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-17'),
+(3, 12, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-18'),
+(4, 6, 15, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-18'),
+(5, 11, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-19'),
+(6, 10, 13, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-19'),
+(8, 15, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-20'),
+(9, 6, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-20'),
+(10, 10, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-21'),
+(11, 13, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-21'),
+(12, 15, 12, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-22'),
+(13, 6, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-22');
 
 -- --------------------------------------------------------
 
@@ -328,14 +343,18 @@ INSERT INTO `teams` (`id`, `country_name`, `flag`) VALUES
 (2, 'New Zealand', 'https://cdn.britannica.com/17/3017-004-DCC13F9D/Flag-New-Zealand.jpg'),
 (3, 'Australia', 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png'),
 (4, 'Pakistan', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/1280px-Flag_of_Pakistan.svg.png'),
-(5, 'England', 'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png'),
+(5, 'England', 'https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1920px-Flag_of_England.svg.png'),
 (6, 'Sri Lanka', 'https://cdn.britannica.com/13/4413-004-3277D2EF/Flag-Sri-Lanka.jpg'),
 (7, 'South Africa', 'https://cdn.britannica.com/27/4227-004-32423B42/Flag-South-Africa.jpg'),
 (8, 'Afghanistan', 'https://cdn.britannica.com/40/5340-004-B25ED5CF/Flag-Afghanistan.jpg'),
 (9, 'West Indies', 'https://upload.wikimedia.org/wikipedia/en/6/65/West_indies_cricket_board_flag.png'),
 (10, 'Bangladesh', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1200px-Flag_of_Bangladesh.svg.png'),
 (11, 'Scotland', 'https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg'),
-(12, 'Ireland', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/255px-Flag_of_Ireland.svg.png');
+(12, 'Ireland', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/255px-Flag_of_Ireland.svg.png'),
+(13, 'Oman', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/1024px-Flag_of_Oman.svg.png'),
+(14, 'Papua New Guinea', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flag_of_Papua_New_Guinea.svg/1024px-Flag_of_Papua_New_Guinea.svg.png'),
+(15, 'Namibia', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Namibia.svg/1024px-Flag_of_Namibia.svg.png'),
+(16, 'Netherlands', 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png');
 
 --
 -- Indexes for dumped tables
@@ -398,19 +417,19 @@ ALTER TABLE `heat_of_the_game`
 -- AUTO_INCREMENT for table `player_details`
 --
 ALTER TABLE `player_details`
-  MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
+  MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
 
 --
 -- AUTO_INCREMENT for table `schedule`
 --
 ALTER TABLE `schedule`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables
