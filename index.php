@@ -519,6 +519,11 @@
 <!-- Venues end -->
 
 
+
+
+
+
+
 <!-- Points table start -->
 
 <div class="section-title text-center mb-55">
@@ -528,7 +533,7 @@
 <section class="wrapper" style="margin-top: 50px;background: rgba(0, 0, 0, 0.9);font-family: 'Open Sans', sans-serif;">
     <!-- Row title -->
     <main class="point-row title">
-      <ul>
+      <ul style="text-align:center;">
         <li>Team</li>
         <li>Matches</li>
         <li>Won</li>
@@ -540,144 +545,69 @@
     <!-- Row 1 - fadeIn -->
     
     <!-- Row 3 -->
-    <article class="point-row england">
-      <ul>
-        <li><a href="#">England</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <article class="point-row india">
-      <ul>
-        <li><a href="#">India</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 4 -->
-    <article class="point-row pakistan">
-      <ul>
-        <li><a href="#">Pakistan</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 5 -->
-    <article class="point-row new-zealand">
-      <ul>
-        <li><a href="#">New Zealand</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 6 -->
-    <article class="point-row south-africa">
-      <ul>
-        <li><a href="#">South Africa</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 7 -->
-    <article class="point-row bangladesh">
-      <ul>
-        <li><a href="#">Bangladesh</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 8 -->
-    <article class="point-row australia">
-      <ul>
-        <li><a href="#">Australia</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 9 -->
-    <article class="point-row afghanistan">
-      <ul>
-        <li><a href="#">Afghanistan</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 10 -->
-    <article class="point-row west-indies">
-      <ul>
-        <li><a href="#">West Indies</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
-    <!-- Row 11 -->
-    <article class="point-row sri-lanka">
-      <ul>
-        <li><a href="#">Sri Lanka</a></li>
-        <li>0</li>
-        <li>0</li>
-        <li>0</li>
-        <li>0.00</li>
-        <li>0</li>
-      </ul>
-      <ul class="more-content">
-        <li>This 1665-player contest boasts a $300,000.00 prize pool and pays out the top 300 finishing positions. First place wins $100,000.00. Good luck!</li>
-      </ul>
-    </article>
+
+
+    <?php
+
+        $team = "";
+        $keyword = "";
+        $matches = "";
+        $won = "";
+        $lost = "";
+        $nrr = "";
+        $points = "";
+        $content = "";
+        $flag = "";
+        
+        $conn = mysqli_connect('localhost', 'root', '', 'evencricket');
+        if ($conn == false) {
+            die('Error: Cannot connect');
+        }
+        
+            $sql = "SELECT * FROM `points_table` ORDER BY points DESC, nrr  DESC";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+            // output data of each row
+                while($row = $result->fetch_assoc()) {
+                
+                    $team = $row["team"];
+                    $keyword = $row["keyword"];
+                    $matches = $row["matches"];
+                    $won = $row["won"];
+                    $lost = $row["lost"];
+                    $nrr = $row["nrr"];
+                    $points = $row["points"];
+                    $content = $row["content"];
+
+                    $sql2 = "SELECT * FROM `teams` WHERE country_name = '$team'";
+                    $result2 = $conn->query($sql2);
+                    if ($result2) {
+                        // output data of each row
+                            while($row2 = $result2->fetch_assoc()) {
+                                $flag = $row2["flag"];
+                            }
+                    }
+                ?>
+                    <article class="point-row <?php echo $keyword;?>">
+                        <ul style="text-align:center;">
+                            <li style="text-align:left;"><a href="#"><img style="hieght:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag ?>" alt=""><?php echo $team;?></a></li>
+                            <li><?php echo $matches;?></li>
+                            <li><?php echo $won;?></li>
+                            <li><?php echo $lost;?></li>
+                            <li><?php echo $nrr;?></li>
+                            <li><?php echo $points;?></li>
+                        </ul>
+                        <ul class="more-content">
+                            <li><?php echo $content;?></li>
+                        </ul>
+                    </article>
+                <?php
+                }
+            }
+    ?>
+    
+    
   </section>
 
 <!-- Points table end -->
