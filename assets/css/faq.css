@@ -1,136 +1,83 @@
-:root {
-  /* colors */
-  --purple: #7276e1;
-  --blue: #3763eb;
-  --blue-dark: hsl(238, 29%, 16%);
-  --grey-light: hsl(237, 12%, 33%);
-  --blue-mid: hsl(240, 6%, 50%);
-}
-
-#faqsection {
-  align-items: center;
-  background-image: linear-gradient(
-    -180deg,
-    hsl(273, 75%, 66%),
-    hsl(240, 73%, 65%)
-  );
-  font-weight: 400;
-  justify-content: center;
-  padding: 10px;
-}
-
-.faq {
-  background-color: #fff;
-  border-radius: 25px;
-  padding: 50px 25px;
-  margin: 150px 5% 5% 5%;
-  width: 90%;
-}
-
-.faq__logo {
-  background: url('https://bobmatyas.github.io/fm-faq-accordion/images/bg-pattern-mobile.svg')
-    center bottom no-repeat;
-  background-color: transparent;
-  margin: 0 auto;
-  padding: 0;
-  margin-top: -157px;
-}
-
-.faq__logo__image {
-  margin-left: -13px;
-  margin-bottom: 13px;
-}
-
-.faq__heading {
-  color: var(--blue-dark);
-  font-size: 3.2rem;
-  font-weight: 700;
+h2 {
+  margin: 20px auto 80px;
+  font-size: 38px;
+  font-weight: 300;
   text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
 
-.faq__detail {
-  border-bottom: 1px solid hsl(240, 5%, 91%);
-  margin: 20px 0 0 0;
-  padding: 5px 0 20px 0;
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s;
 }
 
-.faq__summary:hover,
-.faq__summary:active {
-  color: var(--blue);
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: #f6f7f8;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
   cursor: pointer;
 }
 
-.faq__detail[open] > .faq__summary {
-  font-weight: 700;
-}
-
-.faq__summary {
-  list-style: none;
-}
-
-.faq__summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq__summary {
-  display: block;
-  padding: 0;
-  position: relative;
-  text-align: right;
-}
-
-.faq__summary:after {
-  display: inline-block;
-  content: url('https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  text-align: right;
-  padding-bottom: 20px;
-}
-
-details[open] .faq__summary:after {
-  display: inline-block;
-  margin-bottom: 15px;
-  width: 18px;
-  height: 10px;
-  content: '';
-  background-image: url('https://bobmatyas.github.io/fm-faq-accordion/images/icon-arrow-down.svg');
-  background-repeat: no-repeat;
-  background-position: center right;
-  transform: scaleY(-1);
-}
-
-.faq__question {
-  display: inline-block;
-  margin: 5px 0;
-  text-align: left;
-  width: 90%;
-}
-
-.faq__summary {
-  color: var(--blue-dark);
-  text-align: left;
-}
-
-.faq__summary:focus {
-  color: var(--blue);
+summary:focus {
   outline: none;
 }
 
-.faq__text {
-  color: var(--blue-mid);
-  font-size: var(--base-font-size);
-  line-height: 1.6;
-}
-
-.hidden-lg {
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px rebeccapurple;
 }
 
-.visible-lg {
+summary::-webkit-details-marker {
   display: none;
 }
-.faq img {
-  width: 400px;
-  margin: auto;
+
+.control-icon {
+  fill: rebeccapurple;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: 0.3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
 }
