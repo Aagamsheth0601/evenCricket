@@ -37,76 +37,17 @@
         your experience and security.
       </p>
     <![endif]-->
-    <!-- ========================= preloader start ========================= -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="spinner">
-                <img src="./assets/img/361.png" alt="loader">
-            </div>
-        </div>
-    </div>
-    <!-- preloader end -->
 
-    <!-- ========================= header start ========================= -->
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/ec1-removebg-preview.png" />
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                        </button>
+   <div id="navbar">
+        
 
-                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                            <ul id="nav" class="navbar-nav ms-auto">
-                                <li class="nav-item home">
-                                    <a class="page-scroll" href="http://localhost/evenCricket/index.php" style="border-bottom:2px solid blue; font-weight:bold">Home</a>
-                                </li>
-                                <li class="nav-item fixtures">
-                                    <a class="page-scroll" href="fixtures.html">Fixtures</a>
-                                </li>
-                                <li class="nav-item teams">
-                                    <a class="page-scroll" href="./teams.html">Teams</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Rankings</a>
-
-                                    <ul class="sub-menu collapse" id="submenu-1-3">
-                                        <li class="nav-item"><a href="teamRanking.html">Team Ranking</a></li>
-                                        <li class="nav-item"><a href="playerRanking.html">Player Ranking</a></li>
-                                        <li class="nav-item"><a href="./player comparison/playercomparison.php">Player Comparison</a></li>
-                                        <li class="nav-item"><a href="#0">Team Predictor</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">More</a>
-
-                                    <ul class="sub-menu collapse" id="submenu-1-4">
-                                        <li class="nav-item"><a href="./aboutEC.html">About EC</a></li>
-                                        <li class="nav-item"><a href="#0">EC on social media</a></li>
-                                        <li class="nav-item"><a href="champions.html">Champions through the years</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <!-- navbar collapse -->
-                    </nav>
-                    <!-- navbar -->
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </header>
-    <!-- ========================= header end ========================= -->
-
+   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#navbar").load("navbar.html");
+    });
+</script>
     <!-- ========================= Spacer ========================= -->
     <div style="height:150px;"></div>
     <!-- ========================= Spacer ========================= -->
