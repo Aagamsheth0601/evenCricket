@@ -8,16 +8,16 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/ec1-removebg-preview.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/ec1-removebg-preview.png" />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css" />
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-5.0.0-beta1.min.css" />
+    <link rel="stylesheet" href="../assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="../assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
 
     <!-- fixture -->
     <link rel="stylesheet" href="fixture_css/animate.css">
@@ -36,20 +36,23 @@
 </head>
 
 <body>
-    <div id="navbar"></div>
-
-
-    <!-- ========================= page-banner-section start ========================= -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-
-            </div>
-        </div>
-    </div>
-    </section>
-    <!-- ========================= page-banner-section end ========================= -->
+	<!-- ========================= Preloader Navbar start ========================= -->
+	<style>
+		.navbar-area a {
+			font-family: "Poppins", sans-serif;
+		}
+		#fixtures-navbar {
+			border-bottom: 2px solid blue;
+		}
+	</style>
+	<div id="navbar"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#navbar").load("../navbar.html");
+		});
+	</script>
+	<!-- ========================= Preloader Navbar End ========================= -->
 
     <!-- ========================= feature-section start ========================= -->
 
@@ -380,30 +383,21 @@
 
 
 
-
-
-
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top">
         <i class="lni lni-arrow-up"></i>
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
-    <script src="assets/js/contact-form.js"></script>
-    <script src="assets/js/count-up.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/imagesloaded.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#navbar").load("navbar.html");
-        });
-    </script>
+    <script src="../assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
+    <script src="../assets/js/contact-form.js"></script>
+    <script src="../assets/js/count-up.min.js"></script>
+    <script src="../assets/js/tiny-slider.js"></script>
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/glightbox.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/imagesloaded.min.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

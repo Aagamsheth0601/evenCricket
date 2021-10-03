@@ -23,84 +23,15 @@
 </head>
 
 <body>
-    <!-- ========================= preloader start ========================= -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="spinner">
-                <div class="spinner-container">
-                    <div class="spinner-rotator">
-                        <div class="spinner-left">
-                            <div class="spinner-circle"></div>
-                        </div>
-                        <div class="spinner-right">
-                            <div class="spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- preloader end -->
-
-    <!-- ========================= header start ========================= -->
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="../assets/img/ec1-removebg-preview.png" />
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                            <ul id="nav" class="navbar-nav ms-auto">
-                                <li class="nav-item home">
-                                    <a class="page-scroll" href="javascript:void(0)">Home</a>
-                                </li>
-                                <li class="nav-item fixtures">
-                                    <a class="page-scroll" href="fixtures.html">Fixtures</a>
-                                </li>
-                                <li class="nav-item teams">
-                                    <a class="page-scroll" href="./teams.html">Teams</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Rankings</a>
-
-                                    <ul class="sub-menu collapse" id="submenu-1-3">
-                                        <li class="nav-item"><a href="#0">Team Ranking</a></li>
-                                        <li class="nav-item"><a href="#0">Player Ranking</a></li>
-                                        <li class="nav-item"><a href="#0">Player Comparison</a></li>
-                                        <li class="nav-item"><a href="#0">Team Predictor</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">More</a>
-
-                                    <ul class="sub-menu collapse" id="submenu-1-4">
-                                        <li class="nav-item"><a href="#0">About EC</a></li>
-                                        <li class="nav-item"><a href="#0">EC on social media</a></li>
-                                        <li class="nav-item"><a href="champions.html">Champions through the years</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <!-- navbar collapse -->
-                    </nav>
-                    <!-- navbar -->
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </header>
-    <!-- ========================= header end ========================= -->
+    <!-- ========================= Preloader Navbar start ========================= -->
+    <div id="navbar"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navbar").load("../navbar.html");
+        });
+    </script>
+    <!-- ========================= Preloader Navbar End ========================= -->
 
     <!-- ========================= Spacer ========================= -->
     <div style="height:150px;"></div>
@@ -123,9 +54,13 @@
                 <?php foreach ($result['data'] as $data) { ?>
                     <br><br><br><br><br><br><br><br><br>
                     <div class="col-md-6">
-                        <a href="./playerDetails.php?player_id=<?php echo $data['player_id']; ?>">
+                        <a href="./playerDetails.php?player_id=<?php echo $data[
+                            'player_id'
+                        ]; ?>">
                             <div style="display:inline-block;">
-                                <img src="<?php echo $data['images']; ?>" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
+                                <img src="<?php echo $data[
+                                    'images'
+                                ]; ?>" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
                             </div>
                             <div style="display:inline-block;">
                                 <h3><?php echo $data['player_name']; ?></h3>
