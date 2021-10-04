@@ -25,16 +25,14 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/news.css">
     <link rel="stylesheet" href="../assets/css/faq.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 
 <body>
+    <!-- Preloader Naavbar -->
     <div id="navbar"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#navbar").load("../navbar.html");
-        });
-    </script>
 
     <!-- ========================= Spacer ========================= -->
     <div style="height:150px;"></div>
@@ -101,13 +99,25 @@
                         : '<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" style="height:200px;width:auto;border-radius:50%;margin:auto;">'; ?></td>
                 </tr>
                 <tr>
-                    <button type="button" class="btn btn-secondary"><a style="color: white;" href="http://localhost/evenCricket/player%20comparison/playercomparison.php"> Reset </a></button>
+                    <!-- Accent-colored raised button with ripple -->
+                        <style>
+                            .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+                                color: rgb(255,255,255);
+                                background-color: #3399ff;
+                            }
+                        </style>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        <a style="color: white;" href="http://localhost/evenCricket/player%20comparison/playercomparison.php"> Reset </a>
+                    </button>
+                    <!-- <button type="button" class="btn btn-secondary"><a style="color: white;" href="http://localhost/evenCricket/player%20comparison/playercomparison.php"> Reset </a></button> -->
                     <td>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One">Search</button>
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button> -->
                     </td>
                     <td colspan="3"></td>
                     <td>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@playertwo" title="Player Two"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@playertwo" title="Player Two">Search</button>
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@playertwo" title="Player Two"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button> -->
                     </td>
                 </tr>
                 <tr>
@@ -268,7 +278,7 @@
                                 $_SERVER['REQUEST_URI']; ?>">
                             <input type="hidden" name="player" value='1'>
                         </div>
-                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Search</button>
                     </form>
                 </div>
                 <div id="list-of-players1"></div>
@@ -294,7 +304,7 @@
                                 $_SERVER['REQUEST_URI']; ?>">
                             <input type="hidden" name="player" value='2'>
                         </div>
-                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Search</button>
                     </form>
                 </div>
                 <div id="list-of-players2"></div>
@@ -302,7 +312,8 @@
         </div>
     </div>
     <!-- ========================= Main end ========================= -->
-
+    <!-- Footer -->
+    <div id="footer"></div>
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top">
         <i class="lni lni-arrow-up"></i>
@@ -319,6 +330,12 @@
     <script src="../assets/js/imagesloaded.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#navbar").load("../navbar.html");
+			$("#footer").load("../footer.html");
+		});
+	</script>
     <script>
         $(document).ready(function(e) {
             $("#formone").on('submit', (function(e) {

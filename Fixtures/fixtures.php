@@ -46,7 +46,6 @@
 		}
 	</style>
 	<div id="navbar"></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$("#navbar").load("../navbar.html");
@@ -370,8 +369,12 @@
 
 
 
-
-
+    <div id="footer"></div>
+	<style>
+		.footer {
+			font-family: "Poppins", sans-serif;
+		}
+	</style>
 
 
 
@@ -398,6 +401,13 @@
     <script src="../assets/js/wow.min.js"></script>
     <script src="../assets/js/imagesloaded.min.js"></script>
     <script src="../assets/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#navbar").load("../navbar.html");
+			$("#footer").load("../footer.html");
+		});
+	</script>
 </body>
 
 </html>

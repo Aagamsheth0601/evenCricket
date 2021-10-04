@@ -88,7 +88,7 @@
     <section>
         <div class="row">
             <!-- ===================== Left Side Start ========================== -->
-            <div class="col-xl-9 col-lg-8" style="border-right:1px solid rgb(128, 131, 240);">
+            <div class="col-xl-9 col-lg-8" style="border-right:1px solid rgb(128, 131, 240);padding:0px;">
                 <!-- ===================== News Start ========================== -->
                 <section id="news">
                     <!-- <div class="section-title text-center mb-55">
@@ -98,67 +98,55 @@
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" style="height:400px;">
-                                    <a target="__blank"
-                                        href="https://indianexpress.com/article/sports/cricket/virat-kohli-confirms-he-is-leaving-as-t20-captain-mantle-set-to-go-to-rohit-sharma-7513512/">
+                                    <a target="__blank" href="https://www.icc-cricket.com/news/2275585">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
                                                 <img class="d-block w-100" style="height:25em;"
-                                                    src="https://images.indianexpress.com/2021/09/Rohit-Sharma-and-Virat-Kohli.jpg"
+                                                    src="https://resources.pulse.icc-cricket.com/photo-resources/2021/09/30/0b2ca889-9bf5-4c74-b2f1-6b98a7c2d201/ICC-Greatest-XI-16x9.png?width=440&height=248"
                                                     alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Virat Kohli confirms he is leaving as T20 captain, mantle set to
-                                                        go to Rohit Sharma</h5>
-                                                    <p style="color:beige;">Virat Kohli’s statement mentioned Rohit
-                                                        Sharma as “an essential part of the leadership group”, all but
-                                                        anointing the latter as his successor in the shortest format.
+                                                    <h5>Upstox Greatest XI – Your chance to pick your dream T20 World Cup team</h5>
+                                                    <p>Ahead of the ICC Men’s T20 World Cup 2021, the ICC has launched the Upstox Greatest XI – a chance for you to pick your all-time ICC T20 World Cup XI and measure its strengths against your friends’ picks.
                                                     </p>
-                                                    <p style="color: white;">17 Sept 2021</p>
+                                                    <p style="color: white;">01 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a
-                                        href="https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2021-dry-run-in-the-desert-ahead-of-the-t20-world-cup/articleshow/86334742.cms">
+                                    <a href="https://www.icc-cricket.com/media-releases/2279765">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
                                                 <img class="d-block w-100" style="height:25em;"
-                                                    src="https://c4.wallpaperflare.com/wallpaper/857/547/802/sports-cricket-wallpaper-thumb.jpg"
+                                                    src="https://resources.pulse.icc-cricket.com/photo-resources/2021/10/03/66b9dd57-23b6-4faa-a134-a7fec4fa776d/1600x615.jpg?width=845&height=325"
                                                     alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Hello There</h5>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-                                                        quos temporibus obcaecati molestiae veritatis? Facere placeat
-                                                        accusantium, qui nisi, tempora fuga voluptatibus quia nesciunt
-                                                        quam officiis sequi quidem explicabo nobis?</p>
-                                                    <p style="color: white;">17 Sept 2021</p>
+                                                    <h5>ICC Men’s T20 World Cup 2021 opens the door to fans as tickets go on sale</h5>
+                                                    <p>Cricket fans from across the world are invited to Oman and the UAE to ‘Live the Game’ at the ICC Men’s T20 World Cup 2021, with tickets for every one of the 45 matches going on sale today.</p>
+                                                    <p style="color: white;">03 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a
-                                        href="https://sports.ndtv.com/ipl-2021/ipl-2021-david-hussey-feels-two-kkr-cricketers-are-about-to-shock-the-world-2545738">
+                                    <a href="https://www.icc-cricket.com/news/2277040">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
                                                 <img class="d-block w-100" style="height:25em;"
-                                                    src="https://wallpaperaccess.com/full/3818798.jpg"
+                                                    src="https://resources.pulse.icc-cricket.com/photo-resources/2021/10/02/023c1828-8c1a-4642-9513-b6cd1a5e9f7e/GettyImages-626883838.jpg?width=440&height=248"
                                                     alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Hello There</h5>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-                                                        quos temporibus obcaecati molestiae veritatis? Facere placeat
-                                                        accusantium, qui nisi, tempora fuga voluptatibus quia nesciunt
-                                                        quam officiis sequi quidem explicabo nobis?</p>
-                                                    <p style="color: white;">17 Sept 2021</p>
+                                                    <h5>Glenn Maxwell picks his top five T20 players</h5>
+                                                    <p>Ahead of the ICC Men's T20 World Cup 2021, mercurial Australian all-rounder Glenn Maxwell picked his top five players in the shortest format of the game.</p>
+                                                    <p style="color: white;">02 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,12 +182,12 @@
                     <!-- Row title -->
                     <main class="point-row title">
                         <ul style="text-align:center;">
-                            <li>Team</li>
-                            <li>Matches</li>
-                            <li>Won</li>
-                            <li>Lost</li>
-                            <li>NRR</li>
-                            <li>Points</li>
+                            <li><b>Team</b></li>
+                            <li><b>Matches</b></li>
+                            <li><b>Won</b></li>
+                            <li><b>Lost</b></li>
+                            <li><b>NRR</b></li>
+                            <li><b>Points</b></li>
                         </ul>
                     </main>
                     <!-- Row 1 - fadeIn -->
@@ -254,12 +242,14 @@
                                 }
                             }
                             ?>
-                    <article class="point-row <?php echo $keyword; ?>">
+                    <article class="point-row <?php
+                            //echo $keyword;
+                            ?>">
                         <ul style="text-align:center;">
-                            <li style="text-align:left;"><a href="#"><img
+                            <li style="text-align:left;"><a href="#" style="color:white;"><img
                                         style="hieght:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;"
                                         src="<?php echo $flag; ?>" alt="">
-                                    <?php echo $team; ?>
+                                    <span><?php echo $team; ?></span>
                                 </a></li>
                             <li>
                                 <?php echo $matches; ?>
@@ -323,114 +313,127 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-sm-6 col-md-6 pricing-column-wrapper"
-                                    style="width: 320px;margin: auto;">
-                                    <div class="pricing-column">
-                                        <div class="pricing-price-row">
-                                            <div class="pricing-price-wrapper">
-                                                <div class="pricing-price">
-                                                    <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                                        src="https://resources.pulse.icc-cricket.com/photo-resources/2021/07/26/74f5adc9-bb13-4ab5-954d-751cafd0753a/Dubai-International-Stadium.jpeg?width=576&height=576"
-                                                        alt="blog"
-                                                        style="  border-radius: 50%;height: 220px;width: 220px;">
+                            
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="pricing-column-wrapper"
+                                            style="width: 320px;margin: auto;">
+                                            <div class="pricing-column">
+                                                <div class="pricing-price-row">
+                                                    <div class="pricing-price-wrapper">
+                                                        <div class="pricing-price">
+                                                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                                                src="https://resources.pulse.icc-cricket.com/photo-resources/2021/07/26/74f5adc9-bb13-4ab5-954d-751cafd0753a/Dubai-International-Stadium.jpeg?width=576&height=576"
+                                                                alt="blog"
+                                                                style="  border-radius: 50%;height: 220px;width: 220px;">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="pricing-row-title">
-                                            <div class="pricing_row_title">Dubai International Stadium</div>
-                                        </div>
-                                        <figure>
-                                            The capital of the Emirate with the same name, Dubai is known for its .....
-                                        </figure>
+                                                <div class="pricing-row-title">
+                                                    <div class="pricing_row_title">Dubai International Stadium</div>
+                                                </div>
+                                                <figure>
+                                                    The capital of the Emirate with the same name, Dubai is known for its .....
+                                                </figure>
 
-                                        <div class="pricing-footer">
-                                            <div class="gem-button-container gem-button-position-center"><a
-                                                    href="https://www.t20worldcup.com/venues/37/dubai-international-stadium/city"
-                                                    target="_blank" class="gem-button gem-green">Read Article</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 pricing-column-wrapper"
-                                    style="width: 320px;margin: auto;">
-                                    <div class="pricing-column">
-                                        <div class="pricing-price-row">
-                                            <div class="pricing-price-wrapper">
-                                                <div class="pricing-price">
-                                                    <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                                        src="https://resources.pulse.icc-cricket.com/photo-resources/2021/07/26/136021b0-3393-4b1e-a838-bd6c92e3c9df/Sharjah-Cricket-Stadium-.jpeg?width=576&height=576"
-                                                        alt="blog"
-                                                        style="  border-radius: 50%;height: 220px;width: 220px;">
+                                                <div class="pricing-footer">
+                                                    <div class="gem-button-container gem-button-position-center"><a
+                                                            href="https://www.t20worldcup.com/venues/37/dubai-international-stadium/city"
+                                                            target="_blank" class="gem-button gem-green">Read Article</a></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pricing-row-title">
-                                            <div class="pricing_row_title"
-                                                style="margin-top:10px;padding-bottom: 25px;">Sharjah Stadium</div>
-                                        </div>
-                                        <figure>
-                                            The United Arab Emirates’ third most populous city, Sharjah is the capital
-                                            of .....
-                                        </figure>
-                                        <div class="pricing-footer">
-                                            <div class="gem-button-container gem-button-position-center"><a
-                                                    href="https://www.t20worldcup.com/venues/104/sharjah-stadium/city"
-                                                    target="_blank" class="gem-button gem-purpel">Read Article</a></div>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 col-md-6 pricing-column-wrapper"
-                                    style="width: 320px;margin: auto;">
-                                    <div class="pricing-column">
-                                        <div class="pricing-price-row">
-                                            <div class="pricing-price-wrapper">
-                                                <div class="pricing-price">
-                                                    <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                                        src="https://resources.pulse.icc-cricket.com/photo-resources/2021/07/26/f4b35fe0-732b-472f-977b-6b2a32f697f5/OCA-building.jpeg?width=576&height=576"
-                                                        alt="blog"
-                                                        style="  border-radius: 50%;height: 220px;width: 220px;">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="pricing-column-wrapper"
+                                            style="width: 320px;margin: auto;">
+                                            <div class="pricing-column">
+                                                <div class="pricing-price-row">
+                                                    <div class="pricing-price-wrapper">
+                                                        <div class="pricing-price">
+                                                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                                                src="https://resources.pulse.icc-cricket.com/photo-resources/2021/07/26/136021b0-3393-4b1e-a838-bd6c92e3c9df/Sharjah-Cricket-Stadium-.jpeg?width=576&height=576"
+                                                                alt="blog"
+                                                                style="  border-radius: 50%;height: 220px;width: 220px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pricing-row-title">
+                                                    <div class="pricing_row_title"
+                                                        style="margin-top:10px;padding-bottom: 25px;">Sharjah Stadium</div>
+                                                </div>
+                                                <figure>
+                                                    The United Arab Emirates’ third most populous city, Sharjah is the capital
+                                                    of .....
+                                                </figure>
+                                                <div class="pricing-footer">
+                                                    <div class="gem-button-container gem-button-position-center"><a
+                                                            href="https://www.t20worldcup.com/venues/104/sharjah-stadium/city"
+                                                            target="_blank" class="gem-button gem-purpel">Read Article</a></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pricing-row-title">
-                                            <div class="pricing_row_title">Oman Cricket Academy Ground</div>
-                                        </div>
-                                        <figure>Late Sultan Qaboos bin Said, the Oman Cricket Ground is the jewel .....
-                                        </figure>
-                                        <div class="pricing-footer">
-                                            <div class="gem-button-container gem-button-position-center">
-                                                <a href="https://www.t20worldcup.com/venues/588/oman-cricket-academy-ground/venue"
-                                                    target="_blank" class="gem-button gem-orange">Read Article</a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-md-6 pricing-column-wrapper"
-                                    style="width: 320px;margin: auto;">
-                                    <div class="pricing-column">
-                                        <div class="pricing-price-row">
-                                            <div class="pricing-price-wrapper">
-                                                <div class="pricing-price">
-                                                    <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                                        src="https://resources.pulse.icc-cricket.com/photo-resources/2019/10/18/07b27157-54f9-4542-aece-716b0ad6a97e/IMG_20191018_173053__01.jpg?width=576&height=576"
-                                                        alt="blog"
-                                                        style="  border-radius: 50%;height: 220px;width: 220px;">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="pricing-column-wrapper"
+                                            style="width: 320px;margin: auto;">
+                                            <div class="pricing-column">
+                                                <div class="pricing-price-row">
+                                                    <div class="pricing-price-wrapper">
+                                                        <div class="pricing-price">
+                                                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                                                src="https://resources.pulse.icc-cricket.com/photo-resources/2021/07/26/f4b35fe0-732b-472f-977b-6b2a32f697f5/OCA-building.jpeg?width=576&height=576"
+                                                                alt="blog"
+                                                                style="  border-radius: 50%;height: 220px;width: 220px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pricing-row-title">
+                                                    <div class="pricing_row_title">Oman Cricket Academy Ground</div>
+                                                </div>
+                                                <figure>Late Sultan Qaboos bin Said, the Oman Cricket Ground is the jewel .....
+                                                </figure>
+                                                <div class="pricing-footer">
+                                                    <div class="gem-button-container gem-button-position-center">
+                                                        <a href="https://www.t20worldcup.com/venues/588/oman-cricket-academy-ground/venue"
+                                                            target="_blank" class="gem-button gem-orange">Read Article</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="pricing-row-title">
-                                            <div class="pricing_row_title">Sheikh Zayed Stadium</div>
-                                        </div>
-                                        <figure>The capital of the United Arab Emirates, Abu Dhabi is the country’s
-                                            second .....</figure>
-                                        <div class="pricing-footer">
-                                            <div class="gem-button-container gem-button-position-center"><a
-                                                    href="https://www.t20worldcup.com/venues/102/sheikh-zayed-stadium/city"
-                                                    target="_blank" class="gem-button gem-yellow">Read Article</a></div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="pricing-column-wrapper"
+                                            style="width: 320px;margin: auto;">
+                                            <div class="pricing-column">
+                                                <div class="pricing-price-row">
+                                                    <div class="pricing-price-wrapper">
+                                                        <div class="pricing-price">
+                                                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                                                src="https://resources.pulse.icc-cricket.com/photo-resources/2019/10/18/07b27157-54f9-4542-aece-716b0ad6a97e/IMG_20191018_173053__01.jpg?width=576&height=576"
+                                                                alt="blog"
+                                                                style="  border-radius: 50%;height: 220px;width: 220px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pricing-row-title">
+                                                    <div class="pricing_row_title"style="margin-top:10px;padding-bottom: 25px;">Sheikh Zayed Stadium</div>
+                                                </div>
+                                                <figure>The capital of the United Arab Emirates, Abu Dhabi is the country’s
+                                                    second .....</figure>
+                                                <div class="pricing-footer">
+                                                    <div class="gem-button-container gem-button-position-center"><a
+                                                            href="https://www.t20worldcup.com/venues/102/sheikh-zayed-stadium/city"
+                                                            target="_blank" class="gem-button gem-yellow">Read Article</a></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            
+
 
                         </div>
                     </div>
@@ -553,7 +556,7 @@
                     </svg>
                 </div>
 
-                <details open>
+                <details>
                     <summary>
                         Does this product have what I need?
                         <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
@@ -580,7 +583,7 @@
                     <p>Of course you can, we won't stop you.</p>
                 </details>
 
-                <details>
+                <details style="margin-bottom: 20px;">
                     <summary>
                         Are there any restrictions?
                         <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
@@ -597,9 +600,11 @@
             <!-- ===================== Left Side End ========================== -->
 
             <!-- ===================== Right Side Start ========================== -->
-            <div class="col-xl-3 col-lg-4">
-                <iframe src="https://widget.crictimes.org/" style="width:100%;min-height: 450px;" frameborder="0"
-                    scrolling="yes"></iframe>
+            <div class="col-xl-3 col-lg-4" style="padding:0px;">
+                <div class="container">
+                    <iframe src="https://widget.crictimes.org/" style="width:100%;min-height: 450px;" frameborder="0"
+                        scrolling="yes"></iframe>
+                </div>
                 <br>
                 <div class="container">
                     <blockquote class="twitter-tweet">
@@ -650,8 +655,7 @@
     <!-- ========================= Spacer ========================= -->
 
     <!-- ========================= subscribe-section start ========================= -->
-    <section class=" subscribe-section pt-70 pb-70 img-bg" style="background-color: #000000;
-background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);">
+    <section class=" subscribe-section pt-70 pb-70 img-bg" style="background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6">
@@ -676,8 +680,7 @@ background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);">
     <!-- ========================= subscribe-section end ========================= -->
 
     <!-- ========================= footer start ========================= -->
-    <footer class="footer pt-100" style="background-color: #000000;
-background-image: linear-gradient(147deg, #000000 0%, #2c3e50 60%);">
+    <footer class="footer pt-100" style="background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #2c3e50 60%);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6">

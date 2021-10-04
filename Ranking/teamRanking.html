@@ -36,12 +36,6 @@
 		}
 	</style>
 	<div id="navbar"></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("#navbar").load("../navbar.html");
-		});
-	</script>
 	<!-- ========================= preloader Navbar end ========================= -->
 
 	<!-- ========================= Spacer ========================= -->
@@ -266,6 +260,12 @@
 		</symbol>
 	</svg>
 
+	<!-- ========================= Spacer ========================= -->
+	<div style="height: 50px"></div>
+	<!-- ========================= Spacer ========================= -->
+	<!-- Footer -->
+	<div id="footer"></div>
+
 	<!-- ========================= scroll-top ========================= -->
 	<a href="#" class="scroll-top">
 		<i class="lni lni-arrow-up"></i>
@@ -281,6 +281,13 @@
 	<script src="../assets/js/wow.min.js"></script>
 	<script src="../assets/js/imagesloaded.min.js"></script>
 	<script src="../assets/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#navbar").load("../navbar.html");
+			$("#footer").load("../footer.html");
+		});
+	</script>
 </body>
 
 </html>
