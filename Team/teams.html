@@ -29,12 +29,6 @@
 		}
 	</style>
 	<div id="navbar"></div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("#navbar").load("../navbar.html");
-		});
-	</script>
 	<!-- ========================= Preloader Navbar End ========================= -->
 
 	<!-- ========================= Spacer ========================= -->
@@ -138,7 +132,7 @@
 
 
 
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 				<div class="team-list__block">
 					<a href="../teamDetails/squad.php?team_id=12" class="team-list__link">
 						<div class="team-list__image-container">
@@ -154,7 +148,7 @@
 						</div>
 					</a>
 				</div>
-			</div>
+			</div> -->
 
 
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -252,7 +246,7 @@
 			</div>
 
 
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 				<div class="team-list__block">
 					<a href="../teams/men/18/zimbabwe/overview" class="team-list__link">
 						<div class="team-list__image-container">
@@ -268,10 +262,19 @@
 						</div>
 					</a>
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
+
+	<!-- Footer -->
+	<style>
+		.footer:before {
+			height: 0px !important;
+		}
+	</style>
+	<div id="footer"></div>
+	<!-- Footer -->
 	<!-- ========================= scroll-top ========================= -->
 	<a href="#" class="scroll-top">
 		<i class="lni lni-arrow-up"></i>
@@ -285,6 +288,13 @@
 	<script src="../assets/js/wow.min.js"></script>
 	<script src="../assets/js/imagesloaded.min.js"></script>
 	<script src="../assets/js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#navbar").load("../navbar.html");
+			$("#footer").load("../footer.html");
+		});
+	</script>
 </body>
 
 </html>
