@@ -113,7 +113,7 @@
                             <li><a href="#0" data-date="20/10/2021" class="cd-h-timeline__date">20 Oct</a></li>
                             <li><a href="#0" data-date="21/10/2021" class="cd-h-timeline__date">21 Oct</a></li>
                             <li><a href="#0" data-date="22/10/2021" class="cd-h-timeline__date">22 Oct</a></li>
-                            <!-- <li><a href="#0" data-date="23/10/2021" class="cd-h-timeline__date">23 Oct</a></li>
+                            <li><a href="#0" data-date="23/10/2021" class="cd-h-timeline__date">23 Oct</a></li>
                             <li><a href="#0" data-date="24/10/2021" class="cd-h-timeline__date">24 Oct</a></li>
                             <li><a href="#0" data-date="25/10/2021" class="cd-h-timeline__date">25 Oct</a></li>
                             <li><a href="#0" data-date="26/10/2021" class="cd-h-timeline__date">26 Oct</a></li>
@@ -129,7 +129,7 @@
                             <li><a href="#0" data-date="05/11/2021" class="cd-h-timeline__date">05 Nov</a></li>
                             <li><a href="#0" data-date="06/11/2021" class="cd-h-timeline__date">06 Nov</a></li>
                             <li><a href="#0" data-date="07/11/2021" class="cd-h-timeline__date">07 Nov</a></li>
-                            <li><a href="#0" data-date="08/11/2021" class="cd-h-timeline__date">08 Nov</a></li> -->
+                            <li><a href="#0" data-date="08/11/2021" class="cd-h-timeline__date">08 Nov</a></li>
                     </b>
                     </ol>
                     <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
