@@ -2804,7 +2804,7 @@ u,
   color: var(--color-accent, #f54251);
 }
 .color-success {
-  color: hsl(94, 48%, 56%);
+  color: black;
   color: var(--color-success, #88c559);
 }
 .color-warning {
@@ -3220,8 +3220,9 @@ body {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: hsl(74, 93%, 32%);
-  background-color: var(--cd-color-2);
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -3272,9 +3273,10 @@ body {
   transition: background-color 0.3s, border-color 0.3s;
 }
 .js .cd-h-timeline__date:hover::after {
-  background-color: hsl(74, 93%, 32%);
-  background-color: var(--cd-color-2);
-  border-color: hsl(74, 93%, 32%);
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+  border-color: black;
   border-color: var(--cd-color-2);
 }
 @media (min-width: 64rem) {

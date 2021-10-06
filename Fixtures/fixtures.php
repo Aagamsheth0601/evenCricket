@@ -86,7 +86,9 @@
     <br><br>
 
     <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
-        <p class="text-center margin-top-md timeline margin-bottom-xl">👈 <a class="text--inherit" href="https://codyhouse.co/gem/horizontal-timeline/"></a></p>
+        <p class="text-center margin-top-md timeline margin-bottom-xl">
+            <a class="text--inherit" href="https://codyhouse.co/gem/horizontal-timeline/"></a>
+        </p>
 
         <div class="cd-h-timeline__container container">
             <div class="cd-h-timeline__dates">
@@ -145,103 +147,14 @@
                 </li>
                 <li style="color: black;"><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">></a>
                 </li>
+                <!-- <li><a href="#" class="previous round" class="previous round text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">&#8249;</a></li> -->
+                <!-- <li> <a href="#" class="next round" class="next round text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">&#8250;</a></li> -->
             </ul>
         </div> <!-- .cd-h-timeline__container -->
 
         <div class="cd-h-timeline__events">
             <ol>
-                <!-- <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
-                    <div class="cd-h-timeline__event-content container">
-                        <h2 class="cd-h-timeline__event-title">Upcoming Match</h2>
-                        <em class="cd-h-timeline__event-date">October 17th, 2021</em>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="heading_left">
-                                    </div>
-                                </div>
 
-                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                                    <div class="tg-upcomingmatch">
-
-                                        <div class="tg-match">
-                                            <div class="tg-matchdetail">
-                                                <div class="tg-box">
-                                                    <strong class="tg-teamlogo">
-                                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/1200px-Cricket_India_Crest.svg.png"
-                                                            alt="image description" class="img">
-                                                    </strong>
-                                                    <h3>india
-                                                    </h3>
-                                                </div>
-                                                <div class="tg-box">
-                                                    <h4>vs</h4>
-                                                </div>
-                                                <div class="tg-box">
-                                                    <strong class="tg-teamlogo2">
-                                                        <img src="https://iconape.com/wp-content/png_logo_vector/pakistan-cricket-team-logo.png"
-                                                            alt="image description" class="img">
-                                                    </strong>
-                                                    <h3> pakistan</h3>
-                                                </div>
-                                            </div>
-                                            <div class="tg-matchhover">
-                                                <address>Jan16, 2019 15:30 PM Soccer Stadium, Dubai</address>
-                                                <div class="tg-btnbox">
-                                                    <div class="hs_btn_wrapper match_btn float_left btnnww">
-                                                        <ul class="no-bullets">
-                                                            <li><a href="#" class="hs_btn_hover btn2">heat of the
-                                                                    game</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="tg-match">
-                                            <div class="tg-matchdetail">
-                                                <div class="tg-box">
-                                                    <strong class="tg-teamlogo">
-                                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/1200px-Cricket_India_Crest.svg.png"
-                                                            alt="image description" class="img">
-                                                    </strong>
-                                                    <h3>india
-                                                    </h3>
-                                                </div>
-                                                <div class="tg-box">
-                                                    <h4>vs</h4>
-                                                </div>
-                                                <div class="tg-box">
-                                                    <strong class="tg-teamlogo2">
-                                                        <img src="https://iconape.com/wp-content/png_logo_vector/pakistan-cricket-team-logo.png"
-                                                            alt="image description" class="img">
-                                                    </strong>
-                                                    <h3> pakistan</h3>
-                                                </div>
-                                            </div>
-                                            <div class="tg-matchhover">
-                                                <address>Jan16, 2019 15:30 PM Soccer Stadium, Dubai</address>
-                                                <div class="tg-btnbox">
-                                                    <div class="hs_btn_wrapper match_btn float_left btnnww">
-                                                        <ul class="no-bullets">
-                                                            <li><a href="#" class="hs_btn_hover btn2">heat of the
-                                                                    game</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li> -->
                 <?php
                 $conn = mysqli_connect('localhost', 'root', '', 'evencricket');
                 if ($conn == false) {
