@@ -30,28 +30,31 @@
     <link rel="stylesheet" href="fixture_css/owl.carousel.css">
     <link rel="stylesheet" href="fixture_css/owl.theme.default.css">
     <link rel="stylesheet" href="fixture_css/select2.min.css">
-    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+    </script>
     <link rel="stylesheet" href="fixture_css/style.css">
 
 </head>
 
 <body>
-	<!-- ========================= Preloader Navbar start ========================= -->
-	<style>
-		.navbar-area a {
-			font-family: "Poppins", sans-serif;
-		}
-		#fixtures-navbar {
-			border-bottom: 2px solid blue;
-		}
-	</style>
-	<div id="navbar"></div>
-	<script>
-		$(document).ready(function () {
-			$("#navbar").load("../navbar.html");
-		});
-	</script>
-	<!-- ========================= Preloader Navbar End ========================= -->
+    <!-- ========================= Preloader Navbar start ========================= -->
+    <style>
+        .navbar-area a {
+            font-family: "Poppins", sans-serif;
+        }
+
+        #fixtures-navbar {
+            border-bottom: 2px solid blue;
+        }
+    </style>
+    <div id="navbar"></div>
+    <script>
+        $(document).ready(function() {
+            $("#navbar").load("../navbar.html");
+        });
+    </script>
+    <!-- ========================= Preloader Navbar End ========================= -->
 
     <!-- ========================= feature-section start ========================= -->
 
@@ -66,7 +69,9 @@
             vertical-align: middle;
             border-style: none;
             height: 70px;
-            width: 70px;
+
+
+            width: 100px;
         }
 
         ul.no-bullets {
@@ -81,15 +86,14 @@
     <br><br>
 
     <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
-        <p class="text-center margin-top-md timeline margin-bottom-xl">👈 <a class="text--inherit"
-                href="https://codyhouse.co/gem/horizontal-timeline/"></a></p>
+        <p class="text-center margin-top-md timeline margin-bottom-xl">👈 <a class="text--inherit" href="https://codyhouse.co/gem/horizontal-timeline/"></a></p>
 
         <div class="cd-h-timeline__container container">
             <div class="cd-h-timeline__dates">
                 <div class="cd-h-timeline__line">
                     <ol><b>
                             <?php
-/*$begin = new DateTime('2021-10-17');
+                            /*$begin = new DateTime('2021-10-17');
                             $end = new DateTime('2021-11-08');
 
                             $interval = DateInterval::createFromDateString(
@@ -105,9 +109,8 @@
                                     $dt->format('j M') .
                                     '</a></li>';
                             }*/
-?>
-                            <li><a href="#0" data-date="17/10/2021"
-                                    class="cd-h-timeline__date cd-h-timeline__date--selected">17 Oct</a></li>
+                            ?>
+                            <li><a href="#0" data-date="17/10/2021" class="cd-h-timeline__date cd-h-timeline__date--selected">17 Oct</a></li>
                             <li><a href="#0" data-date="18/10/2021" class="cd-h-timeline__date">18 Oct</a></li>
                             <li><a href="#0" data-date="19/10/2021" class="cd-h-timeline__date">19 Oct</a></li>
                             <li><a href="#0" data-date="20/10/2021" class="cd-h-timeline__date">20 Oct</a></li>
@@ -130,18 +133,17 @@
                             <li><a href="#0" data-date="06/11/2021" class="cd-h-timeline__date">06 Nov</a></li>
                             <li><a href="#0" data-date="07/11/2021" class="cd-h-timeline__date">07 Nov</a></li>
                             <li><a href="#0" data-date="08/11/2021" class="cd-h-timeline__date">08 Nov</a></li>
-                    </b>
+                        </b>
                     </ol>
                     <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
                 </div> <!-- .cd-h-timeline__line -->
             </div> <!-- .cd-h-timeline__dates -->
 
             <ul>
-                <li><a href="#0"
-                        class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">
+                <li style="color: black;"><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">
                         < </a>
                 </li>
-                <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">></a>
+                <li style="color: black;"><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">></a>
                 </li>
             </ul>
         </div> <!-- .cd-h-timeline__container -->
@@ -257,109 +259,106 @@
                         $rowdate[0] .
                         "'";
                     $querymatch = mysqli_query($conn, $sqlmatch);
-                    ?>
-                <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                        <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                        <em class="cd-h-timeline__event-date">
-                            <?php echo date(
-                                'F j, Y',
-                                strtotime($rowdate[0])
-                            ); ?>
-                        </em>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
+                ?>
+                    <li class="cd-h-timeline__event text-component">
+                        <div class="cd-h-timeline__event-content container">
+                            <h2 class="cd-h-timeline__event-title" style="padding-left: 60px;">Matchday ~</h2>
+                            <em class="cd-h-timeline__event-date" style="padding-left: 60px;">
+                                <?php echo date(
+                                    'F j, Y',
+                                    strtotime($rowdate[0])
+                                ); ?>
+                            </em>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
 
-                                </div>
+                                    </div>
 
-                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                                    <div class="tg-upcomingmatch">
+                                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                        <div class="tg-upcomingmatch">
 
 
-                                        <?php while (
-                                            $rowmatch = mysqli_fetch_row(
-                                                $querymatch
-                                            )
-                                        ) {
+                                            <?php while (
+                                                $rowmatch = mysqli_fetch_row(
+                                                    $querymatch
+                                                )
+                                            ) {
 
-                                            $sqlteam1 =
-                                                'SELECT country_name, flag FROM teams WHERE id = ' .
-                                                $rowmatch[0];
-                                            $sqlteam2 =
-                                                'SELECT country_name, flag FROM teams WHERE id = ' .
-                                                $rowmatch[1];
-                                            $queryteam1 = mysqli_query(
-                                                $conn,
-                                                $sqlteam1
-                                            );
-                                            $queryteam2 = mysqli_query(
-                                                $conn,
-                                                $sqlteam2
-                                            );
-                                            $rowteam1 = mysqli_fetch_row(
-                                                $queryteam1
-                                            );
-                                            $rowteam2 = mysqli_fetch_row(
-                                                $queryteam2
-                                            );
+                                                $sqlteam1 =
+                                                    'SELECT country_name, flag FROM teams WHERE id = ' .
+                                                    $rowmatch[0];
+                                                $sqlteam2 =
+                                                    'SELECT country_name, flag FROM teams WHERE id = ' .
+                                                    $rowmatch[1];
+                                                $queryteam1 = mysqli_query(
+                                                    $conn,
+                                                    $sqlteam1
+                                                );
+                                                $queryteam2 = mysqli_query(
+                                                    $conn,
+                                                    $sqlteam2
+                                                );
+                                                $rowteam1 = mysqli_fetch_row(
+                                                    $queryteam1
+                                                );
+                                                $rowteam2 = mysqli_fetch_row(
+                                                    $queryteam2
+                                                );
                                             ?>
-                                        <div class="tg-match my-3">
-                                            <div class="tg-matchdetail">
-                                                <div class="tg-box">
-                                                    <strong class="tg-teamlogo">
-                                                        <img src="<?php echo $rowteam1[1]; ?>"
-                                                            alt="image description" class="img">
-                                                    </strong>
-                                                    <h3>
-                                                        <?php echo $rowteam1[0]; ?>
-                                                    </h3>
-                                                </div>
-                                                <div class="tg-box">
-                                                    <h4>vs</h4>
-                                                </div>
-                                                <div class="tg-box">
-                                                    <strong class="tg-teamlogo2">
-                                                        <img src="<?php echo $rowteam2[1]; ?>"
-                                                            alt="image description" class="img">
-                                                    </strong>
-                                                    <h3>
-                                                        <?php echo $rowteam2[0]; ?>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            <div class="tg-matchhover">
-                                                <address>
-                                                    <?php echo date(
-                                                        'Md, Y ',
-                                                        strtotime($rowdate[0])
-                                                    ) .
-                                                        date(
-                                                            'H:i A',
-                                                            strtotime(
-                                                                $rowmatch[3]
-                                                            )
-                                                        ) .
-                                                        '<br>' .
-                                                        $rowmatch[2]; ?></address>
-                                                <div class="tg-btnbox">
-                                                    <div class="hs_btn_wrapper match_btn float_left btnnww">
-                                                        <ul class="no-bullets">
-                                                            <li><a href="#" class="hs_btn_hover btn2"
-                                                                    style="text-decoration:none;">heat of the game</a></li>
-                                                        </ul>
+                                                <div class="tg-match my-3">
+                                                    <div class="tg-matchdetail">
+                                                        <div class="tg-box">
+                                                            <strong class="tg-teamlogo">
+                                                                <img src="<?php echo $rowteam1[1]; ?>" alt="image description" class="img">
+                                                            </strong>
+                                                            <h3 style="font-size: 2.6vh;font-weight:bold">
+                                                                <?php echo $rowteam1[0]; ?>
+                                                            </h3>
+                                                        </div>
+                                                        <div class="tg-box">
+                                                            <h4>vs</h4>
+                                                        </div>
+                                                        <div class="tg-box">
+                                                            <strong class="tg-teamlogo2">
+                                                                <img src="<?php echo $rowteam2[1]; ?>" alt="image description" class="img">
+                                                            </strong>
+                                                            <h3 style="font-size: 2.1vh;font-weight:bold">
+                                                                <?php echo $rowteam2[0]; ?>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tg-matchhover">
+                                                        <address>
+                                                            <?php echo date(
+                                                                'Md, Y ',
+                                                                strtotime($rowdate[0])
+                                                            ) .
+                                                                date(
+                                                                    'H:i A',
+                                                                    strtotime(
+                                                                        $rowmatch[3]
+                                                                    )
+                                                                ) .
+                                                                '<br>' .
+                                                                $rowmatch[2]; ?></address>
+                                                        <div class="tg-btnbox">
+                                                            <div class="hs_btn_wrapper match_btn float_left btnnww">
+                                                                <ul class="no-bullets">
+                                                                    <li><a href="#" class="hs_btn_hover btn2" style="text-decoration:none;">heat of the game</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            <?php
+                                            } ?>
                                         </div>
-                                        <?php
-                                        } ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
                 <?php
                 }
                 ?>
@@ -370,11 +369,11 @@
 
 
     <div id="footer"></div>
-	<style>
-		.footer {
-			font-family: "Poppins", sans-serif;
-		}
-	</style>
+    <style>
+        .footer {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 
 
 
@@ -401,13 +400,13 @@
     <script src="../assets/js/wow.min.js"></script>
     <script src="../assets/js/imagesloaded.min.js"></script>
     <script src="../assets/js/main.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$("#navbar").load("../navbar.html");
-			$("#footer").load("../footer.html");
-		});
-	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#navbar").load("../navbar.html");
+            $("#footer").load("../footer.html");
+        });
+    </script>
 </body>
 
 </html>

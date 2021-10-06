@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic");
 *,
 *::after,
 *::before {
@@ -293,13 +293,13 @@ svg {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
-[class*='grid-gap'] {
+[class*="grid-gap"] {
   margin-bottom: 1em * -1;
   margin-bottom: calc(var(--grid-gap, 1em) * -1);
   margin-right: 1em * -1;
   margin-right: calc(var(--grid-gap, 1em) * -1);
 }
-[class*='grid-gap'] > * {
+[class*="grid-gap"] > * {
   margin-bottom: 1em;
   margin-bottom: var(--grid-gap, 1em);
   margin-right: 1em;
@@ -986,7 +986,7 @@ svg {
 body {
   font-size: 1em;
   font-size: var(--text-base-size, 1em);
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-family: var(--font-primary, sans-serif);
   color: hsl(240, 4%, 20%);
   color: var(--color-contrast-high, #313135);
@@ -1371,7 +1371,7 @@ u,
   clip: rect(1px, 1px, 1px, 1px);
 }
 .form__msg-error::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0.75em;
   left: var(--space-sm);
@@ -2844,7 +2844,7 @@ u,
   padding-bottom: 75%;
 }
 :root,
-[data-theme='default'] {
+[data-theme="default"] {
   --color-primary-darker: hsl(220, 90%, 36%);
   --color-primary-darker-h: 220;
   --color-primary-darker-s: 90%;
@@ -3107,11 +3107,11 @@ mark {
   box-shadow: 0 0 0 3px hsla(220, 90%, 56%, 0.2);
   box-shadow: 0 0 0 3px var(--color-shadow);
 }
-.form-control[aria-invalid='true'] {
+.form-control[aria-invalid="true"] {
   border-color: hsl(355, 90%, 61%);
   border-color: var(--color-error);
 }
-.form-control[aria-invalid='true']:focus {
+.form-control[aria-invalid="true"]:focus {
   --color-shadow: hsla(355, 90%, 61%, 0.2);
   --color-shadow: hsla(
     var(--color-error-h),
@@ -3122,7 +3122,7 @@ mark {
   box-shadow: undefined;
   box-shadow: 0 0 0 3px var(--color-shadow);
 }
-.form-control[aria-invalid='true']:focus:focus {
+.form-control[aria-invalid="true"]:focus:focus {
   box-shadow: 0 0 0 3px hsla(355, 90%, 61%, 0.2);
   box-shadow: 0 0 0 3px var(--color-shadow);
 }
@@ -3143,8 +3143,8 @@ mark {
   --cd-color-3-h: 0;
   --cd-color-3-s: 0%;
   --cd-color-3-l: 97%;
-  --font-primary: 'Fira Sans', sans-serif;
-  --font-secondary: 'Playfair Display', serif;
+  --font-primary: "Fira Sans", sans-serif;
+  --font-secondary: "Playfair Display", serif;
 }
 body {
   color: hsl(0, 0%, 22%);
@@ -3172,7 +3172,7 @@ body {
 }
 .js .cd-h-timeline__dates::after,
 .js .cd-h-timeline__dates::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 2;
   top: 0;
@@ -3249,7 +3249,7 @@ body {
   text-decoration: none;
 }
 .js .cd-h-timeline__date::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -3299,7 +3299,7 @@ body {
   position: absolute;
   z-index: 1;
   top: 50%;
-  background: url(../../assets/img/361.png);
+  background: none;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -3317,16 +3317,16 @@ body {
   transition: border-color 0.3s;
 }
 .js .cd-h-timeline__navigation::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 16px;
   width: 16px;
+  background: none;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(../../assets/img/361.png);
 }
 .js .cd-h-timeline__navigation:hover {
   border-color: hsl(74, 93%, 32%);
@@ -3405,7 +3405,7 @@ body {
 .js .cd-h-timeline__event-title {
   color: hsl(0, 0%, 22%);
   color: var(--cd-color-1);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 2.48832em;
@@ -3418,7 +3418,7 @@ body {
   margin: var(--space-xs) auto;
 }
 .js .cd-h-timeline__event-date::before {
-  content: '- ';
+  content: "- ";
 }
 @-webkit-keyframes cd-enter-right {
   0% {
