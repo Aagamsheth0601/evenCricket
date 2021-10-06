@@ -101,7 +101,7 @@
                                     <a target="__blank" href="https://www.icc-cricket.com/news/2275585">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://resources.pulse.icc-cricket.com/photo-resources/2021/09/30/0b2ca889-9bf5-4c74-b2f1-6b98a7c2d201/ICC-Greatest-XI-16x9.png?width=440&height=248" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://resources.pulse.icc-cricket.com/photo-resources/2021/09/30/0b2ca889-9bf5-4c74-b2f1-6b98a7c2d201/ICC-Greatest-XI-16x9.png?width=2200&height=1200" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
@@ -237,7 +237,7 @@
                                                         //echo $keyword;
                                                         ?>">
                                 <ul style="text-align:center;">
-                                    <li style="text-align:left;"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
+                                    <li style="text-align:left;font-size:15px"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
                                             <em><?php echo $team; ?></em>
                                         </span></li>
                                     <li>

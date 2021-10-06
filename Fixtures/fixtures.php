@@ -312,7 +312,7 @@
                                                             <strong class="tg-teamlogo">
                                                                 <img src="<?php echo $rowteam1[1]; ?>" alt="image description" class="img">
                                                             </strong>
-                                                            <h3 style="font-size: 2.6vh;font-weight:bold">
+                                                            <h3 style="font-size: 2vh;font-weight:bold">
                                                                 <?php echo $rowteam1[0]; ?>
                                                             </h3>
                                                         </div>
@@ -323,7 +323,7 @@
                                                             <strong class="tg-teamlogo2">
                                                                 <img src="<?php echo $rowteam2[1]; ?>" alt="image description" class="img">
                                                             </strong>
-                                                            <h3 style="font-size: 2.1vh;font-weight:bold">
+                                                            <h3 style="font-size: 2vh;font-weight:bold">
                                                                 <?php echo $rowteam2[0]; ?>
                                                             </h3>
                                                         </div>
