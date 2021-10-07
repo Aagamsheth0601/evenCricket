@@ -213,6 +213,7 @@
 
                     if ($result->num_rows > 0) {
                         // output data of each row
+                        $count = 1;
                         while ($row = $result->fetch_assoc()) {
 
                             $team = $row['team'];
@@ -232,10 +233,10 @@
                                     $flag = $row2['flag'];
                                 }
                             }
-                    ?>
+                            ?>
                             <article class="point-row <?php
-                                                        //echo $keyword;
-                                                        ?>">
+                            //echo $keyword;
+                            ?>" id='<?php echo $count; ?>'>
                                 <ul style="text-align:center;">
                                     <li style="text-align:left;font-size:15px"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
                                             <em><?php echo $team; ?></em>
@@ -256,17 +257,33 @@
                                         <?php echo $points; ?>
                                     </li>
                                 </ul>
-                                <ul class="more-content">
+                                <ul class="more-content" id='team<?php echo $count; ?>' style='display: none;'>
                                     <li>
                                         <?php echo $content; ?>
                                     </li>
                                 </ul>
                             </article>
-                    <?php
+                    <?php $count++;
                         }
                     }
                     ?>
 
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script>
+                        $(document).ready(function() {
+                            $('.point-row').on({
+                                mouseenter: function() {
+                                    var id = $(this).attr("id");
+                                    $("#team" + id).show();
+                                },
+                                mouseleave: function() {
+                                    console.log("your mouse leaves from here");
+                                    var id = $(this).attr("id");
+                                    $("#team" + id).hide();
+                                },
+                            });
+                        });
+                    </script>
 
                 </section>
 

@@ -95,7 +95,7 @@
                 <div class="cd-h-timeline__line">
                     <ol><b>
                             <?php
-                            /*$begin = new DateTime('2021-10-17');
+/*$begin = new DateTime('2021-10-17');
                             $end = new DateTime('2021-11-08');
 
                             $interval = DateInterval::createFromDateString(
@@ -111,7 +111,7 @@
                                     $dt->format('j M') .
                                     '</a></li>';
                             }*/
-                            ?>
+?>
                             <li><a href="#0" data-date="17/10/2021" class="cd-h-timeline__date cd-h-timeline__date--selected">17 Oct</a></li>
                             <li><a href="#0" data-date="18/10/2021" class="cd-h-timeline__date">18 Oct</a></li>
                             <li><a href="#0" data-date="19/10/2021" class="cd-h-timeline__date">19 Oct</a></li>
@@ -172,7 +172,7 @@
                         $rowdate[0] .
                         "'";
                     $querymatch = mysqli_query($conn, $sqlmatch);
-                ?>
+                    ?>
                     <li class="cd-h-timeline__event text-component">
                         <div class="cd-h-timeline__event-content container">
                             <h2 class="cd-h-timeline__event-title" style="padding-left: 60px;">Matchday ~</h2>
@@ -218,49 +218,47 @@
                                                 $rowteam2 = mysqli_fetch_row(
                                                     $queryteam2
                                                 );
-                                            ?>
+                                                ?>
                                                 <div class="tg-match my-3">
-                                                    <div class="tg-matchdetail">
-                                                        <div class="tg-box">
-                                                            <strong class="tg-teamlogo">
+                                                    <div class="tg-matchdetail row text-center">
+                                                        <div class="col-sm-5" style="padding:10px;">
+                                                            <div class="tg-teamlogo" style="display: flex; justify-content: center;">
                                                                 <img src="<?php echo $rowteam1[1]; ?>" alt="image description" class="img">
-                                                            </strong>
-                                                            <h3 style="font-size: 2vh;font-weight:bold">
+                                                            </div>
+                                                            <h3 style="font-size: 1.2rem;font-weight:bold">
                                                                 <?php echo $rowteam1[0]; ?>
                                                             </h3>
                                                         </div>
-                                                        <div class="tg-box">
+                                                        <div class="vs-box col-sm-2">
                                                             <h4>vs</h4>
                                                         </div>
-                                                        <div class="tg-box">
-                                                            <strong class="tg-teamlogo2">
+                                                        <div class="col-sm-5">
+                                                            <div class="tg-teamlogo2" style="display: flex; justify-content: center;">
                                                                 <img src="<?php echo $rowteam2[1]; ?>" alt="image description" class="img">
-                                                            </strong>
-                                                            <h3 style="font-size: 2vh;font-weight:bold">
+                                                            </div>
+                                                            <h3 style="font-size: 1.2rem;font-weight:bold">
                                                                 <?php echo $rowteam2[0]; ?>
                                                             </h3>
                                                         </div>
                                                     </div>
-                                                    <div class="tg-matchhover">
-                                                        <address>
-                                                            <?php echo date(
-                                                                'Md, Y ',
-                                                                strtotime($rowdate[0])
-                                                            ) .
+                                                    <div class="tg-matchhover text-center" style="height: 100%;padding:15px;">
+                                                        <div>
+                                                            <?php echo 'Date : ' .
+                                                                date(
+                                                                    'M d, Y ',
+                                                                    strtotime(
+                                                                        $rowdate[0]
+                                                                    )
+                                                                ) .
+                                                                '<br><br>Time : ' .
                                                                 date(
                                                                     'H:i A',
                                                                     strtotime(
                                                                         $rowmatch[3]
                                                                     )
                                                                 ) .
-                                                                '<br>' .
-                                                                $rowmatch[2]; ?></address>
-                                                        <div class="tg-btnbox">
-                                                            <div class="hs_btn_wrapper match_btn float_left btnnww">
-                                                                <ul class="no-bullets">
-                                                                    <li><a href="#" class="hs_btn_hover btn2" style="text-decoration:none;">heat of the game</a></li>
-                                                                </ul>
-                                                            </div>
+                                                                '<br><br> Venue : ' .
+                                                                $rowmatch[2]; ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -279,6 +277,34 @@
         </div> <!-- .cd-h-timeline__events -->
     </section>
 
+    <style>
+        .vs-box h4 {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 12px 0px;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            background: #ffef2b;
+            font-size: 24px;
+            color: #002398;
+            border-radius: 100px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .vs-box h4 {
+            width: 35px;
+            height: 35px;
+            margin-top: 0;
+            line-height: 35px;
+            font-size: 18px;
+        }
+    </style>
 
 
     <div id="footer"></div>

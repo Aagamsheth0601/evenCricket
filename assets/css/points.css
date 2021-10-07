@@ -1,14 +1,17 @@
 /* Google fonts - Open Sans */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* @import url(https://fonts.googleapis.com/css?family=Open + Sans:400, 700); */
 /* colors */
 /* body */
 
 /* links */
-.nfl a, .mlb a, .nhl a, .pga a {
+.nfl a,
+.mlb a,
+.nhl a,
+.pga a {
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
-
+/* 
 .england a {
   color: #7fccda;
 }
@@ -169,7 +172,7 @@
 
 .west-indies:hover {
   border-left: 3px solid #cc1010;
-}
+} */
 
 /* wrapper */
 .wrapper {
@@ -220,7 +223,7 @@
 /* rows */
 .point-row {
   padding: 10px 0;
-  height: 60px;
+  /* height: 60px; */
   font-size: 0;
   position: relative;
   overflow: hidden;
@@ -230,17 +233,6 @@
 
 .point-row:hover {
   background-color: rgba(26, 26, 26, 0.9);
-  height: 110px;
-}
-@media only screen and (max-width: 767px) {
-  .point-row:hover {
-    height: 50px;
-  }
-}
-@media only screen and (max-width: 359px) {
-  .point-row:hover {
-    height: 105px;
-  }
 }
 
 .title {
@@ -263,37 +255,6 @@
   }
 }
 
-
-
-
-/* row one - fadeIn */
-.row-fadeIn-wrapper {
-  opacity: 0;
-  font-size: 0;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.2s ease-out;
-  -webkit-animation: fadeIn 0.4s ease-out 2s 1 alternate;
-          animation: fadeIn 0.4s ease-out 2s 1 alternate;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.row-fadeIn-wrapper:hover {
-  height: 35px;
-}
-@media only screen and (max-width: 767px) {
-  .row-fadeIn-wrapper:hover {
-    height: 55px;
-  }
-}
-@media only screen and (max-width: 359px) {
-  .row-fadeIn-wrapper:hover {
-    height: 75px;
-  }
-}
-
 .fadeIn {
   padding: 20px 0;
   font-size: 0;
@@ -313,9 +274,9 @@
   position: relative;
   transition: all 0.2s ease-out;
   -webkit-animation: fadeOut 0.4s ease-out 8s 1 alternate;
-          animation: fadeOut 0.4s ease-out 8s 1 alternate;
+  animation: fadeOut 0.4s ease-out 8s 1 alternate;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   opacity: 1;
   height: 65px;
 }
@@ -327,7 +288,7 @@
 /* update content */
 .update-row {
   -webkit-animation: update 0.5s ease-out 12s 1 alternate;
-          animation: update 0.5s ease-out 12s 1 alternate;
+  animation: update 0.5s ease-out 12s 1 alternate;
 }
 
 .update1 {
@@ -336,9 +297,9 @@
   display: inline-block;
   opacity: 1;
   -webkit-animation: update1 1s ease-out 12s 1 alternate;
-          animation: update1 1s ease-out 12s 1 alternate;
+  animation: update1 1s ease-out 12s 1 alternate;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .update2 {
@@ -347,13 +308,13 @@
   display: inline-block;
   opacity: 0;
   -webkit-animation: update2 4s ease-out 13s 1 alternate;
-          animation: update2 4s ease-out 13s 1 alternate;
+  animation: update2 4s ease-out 13s 1 alternate;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 /* more content */
-ul.more-content>li {
+ul.more-content > li {
   position: relative;
   top: 22px;
   font-size: 13px;
@@ -365,7 +326,7 @@ ul.more-content>li {
   color: rgba(128, 128, 128, 0.9);
 }
 @media only screen and (max-width: 767px) {
-  ul.more-content>li {
+  ul.more-content > li {
     font-size: 11px;
   }
 }
