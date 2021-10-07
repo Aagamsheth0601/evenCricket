@@ -539,42 +539,56 @@
 
                 <details>
                     <summary>
-                        Does this product have what I need?
-                        <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                        Who are we?
+                        <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
                         </svg>
-                        <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                        <svg class="control-icon control-icon-close" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
                         </svg>
                     </summary>
-                    <p>Totally. Totally does.</p>
+                    <p>We are a group of 4 friends, making this website just purely out of love for this beautiful game.</p>
                 </details>
 
                 <details>
 
                     <summary>
-                        Can I use it all the time?
-                        <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                        What do we do?
+                        <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
                         </svg>
-                        <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                        <svg class="control-icon control-icon-close" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
                         </svg>
                     </summary>
-                    <p>Of course you can, we won't stop you.</p>
+                    <p>We are a page that keeps you updated with the latest news, scores, and updates from the upcoming T20 Cricket World Cup.</p>
                 </details>
-
-                <details style="margin-bottom: 20px;">
+                
+                <details>
                     <summary>
-                        Are there any restrictions?
-                        <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+                        Which social media platforms are we on?
+                        <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
                         </svg>
-                        <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+                        <svg class="control-icon control-icon-close" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
                         </svg>
                     </summary>
-                    <p>Only your imagination my friend. Go forth!</p>
+                    <p>Currently we are only on Instagram and Twitter but we do plan to expand. By that time do follow these pages!</p>
+                </details>
+                
+                <details style="margin-bottom: 20px;">
+
+                    <summary>
+                        What if we want to ask/suggest anything related to the website?
+                        <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+                        </svg>
+                        <svg class="control-icon control-icon-close" width="24" height="18" role="presentation">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+                        </svg>
+                    </summary>
+                    <p>You can definitely contact any of us. We are always open to doubts and suggestions.</p>
                 </details>
                 <!-- ===================== FAQ End ========================== -->
             </div>
@@ -657,11 +671,7 @@
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="footer-widget mb-60 wow fadeInLeft" data-wow-delay=".2s">
                         <a href="index.html" class="logo mb-30"><img src="assets/img/ec1-removebg-preview.png" /></a>
-                        <p class="mb-30 footer-desc">
-                            We Crafted an awesome desig library that is robust and intuitive
-                            to use. No matter you're building a business presentation
-                            websit.
-                        </p>
+                        
                     </div>
                 </div>
                 <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
@@ -675,29 +685,7 @@
                                 <a href="javascript:void(0)">About Us</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">Service</a>
-                            </li>
-                            <li>
                                 <a href="javascript:void(0)">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".6s">
-                        <h4 style="color: white;">Service</h4>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="javascript:void(0)">Marketing</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">Branding</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">Web Design</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">Graphics Design</a>
                             </li>
                         </ul>
                     </div>
@@ -707,13 +695,10 @@
                         <h4 style="color: white;">Contact</h4>
                         <ul class="footer-contact">
                             <li>
-                                <p>+00983467367234</p>
+                                <p>evencricket@gmail.com</p>
                             </li>
                             <li>
-                                <p>yourmail@gmail.com</p>
-                            </li>
-                            <li>
-                                <p>United State Of America *12 Street House</p>
+                                <p>Mumbai, India.</p>
                             </li>
                         </ul>
                     </div>
@@ -735,7 +720,7 @@
                                     <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a>
+                                    <a href="https://www.instagram.com/evencricket/" target="__blank"><i class="lni lni-instagram-filled"></i></a>
                                 </li>
                             </ul>
                         </div>
