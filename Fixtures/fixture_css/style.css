@@ -2805,7 +2805,7 @@ u,
 }
 .color-success {
   color: black;
-  color: var(--color-success, #88c559);
+  color: var(--color-success, hsl(209, 100%, 50.6%));
 }
 .color-warning {
   color: hsl(46, 100%, 61%);
@@ -2893,26 +2893,26 @@ u,
   --color-white-h: 0;
   --color-white-s: 0%;
   --color-white-l: 100%;
-  --color-success-darker: hsl(94, 48%, 36%);
-  --color-success-darker-h: 94;
-  --color-success-darker-s: 48%;
-  --color-success-darker-l: 36%;
-  --color-success-dark: hsl(94, 48%, 46%);
-  --color-success-dark-h: 94;
-  --color-success-dark-s: 48%;
-  --color-success-dark-l: 46%;
-  --color-success: hsl(94, 48%, 56%);
-  --color-success-h: 94;
-  --color-success-s: 48%;
-  --color-success-l: 56%;
-  --color-success-light: hsl(94, 48%, 66%);
-  --color-success-light-h: 94;
-  --color-success-light-s: 48%;
-  --color-success-light-l: 66%;
-  --color-success-lighter: hsl(94, 48%, 76%);
-  --color-success-lighter-h: 94;
-  --color-success-lighter-s: 48%;
-  --color-success-lighter-l: 76%;
+  --color-success-darker: hsl(209, 100%, 50.6%);
+  --color-success-darker-h: 209;
+  --color-success-darker-s: 100%;
+  --color-success-darker-l: 50.6%;
+  --color-success-dark: hsl(209, 100%, 50.6%);
+  --color-success-dark-h: 209;
+  --color-success-dark-s: 100%;
+  --color-success-dark-l: 50.6%;
+  --color-success: hsl(209, 100%, 50.6%);
+  --color-success-h: 209;
+  --color-success-s: 100%;
+  --color-success-l: 50.6%;
+  --color-success-light: hsl(209, 100%, 50.6%);
+  --color-success-light-h: 209;
+  --color-success-light-s: 100%;
+  --color-success-light-l: 50.6%;
+  --color-success-lighter: hsl(209, 100%, 50.6%);
+  --color-success-lighter-h: 209;
+  --color-success-lighter-s: 100%;
+  --color-success-lighter-l: 50.6%;
   --color-error-darker: hsl(355, 90%, 41%);
   --color-error-darker-h: 355;
   --color-error-darker-s: 90%;
@@ -3135,10 +3135,8 @@ mark {
   --cd-color-1-h: 0;
   --cd-color-1-s: 0%;
   --cd-color-1-l: 22%;
-  --cd-color-2: hsl(74, 93%, 32%);
-  --cd-color-2-h: 74;
-  --cd-color-2-s: 93%;
-  --cd-color-2-l: 32%;
+  --cd-color-2: hsl(209, 100%, 50.6%);
+
   --cd-color-3: hsl(0, 0%, 97%);
   --cd-color-3-h: 0;
   --cd-color-3-s: 0%;
@@ -3277,7 +3275,7 @@ body {
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 
   border-color: black;
-  border-color: var(--cd-color-2);
+
 }
 @media (min-width: 64rem) {
   .js .cd-h-timeline__date {
@@ -3288,14 +3286,12 @@ body {
   pointer-events: none;
 }
 .js .cd-h-timeline__date--selected::after {
-  background-color: hsl(74, 93%, 32%);
-  background-color: var(--cd-color-2);
-  border-color: hsl(74, 93%, 32%);
-  border-color: var(--cd-color-2);
+  background-color: hsl(209, 100%, 50.6%);
+  border-color: hsl(225.3, 81.8%, 56.9%);
 }
 .js .cd-h-timeline__date--older-event::after {
-  border-color: hsl(74, 93%, 32%);
-  border-color: var(--cd-color-2);
+  border-color: hsl(209, 100%, 50.6%);
+
 }
 .js .cd-h-timeline__navigation {
   position: absolute;
@@ -3311,11 +3307,7 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: hsl(0, 0%, 87.3%);
-  border-color: hsl(
-    var(--cd-color-3-h),
-    var(--cd-color-3-s),
-    calc(var(--cd-color-3-l) * 0.9)
-  );
+  border-color: hsl(209, 100%, 50.6%);
   transition: border-color 0.3s;
 }
 .js .cd-h-timeline__navigation::after {
@@ -3331,8 +3323,8 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 .js .cd-h-timeline__navigation:hover {
-  border-color: hsl(74, 93%, 32%);
-  border-color: var(--cd-color-2);
+  border-color: hsl(209, 100%, 50.6%);
+
 }
 .js .cd-h-timeline__navigation--prev {
   left: 0;
@@ -3351,11 +3343,7 @@ body {
 }
 .js .cd-h-timeline__navigation--inactive:hover {
   border-color: hsl(0, 0%, 87.3%);
-  border-color: hsl(
-    var(--cd-color-3-h),
-    var(--cd-color-3-s),
-    calc(var(--cd-color-3-l) * 0.9)
-  );
+  border-color: hsl(225.3, 81.8%, 56.9%)
 }
 .js .cd-h-timeline__events {
   position: relative;

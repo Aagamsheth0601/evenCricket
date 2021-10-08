@@ -81,6 +81,15 @@
         a {
             text-decoration: none;
         }
+
+        .js .cd-h-timeline__date--selected::after {
+            background-color: hsl(209, 100%, 50.6%);
+            border-color: hsl(225.3, 81.8%, 56.9%);
+        }
+
+  
+
+
     </style>
 
     <br><br>
@@ -142,10 +151,9 @@
             </div> <!-- .cd-h-timeline__dates -->
 
             <ul>
-                <li style="color: black;"><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">
-                        < </a>
+                <li style="color: black;"><a href="#0" class="previous cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive"><h1 style="font-size:35px;margin-top:-5px;margin-left:8px;color: hsl(209, 100%, 50.6%);">></h1></a>
                 </li>
-                <li style="color: black;"><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">></a>
+                <li style="color: black;"><a href="#0" class="next cd-h-timeline__navigation cd-h-timeline__navigation--next"><h1 style="font-size:35px;margin-top:-5px;margin-left:8px;color: hsl(209, 100%, 50.6%);">></h1></a>
                 </li>
                 <!-- <li><a href="#" class="previous round" class="previous round text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">&#8249;</a></li> -->
                 <!-- <li> <a href="#" class="next round" class="next round text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">&#8250;</a></li> -->
@@ -230,18 +238,18 @@
                                                             </h3>
                                                         </div>
                                                         <div class="vs-box col-sm-2">
-                                                            <h4>vs</h4>
+                                                            <h4 style="margin-top:25px;">vs</h4>
                                                         </div>
                                                         <div class="col-sm-5">
                                                             <div class="tg-teamlogo2" style="display: flex; justify-content: center;">
                                                                 <img src="<?php echo $rowteam2[1]; ?>" alt="image description" class="img">
                                                             </div>
-                                                            <h3 style="font-size: 1.2rem;font-weight:bold">
+                                                            <h3 style="font-size: 1.2rem;font-weight:bold;margin-top:30px;">
                                                                 <?php echo $rowteam2[0]; ?>
                                                             </h3>
                                                         </div>
                                                     </div>
-                                                    <div class="tg-matchhover text-center" style="height: 100%;padding:15px;">
+                                                    <div class="tg-matchhover text-center" style="height: 100%;padding:15px;font-weight:bold;">
                                                         <div>
                                                             <?php echo 'Date : ' .
                                                                 date(
