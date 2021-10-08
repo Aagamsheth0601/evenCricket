@@ -233,10 +233,10 @@
                                     $flag = $row2['flag'];
                                 }
                             }
-                            ?>
+                    ?>
                             <article class="point-row <?php
-                            //echo $keyword;
-                            ?>" id='<?php echo $count; ?>'>
+                                                        //echo $keyword;
+                                                        ?>" id='<?php echo $count; ?>'>
                                 <ul style="text-align:center;">
                                     <li style="text-align:left;font-size:15px"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
                                             <em><?php echo $team; ?></em>
@@ -500,7 +500,7 @@
                     }
 
                     .control-icon {
-                        fill: rebeccapurple;
+                        fill: #3763eb;
                         transition: 0.3s ease;
                         pointer-events: none;
                     }
@@ -522,7 +522,8 @@
 
 
                 <!-- ===================== FAQ Start ========================== -->
-                <h2>Frequently Asked Questions</h2>
+                <br><br>
+                <h2 style="font-weight:bold">Frequently Asked Questions</h2>
 
                 <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
                     <svg xmlns="http://www.w3.org/2000/svg">
@@ -563,7 +564,7 @@
                     </summary>
                     <p>We are a page that keeps you updated with the latest news, scores, and updates from the upcoming T20 Cricket World Cup.</p>
                 </details>
-                
+
                 <details>
                     <summary>
                         Which social media platforms are we on?
@@ -576,7 +577,7 @@
                     </summary>
                     <p>Currently we are only on Instagram and Twitter but we do plan to expand. By that time do follow these pages!</p>
                 </details>
-                
+
                 <details style="margin-bottom: 20px;">
 
                     <summary>
@@ -643,7 +644,7 @@
     <section class=" subscribe-section pt-70 pb-70 img-bg" style="background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6">
+                <div class="col-xl-6 col-lg-6" style="height: 150px;">
                     <div class="section-title mb-30">
                         <span class="text-white wow fadeInDown" data-wow-delay=".2s"></span>
                         <h2 class="text-white mb-40 wow fadeInUp" data-wow-delay=".4s">
@@ -651,7 +652,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6">
+                <div class=" col-xl-6 col-lg-6">
                     <form action="#" class="subscribe-form wow fadeInRight" data-wow-delay=".4s">
                         <input type="text" name="subs-email" id="subs-email" placeholder="Your Email" />
                         <button type="submit">
@@ -666,36 +667,57 @@
 
     <!-- ========================= footer start ========================= -->
     <footer class="footer pt-100" style="background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #2c3e50 60%);">
+
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="footer-widget mb-60 wow fadeInLeft" data-wow-delay=".2s">
                         <a href="index.html" class="logo mb-30"><img src="assets/img/ec1-removebg-preview.png" /></a>
-                        
+                        <p>Copyright 2021 by Even Cricket. All Rights Reserved.</p>
+
                     </div>
                 </div>
                 <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
                     <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".4s">
-                        <h4 style="color: white;">Quick Link</h4>
+                        <h4 style="color: white;">Quick Links</h4>
                         <ul class="footer-links">
                             <li>
-                                <a href="javascript:void(0)">Home</a>
+                                <a href="http://localhost/evencricket/index.php">Home</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">About Us</a>
+                                <a href="http://localhost/evenCricket/About%20EC/aboutEC.html">About Us</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">Contact</a>
+                                <a href="http://localhost/evenCricket/About%20EC/aboutEC.html">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="footer-widget mb-60 wow fadeInRight" data-wow-delay=".8s">
-                        <h4 style="color: white;">Contact</h4>
+                        <h4 style="color: white;padding-left:10px">Key Points</h4>
                         <ul class="footer-contact">
                             <li>
-                                <p>evencricket@gmail.com</p>
+                                <p>Live updates</p>
+                            </li>
+                            <li>
+                                <p>Use of own API</p>
+                            </li>
+                            <li>
+                                <p>Latest News</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="footer-widget mb-60 wow fadeInRight" data-wow-delay=".8s">
+                        <h4 style="color: white;padding-left:10px">Contact</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <a href="mailto: abc@example.com">
+                                    <p>evencricket@gmail.com</p>
+                                </a>
+
                             </li>
                             <li>
                                 <p>Mumbai, India.</p>
@@ -725,6 +747,7 @@
                             </ul>
                         </div>
                     </div>
+
                     <div class="col-md-6">
                         <p style="color: white;" class="wow fadeInUp" data-wow-delay="0.2s">
 
