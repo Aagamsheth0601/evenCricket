@@ -88,7 +88,7 @@
     <section>
         <div class="row">
             <!-- ===================== Left Side Start ========================== -->
-            <div class="col-xl-9 col-lg-8" style="border-right:1px solid rgb(128, 131, 240);padding:0px;">
+            <div class="col-xl-9 col-lg-8" style="border-right:1px solid grey;padding:0px;">
                 <!-- ===================== News Start ========================== -->
                 <section id="news">
                     <!-- <div class="section-title text-center mb-55">
@@ -335,7 +335,7 @@
                                                 <div class="pricing_row_title">Dubai International Stadium</div>
                                             </div>
                                             <figure>
-                                                The capital of the Emirate with the same name, Dubai is known for its .....
+                                                The Dubai Cricket Stadium is the crown jewel of Dubai Sports City, with a capacity of 25,000 seats. It is considered one of the largest and most spectacular cricket stadiums in the city.
                                             </figure>
 
                                             <div class="pricing-footer">
@@ -358,8 +358,8 @@
                                                 <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px;">Sharjah Stadium</div>
                                             </div>
                                             <figure>
-                                                The United Arab Emirates’ third most populous city, Sharjah is the capital
-                                                of .....
+
+                                                The Sharjah Cricket Stadium is a world-class venue, boasting a capacity of 27,000 people.It holds the record for the most ODIs hosted in a venue with 236 ODIs up to 19 February 2018.
                                             </figure>
                                             <div class="pricing-footer">
                                                 <div class="gem-button-container gem-button-position-center"><a href="https://www.t20worldcup.com/venues/104/sharjah-stadium/city" target="_blank" class="gem-button gem-purpel">Read Article</a></div>
@@ -382,8 +382,9 @@
                                             <div class="pricing-row-title">
                                                 <div class="pricing_row_title">Oman Cricket Academy Ground</div>
                                             </div>
-                                            <figure>Late Sultan Qaboos bin Said, the Oman Cricket Ground is the jewel .....
-                                            </figure>
+                                            <figure>Opened in 2012,the Oman Cricket Academy Ground is the jewel in the crown of Omani Cricket.
+
+                                                Holding official ICC Test accreditation, the ground has so far hosted 30 T20Is, as well as four ODIs as part of Cricket World Cup League 2. </figure>
                                             <div class="pricing-footer">
                                                 <div class="gem-button-container gem-button-position-center">
                                                     <a href="https://www.t20worldcup.com/venues/588/oman-cricket-academy-ground/venue" target="_blank" class="gem-button gem-orange">Read Article</a>
@@ -405,8 +406,7 @@
                                             <div class="pricing-row-title">
                                                 <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px;">Sheikh Zayed Stadium</div>
                                             </div>
-                                            <figure>The capital of the United Arab Emirates, Abu Dhabi is the country’s
-                                                second .....</figure>
+                                            <figure>The ground is picturesque with grass covered mounds on either side of the wicket, the open topped North End Stand and the Members Pavilion. It can hold 20,000 people.The stadium has floodlights facilities and is a newer venue in Sharjah.</figure>
                                             <div class="pricing-footer">
                                                 <div class="gem-button-container gem-button-position-center"><a href="https://www.t20worldcup.com/venues/102/sheikh-zayed-stadium/city" target="_blank" class="gem-button gem-yellow">Read Article</a></div>
                                             </div>
@@ -492,7 +492,8 @@
                         position: absolute;
                         top: 0;
                         left: 0;
-                        box-shadow: 0 0 0 5px rebeccapurple;
+                        box-shadow: 0 0 0 5px #3763eb;
+
                     }
 
                     summary::-webkit-details-marker {
@@ -500,7 +501,7 @@
                     }
 
                     .control-icon {
-                        fill: #3763eb;
+                        fill: black;
                         transition: 0.3s ease;
                         pointer-events: none;
                     }
@@ -539,7 +540,7 @@
                 </div>
 
                 <details>
-                    <summary>
+                    <summary style="font-weight: bold;">
                         Who are we?
                         <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
@@ -553,7 +554,7 @@
 
                 <details>
 
-                    <summary>
+                    <summary style="font-weight: bold;">
                         What do we do?
                         <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
@@ -566,7 +567,7 @@
                 </details>
 
                 <details>
-                    <summary>
+                    <summary style="font-weight: bold;">
                         Which social media platforms are we on?
                         <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
@@ -580,7 +581,7 @@
 
                 <details style="margin-bottom: 20px;">
 
-                    <summary>
+                    <summary style="font-weight: bold;">
                         What if we want to ask/suggest anything related to the website?
                         <svg class="control-icon control-icon-expand" width="24" height="18" role="presentation">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
@@ -592,7 +593,9 @@
                     <p>You can definitely contact any of us. We are always open to doubts and suggestions.</p>
                 </details>
                 <!-- ===================== FAQ End ========================== -->
+                <br><br>
             </div>
+
             <!-- ===================== Left Side End ========================== -->
 
             <!-- ===================== Right Side Start ========================== -->
@@ -637,7 +640,7 @@
     <!-- ========================= Main end ========================= -->
 
     <!-- ========================= Spacer ========================= -->
-    <div style="height:150px;"></div>
+    <div style="height:90px;"></div>
     <!-- ========================= Spacer ========================= -->
 
     <!-- ========================= subscribe-section start ========================= -->
