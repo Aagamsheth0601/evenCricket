@@ -4,162 +4,96 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  $(document).ready(function () {
-    $("#navbar").load("navbar.html");
-  });
+	$(document).ready(function () {
+		$("#navbar").load("navbar.html");
+	});
 </script>
 <link rel="stylesheet" href="./aboutEC.css">
-<body>
-  
-  <header class="about-menu__fixed-container">
-    <nav
-      class="about-menu"
-      data-script="icc-about_main-menu"
-      data-widget="main-menu"
-    >
-      <div class="about-menu__top-bar js-top-bar">
-        <a href="/about" class="about-menu__branding">
-          <div class="icn icn-logo-icc-vertical"></div>
-          <div class="about-menu__branding-text">About EC</div>
-        </a>
-        <div role="button" class="about-menu__button js-menu-button">
-          <span class="about-menu__button-text about-menu__button-text--open"
-            >Menu</span
-          >
-          <span class="about-menu__button-text about-menu__button-text--close"
-            >Close</span
-          >
-          <div class="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <ul class="about-menu__list js-menu-list" role="navigation">
-        <div tabindex="0" class="about-menu__item js-menu-item">
-          <div class="about-menu__primary">
-            About<svg class="icon link-arrow">
-              
-              </li>
-            </ul>
-          </li>
-        </div>
-        <div tabindex="0" class="about-menu__item js-menu-item">
-          <div class="about-menu__primary">
-            Our Team<svg class="icon link-arrow">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-chevron-right"
-              ></use></svg
-            ><svg class="icon link-circle">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-circle"
-              ></use>
-            </svg>
-          </div>
-          
-            </ul>
-          </li>
-        </div>
-        <div tabindex="0" class="about-menu__item js-menu-item">
-          <div class="about-menu__primary">
-            Cricket<svg class="icon link-arrow">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-chevron-right"
-              ></use></svg
-            ><svg class="icon link-circle">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-circle"
-              ></use>
-            </svg>
-          </div>
-          
-            </ul>
-          </li>
-        </div>
-       
-         
-            </ul>
-          </li>
-        </div>
-        <div tabindex="0" class="about-menu__item js-menu-item">
-          <div class="about-menu__primary">
-            Contact Us<svg class="icon link-arrow">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-chevron-right"
-              ></use></svg
-            ><svg class="icon link-circle">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-circle"
-              ></use>
-            </svg>
-          </div>
-          <li class="about-menu__secondary">
-            <h5 class="about-menu__secondary__title">Contact Us</h5>
-            <ul class="about-menu__secondary__list">
-              <li class="about-menu__secondary__item">
-                <a
-                  href="/about/contact-us/icc-contact-details"
-                  class="about-menu__secondary__link"
-                >
-                  <h6 class="about-menu__secondary__link-title">
-                    Contact Details
-                  </h6>
-                </a>
-              </li>
-              <li class="about-menu__secondary__item">
-                <a
-                  href="/about/contact-us/social-media"
-                  class="about-menu__secondary__link"
-                >
-                  <h6 class="about-menu__secondary__link-title">
-                    Social Media
-                  </h6>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </div>
-        <li class="about-menu__home u-hide-tablet">
-          <a href="http://localhost/evenCricket/index.php" class="about-menu__home-link btn"
-            >EC Website<svg class="icon">
-              <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-link-external"
-              ></use></svg
-          ></a>
-        </li>
-      </ul>
-      <div class="about-menu__bottom-bar">
-        <a href="http://localhost/evenCricket/index.php" class="about-menu__site-link btn"
-          ><span class="icn icn-logo-icc-mob"></span>The Official EC
-          Website<svg class="icon">
-            <use
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xlink:href="/resources/prod/v8.20.0/i/svg-output/icons.svg#icn-link-external"
-            ></use></svg
-        ></a>
-      </div>
-    </nav>
-  </header>
 
-  <main id="main-content" tabindex="0">
-    <div class="hero-promo">
-      <picture class="hero-promo__bg">
-        <source
-          srcset="
+<body>
+
+
+
+	<header class="about-menu__fixed-container">
+		<nav class="about-menu" data-script="icc-about_main-menu" data-widget="main-menu">
+			<div class="about-menu__top-bar js-top-bar">
+				<a href="#about" class="about-menu__branding">
+					<div class="icn icn-logo-icc-vertical"></div>
+					<div class="about-menu__branding-text">About EC</div>
+				</a>
+				<div role="button" class="about-menu__button js-menu-button">
+					<span class="about-menu__button-text about-menu__button-text--open">Menu</span>
+					<span class="about-menu__button-text about-menu__button-text--close">Close</span>
+					<div class="menu-button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<ul class="about-menu__list js-menu-list" role="navigation">
+				<div tabindex="0" class="about-menu__item js-menu-item">
+					<a href="#about" style='text-decoration: none;'>
+						<div class="about-menu__primary">
+							About
+						</div>
+					</a>
+				</div>
+			</ul>
+			<ul class="about-menu__list js-menu-list" role="navigation">
+				<div tabindex="0" class="about-menu__item js-menu-item">
+					<a href="#team" style='text-decoration: none;'>
+						<div class="about-menu__primary">
+							Our Team
+						</div>
+					</a>
+				</div>
+			</ul>
+			<ul class="about-menu__list js-menu-list" role="navigation">
+				<div tabindex="0" class="about-menu__item js-menu-item">
+					<a href="#" style='text-decoration: none;'>
+						<div class="about-menu__primary">
+							Cricket
+						</div>
+					</a>
+				</div>
+			</ul>
+			<div tabindex="0" class="about-menu__item js-menu-item">
+				<div class="about-menu__primary">
+					Contact Us
+				</div>
+				<li class="about-menu__secondary">
+					<h5 class="about-menu__secondary__title">Contact Us</h5>
+					<ul class="about-menu__secondary__list">
+						<li class="about-menu__secondary__item">
+							<a href="#" class="about-menu__secondary__link">
+								<h6 class="about-menu__secondary__link-title">
+									Contact Details
+								</h6>
+							</a>
+						</li>
+						<li class="about-menu__secondary__item">
+							<a href="../SocialMedia/social.html" class="about-menu__secondary__link">
+								<h6 class="about-menu__secondary__link-title">
+									Social Media
+								</h6>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</div>
+		</nav>
+	</header>
+
+
+	<main id="main-content" tabindex="0">
+		<div class="hero-promo">
+			<picture class="hero-promo__bg">
+				<source srcset="
             https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/30/3fb0f9d3-8806-45f9-907d-bafc85572a96/GettyImages-463485384_Cropped.jpg,
             https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/30/16dc29d7-3071-4e99-a024-6cfdf8436caf/GettyImages-463485384_Cropped.jpg 2x
-          "
-          media="(max-width: 640px)"
-        />
-<!-- 
+          " media="(max-width: 640px)" />
+				<!-- 
         <source
           srcset="
             https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/30/44780aa2-2b6d-4048-897c-6606762b3d38/GettyImages-463485384_Cropped.jpg,
@@ -167,215 +101,144 @@
           "
         /> -->
 
-        <img
-          src="https://cdn.shopify.com/s/files/1/0033/2768/8813/articles/stadiums.jpg?v=1584443925"
-          alt="EVEN CRICKET" height="500px"
-        />
-      </picture>
-      <div class="hero-promo__heading">
-        <h2 class="hero-promo__title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">EVEN CRICKET</h2>
-      </div>
-    </div>
+				<img src="https://cdn.shopify.com/s/files/1/0033/2768/8813/articles/stadiums.jpg?v=1584443925"
+					alt="EVEN CRICKET" height="500px" />
+			</picture>
+			<div class="hero-promo__heading">
+				<h2 class="hero-promo__title" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">EVEN
+					CRICKET</h2>
+			</div>
+		</div>
 
-    <div class="wrapper">
-      <div class="col-12">
-        <article
-          class="article article--basic article--no-header"
-          data-tracker-action="VIEW"
-          data-tracker-type="TEXT"
-          data-tracker-id="187083"
-          data-tracker-status="true"
-        >
-        <br><br>
-          <header class="article__header">
-            <h3 class="article__title">Introduction</h3>
-          </header>
-          <div class="article__summary"></div>
-          <div class="article__content">
-            <p>
-            Hello Everyone! This is a website that keeps you updated with the latest news, scores and many more things from the upcoming T20worldcup2021 . We are a team
-            young cricket enthusiasts with a blazing desire for the game. We are delighted to present our website in front of you all.
-            Hope you like our page and stay tuned for more updates.
-            </p>
-            <!-- <p>
-              The ICC presides over the ICC Code of Conduct, playing conditions,
-              the Decision Review System and other ICC regulations. The ICC also
-              appoints all match officials that officiate at all sanctioned
-              international matches. Through the Anti-Corruption Unit it
-              coordinates action against corruption and match fixing.
-            </p> -->
-          </div>
-        </article>
+		<div class="wrapper">
+			<div class="col-12">
+				<article class="article article--basic article--no-header" data-tracker-action="VIEW" id='about'
+					data-tracker-type="TEXT" data-tracker-id="187083" data-tracker-status="true">
+					<br><br>
+					<header class="article__header">
+						<h3 class="article__title">Introduction</h3>
+					</header>
+					<div class="article__summary"></div>
+					<div class="article__content">
+						<p>
+							Hello Everyone! This is a website that keeps you updated with the latest news, scores and
+							many more things from the upcoming T20worldcup2021 . We are a team
+							young cricket enthusiasts with a blazing desire for the game. We are delighted to present
+							our website in front of you all.
+							Hope you like our page and stay tuned for more updates.
+						</p>
+					</div>
+				</article>
+				<div id='team'>
+					<div class="promo promo--full">
+						<div class="promo__image-container">
+							<picture class="promo__image">
+								<source srcset="
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/16/c97d2ed4-9c5d-4743-8010-78b9b70f2af1/GettyImages-518364436.jpg,
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/16/b31c18e8-990a-472c-9fdb-7898b04333de/GettyImages-518364436.jpg 2x
+	" media="(max-width: 500px)" />
 
-        <div class="promo promo--full">
-          <div class="promo__image-container">
-            <picture class="promo__image">
-              <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/16/c97d2ed4-9c5d-4743-8010-78b9b70f2af1/GettyImages-518364436.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/16/b31c18e8-990a-472c-9fdb-7898b04333de/GettyImages-518364436.jpg 2x
-                "
-                media="(max-width: 500px)"
-              />
+								<img src="../assets/img/123.png" />
+							</picture>
+						</div>
+						<div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
+							<h3 class="promo__title">Aagam Sheth</h3>
+							<p class="promo__text">
+								Learn more about the Vision, Values, Strategy and Structure of the
+								International Cricket Council, whilst you can discover more about
+								the History of the ICC and the Cricket for Good programme.
+								Learn more about the Vision, Values, Strategy and Structure of the
+								International Cricket Council, whilst you can discover more about
+								the History of the ICC and the Cricket for Good programme.
+								Learn more about the Vision, Values, Strategy and Structure of the
+								International Cricket Council, whilst you can discover more about
+								the History of the ICC and the Cricket for Good programme.
+							</p>
+							<!-- <a href="/about/the-icc" class="promo__cta btn">Learn More</a> -->
+						</div>
+					</div>
 
-              <!-- <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/16/598d9430-3682-469e-ae2a-d81b340003dc/GettyImages-518364436.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/16/23142b29-c782-4992-a037-1852dfa2e777/GettyImages-518364436.jpg 2x
-                "
-              /> -->
+					<div class="promo promo--full">
+						<div class="promo__image-container">
+							<picture class="promo__image">
+								<source srcset="
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2016/12/11/1c43cd1d-c3f1-4bd6-ab22-b4d47605e137/GettyImages-467968722.jpg,
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2016/12/11/26e42ee7-c036-44f9-b8b0-475c8c8b289e/GettyImages-467968722.jpg 2x
+	" media="(max-width: 500px)" />
 
-              <img
-                src="../assets/img/123.png"
-                
-                
-              />
-            </picture>
-          </div>
-          <div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
-            <h3 class="promo__title">Aagam Sheth</h3>
-            <p class="promo__text">
-              Learn more about the Vision, Values, Strategy and Structure of the
-              International Cricket Council, whilst you can discover more about
-              the History of the ICC and the Cricket for Good programme.
-              Learn more about the Vision, Values, Strategy and Structure of the
-              International Cricket Council, whilst you can discover more about
-              the History of the ICC and the Cricket for Good programme.
-              Learn more about the Vision, Values, Strategy and Structure of the
-              International Cricket Council, whilst you can discover more about
-              the History of the ICC and the Cricket for Good programme.
-            </p>
-            <!-- <a href="/about/the-icc" class="promo__cta btn">Learn More</a> -->
-          </div>
-        </div>
+								<img src="..\assets\img\about\WhatsApp Image 2021-06-30 .jpeg" alt="Cricket"
+									class="poly-object-fit" />
+							</picture>
+						</div>
+						<div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
+							<h3 class="promo__title">Shubham Shah</h3>
+							<p class="promo__text">
+								The ICC has over 100 members drawn from 5 regions. Explore the
+								global cricket map to learn more about all of our members and the
+								growth of the game in these countries across the world.
+							</p>
+							<!-- <a href="/about/members" class="promo__cta btn">View Members</a> -->
+						</div>
+					</div>
 
-        <div class="promo promo--full">
-          <div class="promo__image-container">
-            <picture class="promo__image">
-              <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2016/12/11/1c43cd1d-c3f1-4bd6-ab22-b4d47605e137/GettyImages-467968722.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2016/12/11/26e42ee7-c036-44f9-b8b0-475c8c8b289e/GettyImages-467968722.jpg 2x
-                "
-                media="(max-width: 500px)"
-              />
+					<div class="promo promo--full">
+						<div class="promo__image-container">
+							<picture class="promo__image">
+								<source srcset="
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/17/a974619b-aa2e-41af-806d-2808e33e843c/GettyImages-516914122.jpg,
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/17/04796ea4-ac99-4fd1-9a55-a44b9e2169cd/GettyImages-516914122.jpg 2x
+	" media="(max-width: 500px)" />
+								<img src="..\assets\img\about\jagjot.jpeg" alt="Cricket" class="poly-object-fit" />
+							</picture>
+						</div>
+						<div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
+							<h3 class="promo__title">Jagjot Singh</h3>
+							<p class="promo__text">
+								The ICC will lead the continued drive towards more competitive,
+								entertaining and meaningful cricket for players and fans. Learn
+								more about the history of the game, the three formats of cricket
+								and our Match Officials.
+							</p>
+						</div>
+					</div>
 
-              <!-- <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2016/12/11/bd697cf4-9a2a-4418-bea8-7f46d3d54bc4/GettyImages-467968722.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2016/12/11/ca09ea66-8084-461c-b149-6d6d702200a1/GettyImages-467968722.jpg 2x
-                "
-              /> -->
+					<div class="promo promo--full">
+						<div class="promo__image-container">
+							<picture class="promo__image">
+								<source srcset="
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/1d7724c5-f08d-4041-b7ed-8edeadabdddd/Development.jpg,
+	  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/e9bc8620-e0de-4e63-ad39-e0302ade030d/Development.jpg 2x
+	" media="(max-width: 500px)" />
+								<img src="https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/a36612bc-a430-4465-8927-5bdd9cf2b11e/Development.jpg"
+									alt="Development" class="poly-object-fit" />
+							</picture>
+						</div>
+						<div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
+							<h3 class="promo__title">Dhiraj Shetty</h3>
+							<p class="promo__text">
+								The ICC will grow the sport by creating more opportunities for
+								more people and nations to enjoy cricket and increase the
+								competitiveness of international cricket at all levels. Discover
+								the ‘What is Cricket?’ series of videos and learn more about the
+								ICC Development Programme.
+							</p>
+							<!-- <a href="/about/development" class="promo__cta btn">Learn More</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
 
-              <img
-                src="..\assets\img\about\WhatsApp Image 2021-06-30 .jpeg"
-                alt="Cricket"
-                class="poly-object-fit"
-              />
-            </picture>
-          </div>
-          <
-          <div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
-            <h3 class="promo__title">Shubham Shah</h3>
-            <p class="promo__text">
-              The ICC has over 100 members drawn from 5 regions. Explore the
-              global cricket map to learn more about all of our members and the
-              growth of the game in these countries across the world.
-            </p>
-            <!-- <a href="/about/members" class="promo__cta btn">View Members</a> -->
-          </div>
-        </div>
+	<footer class="footer u-no-padding" role="contentinfo"></footer>
 
-        <div class="promo promo--full">
-          <div class="promo__image-container">
-            <picture class="promo__image">
-              <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/17/a974619b-aa2e-41af-806d-2808e33e843c/GettyImages-516914122.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/17/04796ea4-ac99-4fd1-9a55-a44b9e2169cd/GettyImages-516914122.jpg 2x
-                "
-                media="(max-width: 500px)"
-              />
+	<script src="/resources/prod/v8.20.0/scripts/vendors.js"></script>
+	<script src="/resources/prod/v8.20.0/scripts/client.js"></script>
 
-              <!-- <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/17/55016242-2f08-46f4-81cd-8db49a13aa6c/GettyImages-516914122.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/17/7e6b5dfb-2362-46e7-a6f2-0ac8d9eb2dd7/GettyImages-516914122.jpg 2x
-                "
-              /> -->
+	<!--[if IE]> -->
+	<script type="text/javascript">
+		svg4everybody();
+	</script>
+	<!-- <![endif]-->
 
-              <img
-                src="..\assets\img\about\jagjot.jpeg"
-                alt="Cricket"
-                class="poly-object-fit"
-              />
-            </picture>
-          </div>
-          <div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
-            <h3 class="promo__title">Jagjot Singh</h3>
-            <p class="promo__text">
-              The ICC will lead the continued drive towards more competitive,
-              entertaining and meaningful cricket for players and fans. Learn
-              more about the history of the game, the three formats of cricket
-              and our Match Officials.
-            </p>
-            <!-- <a href="/about/cricket" class="promo__cta btn">Learn More</a> -->
-          </div>
-        </div>
-
-        <div class="promo promo--full">
-          <div class="promo__image-container">
-            <picture class="promo__image">
-              <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/1d7724c5-f08d-4041-b7ed-8edeadabdddd/Development.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/e9bc8620-e0de-4e63-ad39-e0302ade030d/Development.jpg 2x
-                "
-                media="(max-width: 500px)"
-              />
-
-              <!-- <source
-                srcset="
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/a36612bc-a430-4465-8927-5bdd9cf2b11e/Development.jpg,
-                  https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/6189c5b4-af2b-4b51-a0b0-ef6195028312/Development.jpg 2x
-                "
-              /> -->
-
-              <img
-                src="https://resources.pulse.icc-cricket.com/ICC/photo/2017/01/15/a36612bc-a430-4465-8927-5bdd9cf2b11e/Development.jpg"
-                alt="Development"
-                class="poly-object-fit"
-              />
-            </picture>
-          </div>
-          <div style="height:55vh;" class="promo__text-container promo__text-container--with-image">
-            <h3 class="promo__title">Dhiraj Shetty</h3>
-            <p class="promo__text">
-              The ICC will grow the sport by creating more opportunities for
-              more people and nations to enjoy cricket and increase the
-              competitiveness of international cricket at all levels. Discover
-              the ‘What is Cricket?’ series of videos and learn more about the
-              ICC Development Programme.
-            </p>
-            <!-- <a href="/about/development" class="promo__cta btn">Learn More</a> -->
-          </div>
-        </div>
-    </div>
-  </main>
-
-  <footer class="footer u-no-padding" role="contentinfo"></footer>
-
-  <script src="/resources/prod/v8.20.0/scripts/vendors.js"></script>
-  <script src="/resources/prod/v8.20.0/scripts/client.js"></script>
-
-  <!--[if IE]> -->
-  <script type="text/javascript">
-    svg4everybody();
-  </script>
-  <!-- <![endif]-->
-
-  <script
-    type="text/javascript"
-    src="/resources/prod/v8.20.0/widgets/icc-about_main-menu.min.js"
-  ></script>
+	<script type="text/javascript" src="/resources/prod/v8.20.0/widgets/icc-about_main-menu.min.js"></script>
 </body>
