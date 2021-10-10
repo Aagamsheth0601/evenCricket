@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 06, 2021 at 10:05 AM
+-- Generation Time: Oct 10, 2021 at 01:56 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -338,56 +338,59 @@ CREATE TABLE `schedule` (
   `team_2` int(100) NOT NULL,
   `venue` text NOT NULL,
   `time` time(6) NOT NULL,
-  `date` date NOT NULL
+  `date` date NOT NULL,
+  `day` varchar(100) NOT NULL DEFAULT '17 Oct',
+  `status` varchar(100) NOT NULL DEFAULT 'pending',
+  `result` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `schedule`
 --
 
-INSERT INTO `schedule` (`id`, `team_1`, `team_2`, `venue`, `time`, `date`) VALUES
-(1, 13, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-17'),
-(2, 10, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-17'),
-(3, 12, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-18'),
-(4, 6, 15, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-18'),
-(5, 11, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-19'),
-(6, 10, 13, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-19'),
-(8, 15, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-20'),
-(9, 6, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-20'),
-(10, 10, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-21'),
-(11, 13, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-21'),
-(12, 15, 12, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-22'),
-(13, 6, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-22'),
-(14, 3, 7, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-23'),
-(15, 5, 9, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-23'),
-(18, 6, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.948000', '2021-10-24'),
-(19, 1, 4, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-24'),
-(20, 8, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-25'),
-(21, 7, 9, 'Dubai International Stadium, Dubai', '15:30:00.000000', '2021-10-26'),
-(22, 4, 2, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-26'),
-(23, 5, 6, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-27'),
-(24, 11, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-27'),
-(25, 3, 12, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-28'),
-(26, 9, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-29'),
-(27, 8, 4, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-29'),
-(28, 7, 6, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-30'),
-(29, 5, 3, 'Dubai', '19:30:00.000000', '2021-10-30'),
-(30, 8, 11, 'Zayed Cricket Stadium,Abu Dhabi', '15:30:00.000000', '2021-10-31'),
-(31, 1, 2, 'Dubai', '19:30:00.000000', '2021-10-31'),
-(32, 5, 12, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-01'),
-(33, 7, 11, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-02'),
-(34, 4, 6, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-02'),
-(35, 2, 11, 'Dubai', '15:30:00.000000', '2021-11-03'),
-(36, 1, 8, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-03'),
-(37, 3, 6, 'Dubai', '15:30:00.000000', '2021-11-04'),
-(38, 9, 11, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-04'),
-(39, 2, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-11-05'),
-(40, 1, 6, 'Dubai', '19:30:00.000000', '2021-11-05'),
-(41, 3, 9, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-06'),
-(42, 5, 7, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-06'),
-(43, 2, 8, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-07'),
-(44, 4, 6, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-07'),
-(45, 1, 11, 'Dubai', '19:30:00.000000', '2021-11-08');
+INSERT INTO `schedule` (`id`, `team_1`, `team_2`, `venue`, `time`, `date`, `day`, `status`, `result`) VALUES
+(1, 13, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-17', '17 Oct', 'pending', ''),
+(2, 10, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-17', '17 Oct', 'pending', ''),
+(3, 12, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-18', '18 Oct', 'pending', ''),
+(4, 6, 15, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-18', '18 Oct', 'pending', ''),
+(5, 11, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-19', '19 Oct', 'pending', ''),
+(6, 10, 13, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-19', '19 Oct', 'pending', ''),
+(8, 15, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-20', '20 Oct', 'pending', ''),
+(9, 6, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-20', '20 Oct', 'pending', ''),
+(10, 10, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-21', '21 Oct', 'pending', ''),
+(11, 13, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-21', '21 Oct', 'pending', ''),
+(12, 15, 12, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-22', '22 Oct', 'pending', ''),
+(13, 6, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-22', '22 Oct', 'pending', ''),
+(14, 3, 7, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-23', '23 Oct', 'pending', ''),
+(15, 5, 9, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-23', '23 Oct', 'pending', ''),
+(18, 6, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.948000', '2021-10-24', '24 Oct', 'pending', ''),
+(19, 1, 4, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-24', '24 Oct', 'pending', ''),
+(20, 8, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-25', '25 Oct', 'pending', ''),
+(21, 7, 9, 'Dubai International Stadium, Dubai', '15:30:00.000000', '2021-10-26', '26 Oct', 'pending', ''),
+(22, 4, 2, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-26', '26 Oct', 'pending', ''),
+(23, 5, 6, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-27', '27 Oct', 'pending', ''),
+(24, 11, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-27', '27 Oct', 'pending', ''),
+(25, 3, 12, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-28', '28 Oct', 'pending', ''),
+(26, 9, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-29', '29 Oct', 'pending', ''),
+(27, 8, 4, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-29', '29 Oct', 'pending', ''),
+(28, 7, 6, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-30', '30 Oct', 'pending', ''),
+(29, 5, 3, 'Dubai', '19:30:00.000000', '2021-10-30', '30 Oct', 'pending', ''),
+(30, 8, 11, 'Zayed Cricket Stadium,Abu Dhabi', '15:30:00.000000', '2021-10-31', '31 Oct', 'pending', ''),
+(31, 1, 2, 'Dubai', '19:30:00.000000', '2021-10-31', '31 Oct', 'pending', ''),
+(32, 5, 12, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-01', '01 Nov', 'pending', ''),
+(33, 7, 11, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-02', '02 Nov', 'pending', ''),
+(34, 4, 6, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-02', '02 Nov', 'pending', ''),
+(35, 2, 11, 'Dubai', '15:30:00.000000', '2021-11-03', '03 Nov', 'pending', ''),
+(36, 1, 8, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-03', '03 Nov', 'pending', ''),
+(37, 3, 6, 'Dubai', '15:30:00.000000', '2021-11-04', '04 Nov', 'pending', ''),
+(38, 9, 11, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-04', '04 Nov', 'pending', ''),
+(39, 2, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-11-05', '05 Nov', 'pending', ''),
+(40, 1, 6, 'Dubai', '19:30:00.000000', '2021-11-05', '05 Nov', 'pending', ''),
+(41, 3, 9, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-06', '06 Nov', 'pending', ''),
+(42, 5, 7, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-06', '06 Nov', 'pending', ''),
+(43, 2, 8, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-07', '07 Nov', 'pending', ''),
+(44, 4, 6, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-07', '07 Nov', 'pending', ''),
+(45, 1, 11, 'Dubai', '19:30:00.000000', '2021-11-08', '08 Nov', 'pending', '');
 
 -- --------------------------------------------------------
 
