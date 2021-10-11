@@ -293,6 +293,112 @@
                 <!-- venues start -->
 
 
+                <style>
+                    
+
+                    .sharjah .pricing-price {
+                        background-color: #a637ec;
+                        -webkit-box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
+                        -moz-box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
+                        box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
+                    }
+
+                    .strike
+                    {
+                    text-decoration: line-through;
+                        color: #99a9b5;
+                    }
+
+                    .sharjah .pricing_row_title {
+                        color: #a637ec;
+                    }
+
+                    .oman .pricing_row_title {
+                        color: #ee417c;
+                    }
+
+                    .oman .pricing-price {
+                        background-color: #ee417c;
+                        -webkit-box-shadow: 0px 0px 0px 10px rgba(238, 65, 124, 0.31);
+                        -moz-box-shadow: 0px 0px 0px 10px rgba(238, 65, 124, 0.31);
+                        box-shadow: 0px 0px 0px 10px rgba(238, 65, 124, 0.31);
+                    }
+
+                    .sheikh .pricing_row_title {
+                        color: #ff994e;
+                    }
+
+                    .sheikh .pricing-price {
+                        background-color: #ff994e;
+                        -webkit-box-shadow: 0px 0px 0px 10px rgba(255, 153, 78, 0.31);
+                        -moz-box-shadow: 0px 0px 0px 10px rgba(255, 153, 78, 0.31);
+                        box-shadow: 0px 0px 0px 10px rgba(255, 153, 78, 0.31);
+                    }
+
+                    .sharjah .pricing-row:before{
+                        color: #a637ec;
+                    }
+
+                    .oman .pricing-row:before
+                    {
+                    color: #ee417c;
+                    }
+
+                    .sheikh .pricing-row:before
+                    {
+                        color: #ff994e;
+                    }
+
+
+
+
+                    .dubai:hover .pricing-price-wrapper
+                    {
+                        box-shadow: 0px 35px 80px rgba(4, 255, 236, 0.25), 0px 0px 0px rgba(10, 197, 173, 0.33);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -moz-transition: all 0.3s ease-in-out 0s;
+                        -ms-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+
+                    .pricing-column:hover
+                    {
+                    overflow:hidden;
+                    }
+
+                    .sharjah:hover .pricing-price-wrapper
+                    {
+                        box-shadow: 0px 35px 80px rgba(230, 2, 241, 0.34), 0px 0px 0px rgba(21, 21, 20, 0.79);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -moz-transition: all 0.3s ease-in-out 0s;
+                        -ms-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+
+                    .oman:hover .pricing-price-wrapper
+                    {
+                        box-shadow: 0px 35px 80px rgba(255, 4, 166, 0.25), 0px 0px 0px rgba(222, 6, 84, 0.33);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -moz-transition: all 0.3s ease-in-out 0s;
+                        -ms-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+
+                    .sheikh:hover .pricing-price-wrapper
+                    {
+                        box-shadow: 0px 35px 80px rgba(241, 139, 2, 0.34), 0px 0px 0px rgba(21, 21, 20, 0.79);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -moz-transition: all 0.3s ease-in-out 0s;
+                        -ms-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+                </style>
+
+
                 <div style="overflow: hidden;">
                     <div id="mainCoantiner">
                         <!--dust particel-->
@@ -322,7 +428,7 @@
 
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="pricing-column-wrapper" style="width: 320px;margin: auto;">
+                                    <div class="pricing-column-wrapper dubai" style="width: 320px;margin: auto;">
                                         <div class="pricing-column">
                                             <div class="pricing-price-row">
                                                 <div class="pricing-price-wrapper">
@@ -345,7 +451,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="pricing-column-wrapper" style="width: 320px;margin: auto;">
+                                    <div class="pricing-column-wrapper sharjah" style="width: 320px;margin: auto;">
                                         <div class="pricing-column">
                                             <div class="pricing-price-row">
                                                 <div class="pricing-price-wrapper">
@@ -355,7 +461,7 @@
                                                 </div>
                                             </div>
                                             <div class="pricing-row-title">
-                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px; color:#A637EC">Sharjah Stadium</div>
+                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px;">Sharjah Stadium</div>
                                             </div>
                                             <figure>
 
@@ -370,7 +476,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="pricing-column-wrapper" style="width: 320px;margin: auto;">
+                                    <div class="pricing-column-wrapper oman" style="width: 320px;margin: auto;">
                                         <div class="pricing-column">
                                             <div class="pricing-price-row">
                                                 <div class="pricing-price-wrapper">
@@ -380,7 +486,7 @@
                                                 </div>
                                             </div>
                                             <div class="pricing-row-title">
-                                                <div class="pricing_row_title" style="color:#EE417C">Oman Cricket Academy Ground</div>
+                                                <div class="pricing_row_title">Oman Cricket Academy Ground</div>
                                             </div>
                                             <figure>Opened in 2012,the Oman Cricket Academy Ground is the jewel in the crown of Omani Cricket.
 
@@ -394,7 +500,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12">
-                                    <div class="pricing-column-wrapper" style="width: 320px;margin: auto;">
+                                    <div class="pricing-column-wrapper sheikh" style="width: 320px;margin: auto;">
                                         <div class="pricing-column">
                                             <div class="pricing-price-row">
                                                 <div class="pricing-price-wrapper">
@@ -404,7 +510,7 @@
                                                 </div>
                                             </div>
                                             <div class="pricing-row-title">
-                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px; color:#FF994E">Sheikh Zayed Stadium</div>
+                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px;">Sheikh Zayed Stadium</div>
                                             </div>
                                             <figure>The ground is picturesque with grass covered mounds on either side of the wicket, the open topped North End Stand and the Members Pavilion. It can hold 20,000 people.The stadium has floodlights facilities and is a newer venue in Sharjah.</figure>
                                             <div class="pricing-footer">
@@ -590,7 +696,7 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
                         </svg>
                     </summary>
-                    <p>You can definitely contact any of us. We are always open to doubts and suggestions.</p>
+                    <p>You can definitely contact any of us through mail id : evencricket@gmail.com. We are always open to doubts and suggestions.</p>
                 </details>
                 <!-- ===================== FAQ End ========================== -->
                 <br><br>

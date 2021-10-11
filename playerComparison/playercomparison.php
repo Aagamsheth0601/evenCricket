@@ -107,9 +107,11 @@
                             background-color: #3399ff;
                         }
                     </style>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                        <a style="color: white;" href="http://localhost/evenCricket/playerComparison/playercomparison.php"> Reset </a>
-                    </button>
+                    <a style="color: white;" href="http://localhost/evenCricket/playerComparison/playercomparison.php">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                            Reset
+                        </button>
+                    </a>
                     <!-- <button type="button" class="btn btn-secondary"><a style="color: white;" href="http://localhost/evenCricket/player%20comparison/playercomparison.php"> Reset </a></button> -->
                     <td>
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One">Search</button>
