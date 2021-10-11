@@ -355,7 +355,7 @@
                                                 </div>
                                             </div>
                                             <div class="pricing-row-title">
-                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px;">Sharjah Stadium</div>
+                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px; color:#A637EC">Sharjah Stadium</div>
                                             </div>
                                             <figure>
 
@@ -380,7 +380,7 @@
                                                 </div>
                                             </div>
                                             <div class="pricing-row-title">
-                                                <div class="pricing_row_title">Oman Cricket Academy Ground</div>
+                                                <div class="pricing_row_title" style="color:#EE417C">Oman Cricket Academy Ground</div>
                                             </div>
                                             <figure>Opened in 2012,the Oman Cricket Academy Ground is the jewel in the crown of Omani Cricket.
 
@@ -404,7 +404,7 @@
                                                 </div>
                                             </div>
                                             <div class="pricing-row-title">
-                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px;">Sheikh Zayed Stadium</div>
+                                                <div class="pricing_row_title" style="margin-top:10px;padding-bottom: 25px; color:#FF994E">Sheikh Zayed Stadium</div>
                                             </div>
                                             <figure>The ground is picturesque with grass covered mounds on either side of the wicket, the open topped North End Stand and the Members Pavilion. It can hold 20,000 people.The stadium has floodlights facilities and is a newer venue in Sharjah.</figure>
                                             <div class="pricing-footer">
@@ -735,15 +735,15 @@
                     <div class="col-md-6">
                         <div class="footer-social-links">
                             <ul class="d-flex">
-                                <li>
+                                <!-- <li>
                                     <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="https://twitter.com/CricketEven" target="__blank"><i class="lni lni-twitter-filled"></i></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="https://www.instagram.com/evencricket/" target="__blank"><i class="lni lni-instagram-filled"></i></a>
                                 </li>

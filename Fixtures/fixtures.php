@@ -90,9 +90,6 @@
         .js .cd-h-timeline__navigation:hover {
             border-color: black;
         }
-
-
-
     </style>
 
     <br><br>
@@ -107,7 +104,7 @@
                 <div class="cd-h-timeline__line">
                     <ol><b>
                             <?php
-/*$begin = new DateTime('2021-10-17');
+                            /*$begin = new DateTime('2021-10-17');
                             $end = new DateTime('2021-11-08');
 
                             $interval = DateInterval::createFromDateString(
@@ -125,24 +122,23 @@
                             }*/
 
 
-?>
+                            ?>
                             <?php
-                                            $conn = mysqli_connect('localhost', 'root', '', 'evencricket');
-                                            if ($conn == false) {
-                                                die('Error: Cannot connect');
-                                            }
-                                            $sqldate =
-                                                'SELECT distinct day, date FROM schedule';
-                                            $querydate = mysqli_query($conn, $sqldate);
-                                            while ($rowdate = mysqli_fetch_row($querydate)) {
-                                                $date = strtotime($rowdate[1]);
-                                                if ($date == strtotime('2021/10/24')){
-                                                    echo '<br><li><a href="#0" data-date="'.date("Y/m/d"),'" class="cd-h-timeline__date cd-h-timeline__date--selected">'.$rowdate[0],'</a></li>';
-                                                }
-                                                else {
-                                                    echo '<br><li><a href="#0" data-date="'.date("Y/m/d"),'" class="cd-h-timeline__date">'.$rowdate[0],'</a></li>';
-                                                }
-                            /*<!-- <li><a href="#0" data-date="2021/10/18" class="cd-h-timeline__date cd-h-timeline__date--selected">18 Oct</a></li>
+                            $conn = mysqli_connect('localhost', 'root', '', 'evencricket');
+                            if ($conn == false) {
+                                die('Error: Cannot connect');
+                            }
+                            $sqldate =
+                                'SELECT distinct day, date FROM schedule';
+                            $querydate = mysqli_query($conn, $sqldate);
+                            while ($rowdate = mysqli_fetch_row($querydate)) {
+                                $date = strtotime($rowdate[1]);
+                                if ($date == strtotime('2021/10/17')) {
+                                    echo '<br><li><a href="#0" data-date="' . date("Y/m/d"), '" class="cd-h-timeline__date cd-h-timeline__date--selected">' . $rowdate[0], '</a></li>';
+                                } else {
+                                    echo '<br><li><a href="#0" data-date="' . date("Y/m/d"), '" class="cd-h-timeline__date">' . $rowdate[0], '</a></li>';
+                                }
+                                /*<!-- <li><a href="#0" data-date="2021/10/18" class="cd-h-timeline__date cd-h-timeline__date--selected">18 Oct</a></li>
                             <li><a href="#0" data-date="2021/10/19" class="cd-h-timeline__date">19 Oct</a></li>
                             <li><a href="#0" data-date="20/10/2021" class="cd-h-timeline__date">20 Oct</a></li>
                             <li><a href="#0" data-date="21/10/2021" class="cd-h-timeline__date">21 Oct</a></li>
@@ -164,8 +160,7 @@
                             <li><a href="#0" data-date="06/11/2021" class="cd-h-timeline__date">06 Nov</a></li>
                             <li><a href="#0" data-date="07/11/2021" class="cd-h-timeline__date">07 Nov</a></li>
                             <li><a href="#0" data-date="08/11/2021" class="cd-h-timeline__date">08 Nov</a></li> --> */
-                            
-                                            }
+                            }
                             ?>
                         </b>
                     </ol>
@@ -174,9 +169,14 @@
             </div> <!-- .cd-h-timeline__dates -->
 
             <ul>
-                <li style="color: black;"><a href="#0" class="previous cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive"><h1 class="arrow" style="font-size:35px;margin-top:-5px;margin-left:8px;color: hsl(209, 100%, 50.6%);">></h1></a>
+                <li style="color: black;"><a href="#0" class="previous cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">
+                        <h1 class="arrow" style="font-size:35px;margin-top:-5px;margin-left:8px;color: hsl(209, 100%, 50.6%);">
+                            < </h1>
+                    </a>
                 </li>
-                <li style="color: black;"><a href="#0" class="next cd-h-timeline__navigation cd-h-timeline__navigation--next"><h1 class="arrow" style="font-size:35px;margin-top:-5px;margin-left:8px;color: hsl(209, 100%, 50.6%);">></h1></a>
+                <li style="color: black;"><a href="#0" class="next cd-h-timeline__navigation cd-h-timeline__navigation--next">
+                        <h1 class="arrow" style="font-size:35px;margin-top:-5px;margin-left:8px;color: hsl(209, 100%, 50.6%);">></h1>
+                    </a>
                 </li>
                 <!-- <li><a href="#" class="previous round" class="previous round text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">&#8249;</a></li> -->
                 <!-- <li> <a href="#" class="next round" class="next round text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">&#8250;</a></li> -->
@@ -203,7 +203,7 @@
                         $rowdate[0] .
                         "'";
                     $querymatch = mysqli_query($conn, $sqlmatch);
-                    ?>
+                ?>
                     <li class="cd-h-timeline__event text-component">
                         <div class="cd-h-timeline__event-content container">
                             <h2 class="cd-h-timeline__event-title" style="padding-left: 60px;">Matchday ~</h2>
@@ -249,7 +249,7 @@
                                                 $rowteam2 = mysqli_fetch_row(
                                                     $queryteam2
                                                 );
-                                                ?>
+                                            ?>
                                                 <div class="tg-match my-3">
                                                     <div class="tg-matchdetail row text-center">
                                                         <div class="col-sm-5" style="padding:10px;">
@@ -274,9 +274,9 @@
                                                     </div>
                                                     <div class="tg-matchhover text-center" style="height: 100%;padding:15px;">
                                                         <div>
-                                                            <?php 
-                                                                if ($rowmatch[4] == 'pending') {
-                                                                    echo '<p style="font-weight:bold;font-size:20px;color:black;">Date : ' .
+                                                            <?php
+                                                            if ($rowmatch[4] == 'pending') {
+                                                                echo '<p style="font-weight:bold;font-size:20px;color:black;">Date : ' .
                                                                     date(
                                                                         'M d, Y ',
                                                                         strtotime(
@@ -292,11 +292,9 @@
                                                                     ) .
                                                                     '</p><p style="font-weight:bold;font-size:20px;color:black;">Venue : ' .
                                                                     $rowmatch[2],
-                                                                    '</p>';
-                                                                }
-
-                                                                else{
-                                                                    echo '<p style="font-weight:bold;font-size:20px;color:black;">Date : ' .
+                                                                '</p>';
+                                                            } else {
+                                                                echo '<p style="font-weight:bold;font-size:20px;color:black;">Date : ' .
                                                                     date(
                                                                         'M d, Y ',
                                                                         strtotime(
@@ -312,11 +310,11 @@
                                                                     ) .
                                                                     '</p><p style="font-weight:bold;font-size:20px;color:black;">Venue : ' .
                                                                     $rowmatch[2],
-                                                                    '</p><p style="font-weight:bold;font-size:20px;color:red;">Result : ' .
+                                                                '</p><p style="font-weight:bold;font-size:20px;color:red;">Result : ' .
                                                                     $rowmatch[5],
-                                                                    '</p>';    
-                                                                }
-                                                                      ?>
+                                                                '</p>';
+                                                            }
+                                                            ?>
                                                         </div>
                                                     </div>
                                                 </div>
