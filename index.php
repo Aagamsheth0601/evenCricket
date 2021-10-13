@@ -294,8 +294,6 @@
 
 
                 <style>
-                    
-
                     .sharjah .pricing-price {
                         background-color: #a637ec;
                         -webkit-box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
@@ -303,9 +301,8 @@
                         box-shadow: 0px 0px 0px 10px rgba(166, 55, 236, 0.31);
                     }
 
-                    .strike
-                    {
-                    text-decoration: line-through;
+                    .strike {
+                        text-decoration: line-through;
                         color: #99a9b5;
                     }
 
@@ -335,62 +332,55 @@
                         box-shadow: 0px 0px 0px 10px rgba(255, 153, 78, 0.31);
                     }
 
-                    .sharjah .pricing-row:before{
+                    .sharjah .pricing-row:before {
                         color: #a637ec;
                     }
 
-                    .oman .pricing-row:before
-                    {
-                    color: #ee417c;
+                    .oman .pricing-row:before {
+                        color: #ee417c;
                     }
 
-                    .sheikh .pricing-row:before
-                    {
+                    .sheikh .pricing-row:before {
                         color: #ff994e;
                     }
 
 
 
 
-                    .dubai:hover .pricing-price-wrapper
-                    {
+                    .dubai:hover .pricing-price-wrapper {
                         box-shadow: 0px 35px 80px rgba(4, 255, 236, 0.25), 0px 0px 0px rgba(10, 197, 173, 0.33);
-                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
                         -moz-transition: all 0.3s ease-in-out 0s;
                         -ms-transition: all 0.3s ease-in-out 0s;
                         -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
                     }
 
-                    .pricing-column:hover
-                    {
-                    overflow:hidden;
+                    .pricing-column:hover {
+                        overflow: hidden;
                     }
 
-                    .sharjah:hover .pricing-price-wrapper
-                    {
+                    .sharjah:hover .pricing-price-wrapper {
                         box-shadow: 0px 35px 80px rgba(230, 2, 241, 0.34), 0px 0px 0px rgba(21, 21, 20, 0.79);
-                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
                         -moz-transition: all 0.3s ease-in-out 0s;
                         -ms-transition: all 0.3s ease-in-out 0s;
                         -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
                     }
 
-                    .oman:hover .pricing-price-wrapper
-                    {
+                    .oman:hover .pricing-price-wrapper {
                         box-shadow: 0px 35px 80px rgba(255, 4, 166, 0.25), 0px 0px 0px rgba(222, 6, 84, 0.33);
-                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
                         -moz-transition: all 0.3s ease-in-out 0s;
                         -ms-transition: all 0.3s ease-in-out 0s;
                         -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
                     }
 
-                    .sheikh:hover .pricing-price-wrapper
-                    {
+                    .sheikh:hover .pricing-price-wrapper {
                         box-shadow: 0px 35px 80px rgba(241, 139, 2, 0.34), 0px 0px 0px rgba(21, 21, 20, 0.79);
-                    -webkit-transition: all 0.3s ease-in-out 0s;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
                         -moz-transition: all 0.3s ease-in-out 0s;
                         -ms-transition: all 0.3s ease-in-out 0s;
                         -o-transition: all 0.3s ease-in-out 0s;
