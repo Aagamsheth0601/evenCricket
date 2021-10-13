@@ -44,6 +44,10 @@
             font-family: "Poppins", sans-serif;
         }
 
+        .navbar-brand img{
+            cursor: pointer;
+        }
+
         #fixtures-navbar {
             border-bottom: 2px solid blue;
         }
