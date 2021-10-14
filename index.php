@@ -787,7 +787,7 @@
                                 <a href="http://localhost/evenCricket/About%20EC/aboutEC.html">About Us</a>
                             </li>
                             <li>
-                                <a href="http://localhost/evenCricket/About%20EC/aboutEC.html">Contact</a>
+                                <a href="http://localhost/evenCricket/SocialMedia/social.html">Social Media</a>
                             </li>
                         </ul>
                     </div>
@@ -799,11 +799,12 @@
                             <li>
                                 <p>Live updates</p>
                             </li>
-                            <li>
-                                <p>Use of own API</p>
-                            </li>
+
                             <li>
                                 <p>Latest News</p>
+                            </li>
+                            <li>
+                                <p>Use of own API</p>
                             </li>
                         </ul>
                     </div>
@@ -813,7 +814,7 @@
                         <h4 style="color: white;padding-left:10px">Contact</h4>
                         <ul class="footer-contact">
                             <li>
-                                <a href="mailto: abc@example.com">
+                                <a class="mail" href="mailto: abc@example.com">
                                     <p>evencricket@gmail.com</p>
                                 </a>
 

@@ -107,8 +107,8 @@
                             background-color: #3399ff;
                         }
                     </style>
-                    <a style="color: white;" href="http://localhost/evenCricket/playerComparison/playercomparison.php">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                    <a style="color: white; background-color:grey" href="http://localhost/evenCricket/playerComparison/playercomparison.php">
+                        <button class="btn" style="background-color:grey;width: 100px; height:40px;color:white">
                             Reset
                         </button>
                     </a>
