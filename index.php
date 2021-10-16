@@ -98,49 +98,52 @@
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" style="height:400px;">
-                                    <a target="__blank" href="https://www.icc-cricket.com/news/2275585">
+                                    <a target="__blank" href="https://timesofindia.indiatimes.com/sports/cricket/news/england-players-not-thinking-about-ben-stokes-possible-return-says-mark-wood/articleshow/87061029.cms">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://resources.pulse.icc-cricket.com/photo-resources/2021/09/30/0b2ca889-9bf5-4c74-b2f1-6b98a7c2d201/ICC-Greatest-XI-16x9.png?width=2200&height=1200" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://staticg.sportskeeda.com/editor/2021/10/0d792-16342302455214-1920.jpg" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Upstox Greatest XI – Your chance to pick your dream T20 World Cup team</h5>
-                                                    <p>Ahead of the ICC Men’s T20 World Cup 2021, the ICC has launched the Upstox Greatest XI – a chance for you to pick your all-time ICC T20 World Cup XI and measure its strengths against your friends’ picks.
+                                                    <h5>England players not thinking about Ben Stokes' possible return, says Mark Wood</h5>
+                                                    <p>England pacer Mark Wood has asserted that Ben Stokes' potential late inclusion into the squad, after the all-rounder returned to nets earlier this week, has "not once" crossed any player's mind, saying that the main concern remains his recovery.
+
+
                                                     </p>
-                                                    <p style="color: white;">01 Oct 2021</p>
+                                                    <p style="color: black;">16 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a href="https://www.icc-cricket.com/media-releases/2279765">
+                                    <a href="https://sports.ndtv.com/cricket/rahul-dravid-set-to-take-over-as-team-india-coach-after-t20-world-cup-claim-reports-2577157" target="__blank">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://resources.pulse.icc-cricket.com/photo-resources/2021/10/03/66b9dd57-23b6-4faa-a134-a7fec4fa776d/1600x615.jpg?width=845&height=325" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://c.ndtvimg.com/2021-08/m3kuoq68_rahul-dravid-afp_625x300_18_August_21.jpg?im=FeatureCrop,algorithm=dnn" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>ICC Men’s T20 World Cup 2021 opens the door to fans as tickets go on sale</h5>
-                                                    <p>Cricket fans from across the world are invited to Oman and the UAE to ‘Live the Game’ at the ICC Men’s T20 World Cup 2021, with tickets for every one of the 45 matches going on sale today.</p>
-                                                    <p style="color: white;">03 Oct 2021</p>
+                                                    <h5>Rahul Dravid Set To Take Over As Team India Coach After T20 World Cup, Claim Reports</h5>
+                                                    <p style="font-size: 15px;">India's batting stalwart Rahul Dravid is all set to take over as the national cricket team's head coach following the T20 World Cup in the UAE, having agreed to the BCCI's offer after initial reluctance. The 48-year-old Dravid, one of the greatest ever to have played for India, has been in charge of the India A and U-19 set-up for the past six years.</p>
+                                                    <p style="color: black;">16 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a href="https://www.icc-cricket.com/news/2277040">
+                                    <a href="https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/ten-match-win-streak-in-uae-gives-pakistan-edge-over-india-babar-azam/articleshow/87066698.cms" target="__blank">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://resources.pulse.icc-cricket.com/photo-resources/2021/10/02/023c1828-8c1a-4642-9513-b6cd1a5e9f7e/GettyImages-626883838.jpg?width=440&height=248" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://resources.pulse.icc-cricket.com/photo-resources/2021/10/13/4376b302-61fc-4e40-8e02-090e27585f9f/Babar.jpeg?width=985&height=580" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Glenn Maxwell picks his top five T20 players</h5>
-                                                    <p>Ahead of the ICC Men's T20 World Cup 2021, mercurial Australian all-rounder Glenn Maxwell picked his top five players in the shortest format of the game.</p>
-                                                    <p style="color: white;">02 Oct 2021</p>
+                                                    <h5>Ten-match win streak in UAE gives Pakistan edge over India: Babar Azam</h5>
+                                                    <p>he arch-rivals will meet in Dubai on October 24 in what will be the biggest clash of the tournament that starts Sunday.Pakistan have never won a World Cup match against India, but that does
+                                                        not bother Babar who believes familiarity with the pitches will help them break the jinx. </p>
+                                                    <p style="color: black;">16 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -233,10 +236,10 @@
                                     $flag = $row2['flag'];
                                 }
                             }
-                            ?>
+                    ?>
                             <article class="point-row <?php
-                            //echo $keyword;
-                            ?>" id='<?php echo $count; ?>'>
+                                                        //echo $keyword;
+                                                        ?>" id='<?php echo $count; ?>'>
                                 <ul style="text-align:center;">
                                     <li style="text-align:left;font-size:15px"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
                                             <em><?php echo $team; ?></em>
