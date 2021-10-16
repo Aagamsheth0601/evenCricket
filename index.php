@@ -233,10 +233,10 @@
                                     $flag = $row2['flag'];
                                 }
                             }
-                    ?>
+                            ?>
                             <article class="point-row <?php
-                                                        //echo $keyword;
-                                                        ?>" id='<?php echo $count; ?>'>
+                            //echo $keyword;
+                            ?>" id='<?php echo $count; ?>'>
                                 <ul style="text-align:center;">
                                     <li style="text-align:left;font-size:15px"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
                                             <em><?php echo $team; ?></em>
@@ -739,6 +739,8 @@
     <div style="height:90px;"></div>
     <!-- ========================= Spacer ========================= -->
 
+
+    <div id="messagesubscribe"></div>
     <!-- ========================= subscribe-section start ========================= -->
     <section class=" subscribe-section pt-70 pb-70 img-bg" style="background-color: #000000;background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);">
         <div class="container">
@@ -752,8 +754,8 @@
                     </div>
                 </div>
                 <div class=" col-xl-6 col-lg-6">
-                    <form action="#" class="subscribe-form wow fadeInRight" data-wow-delay=".4s">
-                        <input type="text" name="subs-email" id="subs-email" placeholder="Your Email" />
+                    <form class="subscribe-form wow fadeInRight" data-wow-delay=".4s">
+                        <input type="email" name="subs-email" id="subs-email" placeholder="Your Email" />
                         <button type="submit">
                             <i class="lni lni-telegram-original"></i>
                         </button>
@@ -875,6 +877,24 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $("form").on('submit', (function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "emailtodb.php",
+                    type: "POST",
+                    data: new FormData(this),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success: function(data) {
+                        $("#messagesubscribe").html(data);
+                    }
+                });
+            }));
+        });
+    </script>
     <script>
         // Master DOManipulator v2 ------------------------------------------------------------
         const items = document.querySelectorAll('.item'),
