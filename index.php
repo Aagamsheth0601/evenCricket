@@ -82,7 +82,19 @@
             color: white;
             padding: 5px;
         }
+        @media only screen and (min-width: 992px) {
+            .live-score {
+                display: none;
+            }
+        }
+        
     </style>
+
+    <div class="container" style="text-align:right;margin-bottom:20px;">
+        <a class="btn btn-primary live-score" href="#score">
+            Live score
+        </a>
+    </div>
 
 
     <section>
@@ -236,10 +248,10 @@
                                     $flag = $row2['flag'];
                                 }
                             }
-                    ?>
+                            ?>
                             <article class="point-row <?php
-                                                        //echo $keyword;
-                                                        ?>" id='<?php echo $count; ?>'>
+                            //echo $keyword;
+                            ?>" id='<?php echo $count; ?>'>
                                 <ul style="text-align:center;">
                                     <li style="text-align:left;font-size:15px"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
                                             <em><?php echo $team; ?></em>
@@ -699,7 +711,7 @@
 
             <!-- ===================== Right Side Start ========================== -->
             <div class="col-xl-3 col-lg-4" style="padding:0px;">
-                <div class="container">
+                <div class="container" id="score">
                     <iframe src="https://widget.crictimes.org/" style="width:100%;min-height: 450px;" frameborder="0" scrolling="yes"></iframe>
                 </div>
                 <br>

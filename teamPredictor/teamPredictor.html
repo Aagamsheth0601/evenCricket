@@ -1,567 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="../assets/img/ec1-removebg-preview.png"
-    />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./teamPredictor.scss" />
-    <link rel="stylesheet" href="../assets/css/bootstrap-5.0.0-beta1.min.css" />
-    <link rel="stylesheet" href="../assets/css/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="../assets/css/animate.css" />
-    <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
-    <link rel="stylesheet" href="../assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <title>Team Predictor</title>
-  </head>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/ec1-removebg-preview.png" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <body>
-    <div id="navbar"></div>
-    <div style="height: 100px"></div>
-    <div class="main">
-      <div class="container">
-        <div class="card">
-          <div class="box">
-            <div class="content">
-              <div class="team1">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Oman.svg/1024px-Flag_of_Oman.svg.png"
-                  alt=""
-                />
-                <h3>Oman</h3>
-              </div>
-              <h3>Vs</h3>
-              <div class="team2">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flag_of_Papua_New_Guinea.svg/1024px-Flag_of_Papua_New_Guinea.svg.png"
-                  alt=""
-                />
-                <h3>Papua New Guinea</h3>
-              </div>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo
+  <link rel="stylesheet" href="./teamPredictor.scss" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-5.0.0-beta1.min.css" />
+  <link rel="stylesheet" href="../assets/css/LineIcons.2.0.css" />
+  <link rel="stylesheet" href="../assets/css/animate.css" />
+  <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="../assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <title>Team Predictor</title>
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <div style="height: 100px"></div>
+  <div class="main">
+    <div class="container">
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <div class="team1">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png"
+                alt="" />
+              <h3>Australia</h3>
+            </div>
+            <h3>Vs</h3>
+            <div class="team2">
+              <img src="https://cdn.britannica.com/27/4227-004-32423B42/Flag-South-Africa.jpg" alt="" />
+              <h3>South Africa</h3>
+            </div>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo
                             labore
                             inventore?</p> -->
-              <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
-                >Read More</a
-              >
-            </div>
+            <a data-bs-toggle="modal" href="#exampleModalToggle" role="button">Read More</a>
           </div>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="box">
-            <div class="content">
-              <div class="team1">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1200px-Flag_of_Bangladesh.svg.png"
-                  alt=""
-                />
-                <h3>Bangladesh</h3>
-              </div>
-              <h3>Vs</h3>
-              <div class="team2">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
-                  alt=""
-                />
-                <h3>Scotland</h3>
-              </div>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <div class="team1">
+              <img src="https://cdn.britannica.com/44/344-004-494CC2E8/Flag-England.jpg" alt="" />
+              <h3>England </h3>
+            </div>
+            <h3>Vs</h3>
+            <div class="team2">
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/65/West_indies_cricket_board_flag.png" alt="" />
+              <h3>West Indies</h3>
+            </div>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo
                             labore
                             inventore?</p> -->
-              <a
-                data-bs-toggle="modal"
-                href="#exampleModalToggle2"
-                role="button"
-                >Read More</a
-              >
-            </div>
+            <a data-bs-toggle="modal" href="#exampleModalToggle2" role="button">Read More</a>
           </div>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="box">
-            <div class="content">
-              <div class="team1">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/255px-Flag_of_Ireland.svg.png"
-                  alt=""
-                />
-                <h3>Ireland</h3>
-              </div>
-              <h3>Vs</h3>
-              <div class="team2">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png"
-                  alt=""
-                />
-                <h3>Netherlands</h3>
-              </div>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <div class="team1">
+              <img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg" alt="" />
+              <h3>India</h3>
+            </div>
+            <h3>Vs</h3>
+            <div class="team2">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/1280px-Flag_of_Pakistan.svg.png"
+                alt="" />
+              <h3>Pakistan</h3>
+            </div>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo
                             labore
                             inventore?</p> -->
-              <a
-                data-bs-toggle="modal"
-                href="#exampleModalToggle3"
-                role="button"
-                >Read More</a
-              >
+            <a data-bs-toggle="modal" href="#exampleModalToggle3" role="button">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .modal .modal-content .modal-body {
+      background-color: #49ad73;
+      color: black;
+    }
+
+    .modal .modal-content .modal-body h3 {
+      margin: 20px;
+      color: white;
+    }
+
+    .modal .modal-content .modal-body img {
+      height: 8rem;
+      width: auto;
+      margin: auto;
+    }
+  </style>
+
+  <!-- Modal one -->
+  <div class="modal fade text-center" id="exampleModalToggle" aria-hidden="true"
+    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">
+            Our Fantasy XI
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <h3>WK</h3>
+            <div class="player col-sm-12">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>Batsman</h3>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>All rounder</h3>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>Bowler</h3>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
+              </div>
+              <div class="player-name">Virat Kohli</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <style>
-      .modal .modal-content .modal-body {
-        background-color: #49ad73;
-        color: black;
-      }
-
-      .modal .modal-content .modal-body h3 {
-        margin: 20px;
-        color: white;
-      }
-
-      .modal .modal-content .modal-body img {
-        height: 8rem;
-        width: auto;
-        margin: auto;
-      }
-    </style>
-
-    <!-- Modal one -->
-    <div
-      class="modal fade text-center"
-      id="exampleModalToggle"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">
-              Our Fantasy XI
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <h3>WK</h3>
-              <div class="player col-sm-12">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+  <!-- Modal two -->
+  <div class="modal fade text-center" id="exampleModalToggle2" aria-hidden="true"
+    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">
+            Our Fantasy XI
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <h3>WK</h3>
+            <div class="player col-sm-12">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <h3>Batsman</h3>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>Batsman</h3>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <h3>All rounder</h3>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>All rounder</h3>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <h3>Bowler</h3>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>Bowler</h3>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
+              <div class="player-name">Virat Kohli</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal two -->
-    <div
-      class="modal fade text-center"
-      id="exampleModalToggle2"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">
-              Our Fantasy XI
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <h3>WK</h3>
-              <div class="player col-sm-12">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+  <!-- Modal three -->
+  <div class="modal fade text-center" id="exampleModalToggle3" aria-hidden="true"
+    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">
+            Our Fantasy XI
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <h3>WK</h3>
+            <div class="player col-sm-12">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <h3>Batsman</h3>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>Batsman</h3>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-3">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <h3>All rounder</h3>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>All rounder</h3>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <h3>Bowler</h3>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <h3>Bowler</h3>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
+              <div class="player-name">Virat Kohli</div>
+            </div>
+            <div class="player col-sm-4">
+              <div class="player-image">
+                <img src="https://resources.pulse.icc-cricket.com/players/210/164.png" alt="" />
               </div>
+              <div class="player-name">Virat Kohli</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal three -->
-    <div
-      class="modal fade text-center"
-      id="exampleModalToggle3"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">
-              Our Fantasy XI
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <h3>WK</h3>
-              <div class="player col-sm-12">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <h3>Batsman</h3>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <div class="player col-sm-3">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <h3>All rounder</h3>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <h3>Bowler</h3>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-              <div class="player col-sm-4">
-                <div class="player-image">
-                  <img
-                    src="https://resources.pulse.icc-cricket.com/players/210/164.png"
-                    alt=""
-                  />
-                </div>
-                <div class="player-name">Virat Kohli</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div id="footer"></div>
+  <!-- Footer -->
+  <!-- ========================= scroll-top ========================= -->
+  <a href="#" class="scroll-top">
+    <i class="lni lni-arrow-up"></i>
+  </a>
+  <script src="../assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
+  <script src="../assets/js/contact-form.js"></script>
+  <script src="../assets/js/count-up.min.js"></script>
+  <script src="../assets/js/tiny-slider.js"></script>
+  <script src="../assets/js/isotope.min.js"></script>
+  <script src="../assets/js/glightbox.min.js"></script>
+  <script src="../assets/js/wow.min.js"></script>
+  <script src="../assets/js/imagesloaded.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#navbar").load("../navbar.html");
+      $("#footer").load("../footer.html");
+    });
+  </script>
+</body>
 
-    <div id="footer"></div>
-    <!-- Footer -->
-    <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top">
-      <i class="lni lni-arrow-up"></i>
-    </a>
-    <script src="../assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
-    <script src="../assets/js/contact-form.js"></script>
-    <script src="../assets/js/count-up.min.js"></script>
-    <script src="../assets/js/tiny-slider.js"></script>
-    <script src="../assets/js/isotope.min.js"></script>
-    <script src="../assets/js/glightbox.min.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/imagesloaded.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#navbar").load("../navbar.html");
-        $("#footer").load("../footer.html");
-      });
-    </script>
-  </body>
 </html>

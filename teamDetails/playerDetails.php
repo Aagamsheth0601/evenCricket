@@ -52,9 +52,9 @@
                 <br><br><br>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="<?php echo $data[
-                            'images'
-                        ]; ?>" alt="" style="width:350px; height:300px;">
+                        <img src="<?php echo $data['images'] != ''
+                            ? $data['images']
+                            : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'; ?>" alt="" style="width:350px; height:300px;">
                         <br><br>
                         <div class="general-detail">
                             <h3>General Stat</h3>

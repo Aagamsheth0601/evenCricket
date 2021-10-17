@@ -52,9 +52,9 @@
                             'player_id'
                         ]; ?>">
                             <div style="display:inline-block;">
-                                <img src="<?php echo $data[
-                                    'images'
-                                ]; ?>" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
+                                <img src="<?php echo $data['images'] != ''
+                                    ? $data['images']
+                                    : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'; ?>" class="img img" style="height: 100px; width: 100px;border-radius: 50%;">
                             </div>
                             <div style="display:inline-block;">
                                 <h3><?php echo $data['player_name']; ?></h3>
