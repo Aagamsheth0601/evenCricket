@@ -110,52 +110,51 @@
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" style="height:400px;">
-                                    <a target="__blank" href="https://timesofindia.indiatimes.com/sports/cricket/news/england-players-not-thinking-about-ben-stokes-possible-return-says-mark-wood/articleshow/87061029.cms">
+                                    <a target="__blank" href="https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/t20-world-cup-team-india-needs-old-bhuvneshwar-kumar-with-the-new-ball/articleshow/87218064.cms">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://staticg.sportskeeda.com/editor/2021/10/0d792-16342302455214-1920.jpg" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://static.toiimg.com/thumb/msid-87218053,imgsize-39272,width-400,resizemode-4/87218053.jpg" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>England players not thinking about Ben Stokes' possible return, says Mark Wood</h5>
-                                                    <p>England pacer Mark Wood has asserted that Ben Stokes' potential late inclusion into the squad, after the all-rounder returned to nets earlier this week, has "not once" crossed any player's mind, saying that the main concern remains his recovery.
-
+                                                    <h5>T20 World Cup: Team India needs old Bhuvneshwar Kumar with the new ball</h5>
+                                                    <p>
+                                                    The last time Bhuvneshwar Kumar and Jasprit Bumrah bowled in ..
 
                                                     </p>
-                                                    <p style="color: black;">16 Oct 2021</p>
+                                                    <p style="color: black;">23 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a href="https://sports.ndtv.com/cricket/rahul-dravid-set-to-take-over-as-team-india-coach-after-t20-world-cup-claim-reports-2577157" target="__blank">
+                                    <a href="https://www.espncricinfo.com/story/t20-world-cup-2021-eng-vs-wi-west-indies-look-to-replicate-never-say-die-attitude-of-2016-1284647" target="__blank">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://c.ndtvimg.com/2021-08/m3kuoq68_rahul-dravid-afp_625x300_18_August_21.jpg?im=FeatureCrop,algorithm=dnn" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/325000/325074.4.jpg" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Rahul Dravid Set To Take Over As Team India Coach After T20 World Cup, Claim Reports</h5>
-                                                    <p style="font-size: 15px;">India's batting stalwart Rahul Dravid is all set to take over as the national cricket team's head coach following the T20 World Cup in the UAE, having agreed to the BCCI's offer after initial reluctance. The 48-year-old Dravid, one of the greatest ever to have played for India, has been in charge of the India A and U-19 set-up for the past six years.</p>
-                                                    <p style="color: black;">16 Oct 2021</p>
+                                                    <h5>West Indies look to replicate 'never-say-die attitude' of 2016</h5>
+                                                    <p style="font-size: 15px;">Captain Kieron Pollard denies that his team has a psychological edge over England as they go into a re-match of the final from five years ago</p>
+                                                    <p style="color: black;">22 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a href="https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/ten-match-win-streak-in-uae-gives-pakistan-edge-over-india-babar-azam/articleshow/87066698.cms" target="__blank">
+                                    <a href="https://www.espncricinfo.com/story/aus-vs-sa-t20-world-cup-2021-tabraiz-shamsi-to-play-after-passing-fitness-test-1284617" target="__blank">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://resources.pulse.icc-cricket.com/photo-resources/2021/10/13/4376b302-61fc-4e40-8e02-090e27585f9f/Babar.jpeg?width=985&height=580" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/327300/327311.4.jpg" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Ten-match win streak in UAE gives Pakistan edge over India: Babar Azam</h5>
-                                                    <p>he arch-rivals will meet in Dubai on October 24 in what will be the biggest clash of the tournament that starts Sunday.Pakistan have never won a World Cup match against India, but that does
-                                                        not bother Babar who believes familiarity with the pitches will help them break the jinx. </p>
-                                                    <p style="color: black;">16 Oct 2021</p>
+                                                    <h5>Tabraiz Shamsi to play South Africa's T20 World Cup opener after passing fitness test</h5>
+                                                    <p>Captain Temba Bavuma says South Africa could field three frontline spinners, but will take call on the morning of the match</p>
+                                                    <p style="color: black;">22 Oct 2021</p>
                                                 </div>
                                             </div>
                                         </div>
