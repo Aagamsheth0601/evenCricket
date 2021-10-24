@@ -183,8 +183,10 @@
                         Table</span>
                 </div>
 
+                <?php for ($i = 1; $i < 3; $i++) { ?>
                 <section class="wrapper" style="margin-top: 50px;background: rgba(0, 0, 0, 0.9);font-family: 'Open Sans', sans-serif;">
                     <!-- Row title -->
+                    <h1 class = "text-center" style="color:white">Group <?php echo $i; ?></h1>
                     <main class="point-row title">
                         <ul style="text-align:center;">
                             <li><b>Team</b></li>
@@ -222,12 +224,14 @@
                     }
 
                     $sql =
-                        'SELECT * FROM `points_table` ORDER BY points DESC, nrr  DESC';
+                        'SELECT * FROM `points_table` WHERE group_no = ' .
+                        $i .
+                        ' ORDER BY points DESC, nrr  DESC';
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
                         // output data of each row
-                        $count = 1;
+                        $count = ($i - 1) * 6 + 1;
                         while ($row = $result->fetch_assoc()) {
 
                             $team = $row['team'];
@@ -300,7 +304,7 @@
                     </script>
 
                 </section>
-
+                <?php } ?>
                 <!-- Points table end -->
 
 
