@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 16, 2021 at 09:00 PM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 5.6.24
+-- Host: sg2nlmysql3plsk.secureserver.net:3306
+-- Generation Time: Nov 16, 2021 at 03:56 AM
+-- Server version: 5.5.51-38.1-log
+-- PHP Version: 7.1.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -289,6 +291,7 @@ INSERT INTO `player_details` (`player_id`, `player_name`, `player_country`, `pla
 CREATE TABLE `points_table` (
   `id` int(11) NOT NULL,
   `team` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `group_no` int(11) NOT NULL,
   `keyword` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `matches` int(100) NOT NULL,
   `won` int(100) NOT NULL,
@@ -302,17 +305,19 @@ CREATE TABLE `points_table` (
 -- Dumping data for table `points_table`
 --
 
-INSERT INTO `points_table` (`id`, `team`, `keyword`, `matches`, `won`, `lost`, `nrr`, `points`, `content`) VALUES
-(1, 'England', 'england', 0, 0, 0, 0, 0, 'England won the 2010 T20 worldcup by defeating Australia which was held in West Indies'),
-(2, 'India', 'india', 0, 0, 0, 0, 0, 'India defeated Pakistan and won the first T20 worldcup in 2007 which was held in South Africa'),
-(3, 'Pakistan', 'pakistan', 0, 0, 0, 0, 0, 'Pakistan defeated Sri Lanka and won the 2009 T20 world-cup which was held in England'),
-(4, 'New Zealand', 'new-zealand', 0, 0, 0, 0, 0, 'New Zealand have never won a T20 worldcup'),
-(5, 'South Africa', 'south-africa', 0, 0, 0, 0, 0, 'South Africa have never won a T20 worldcup'),
-(6, 'Bangladesh', 'bangladesh', 0, 0, 0, 0, 0, 'Bangladesh have never won a T20 worldcup'),
-(7, 'Australia', 'australia', 0, 0, 0, 0, 0, 'Australia have never won a T20 worldcup'),
-(8, 'Afghanistan', 'afghanistan', 0, 0, 0, 0, 0, 'Afghanistan have never won a T20 worldcup'),
-(9, 'West Indies', 'west-indies', 0, 0, 0, 0, 0, 'West Indies have won the T20 worldcup twice by defeating Sri Lanka  in 2012 and England in 2016 which were held in Sri Lanka and India respectively'),
-(10, 'Sri Lanka', 'sri-lanka', 0, 0, 0, 0, 0, 'Sri Lanka defeated India and won the 2014 T20 worldcup which was held in Bangladesh');
+INSERT INTO `points_table` (`id`, `team`, `group_no`, `keyword`, `matches`, `won`, `lost`, `nrr`, `points`, `content`) VALUES
+(1, 'England', 1, 'england', 5, 4, 4, 2.464, 8, 'England won the 2010 T20 worldcup by defeating Australia which was held in West Indies'),
+(2, 'India', 2, 'india', 5, 3, 2, 1.747, 6, 'India defeated Pakistan and won the first T20 worldcup in 2007 which was held in South Africa'),
+(3, 'Pakistan', 2, 'pakistan', 5, 5, 0, 1.583, 10, 'Pakistan defeated Sri Lanka and won the 2009 T20 world-cup which was held in England'),
+(4, 'New Zealand', 2, 'new-zealand', 5, 4, 1, 1.162, 8, 'New Zealand have never won a T20 worldcup'),
+(5, 'South Africa', 1, 'south-africa', 5, 4, 1, 0.739, 8, 'South Africa have never won a T20 worldcup'),
+(6, 'Bangladesh', 1, 'bangladesh', 5, 0, 5, -2.383, 0, 'Bangladesh have never won a T20 worldcup'),
+(7, 'Australia', 1, 'australia', 5, 4, 1, 1.216, 8, 'Australia have never won a T20 worldcup'),
+(8, 'Afghanistan', 2, 'afghanistan', 5, 2, 3, 1.053, 4, 'Afghanistan have never won a T20 worldcup'),
+(9, 'West Indies', 1, 'west-indies', 5, 1, 4, -1.641, 2, 'West Indies have won the T20 worldcup twice by defeating Sri Lanka  in 2012 and England in 2016 which were held in Sri Lanka and India respectively'),
+(10, 'Sri Lanka', 1, 'sri-lanka', 5, 2, 3, -0.269, 4, 'Sri Lanka defeated India and won the 2014 T20 worldcup which was held in Bangladesh'),
+(11, 'Scotland', 2, 'scotland', 5, 0, 5, -3.543, 0, 'Into Super 12 for first time'),
+(12, 'Namibia', 2, 'namibia', 5, 1, 4, -1.89, 2, 'Into Super 12 for first time');
 
 -- --------------------------------------------------------
 
@@ -325,9 +330,9 @@ CREATE TABLE `schedule` (
   `team_1` int(100) NOT NULL,
   `team_2` int(100) NOT NULL,
   `venue` text NOT NULL,
-  `time` time(6) NOT NULL,
+  `time` time NOT NULL,
   `date` date NOT NULL,
-  `day` varchar(100) NOT NULL DEFAULT '17 Oct',
+  `day` varchar(100) DEFAULT NULL,
   `status` varchar(100) NOT NULL DEFAULT 'pending',
   `result` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -337,48 +342,51 @@ CREATE TABLE `schedule` (
 --
 
 INSERT INTO `schedule` (`id`, `team_1`, `team_2`, `venue`, `time`, `date`, `day`, `status`, `result`) VALUES
-(1, 13, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-17', '17 Oct', 'pending', ''),
-(2, 10, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-17', '17 Oct', 'pending', ''),
-(3, 12, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-18', '18 Oct', 'pending', ''),
-(4, 6, 15, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-18', '18 Oct', 'pending', ''),
-(5, 11, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-19', '19 Oct', 'pending', ''),
-(6, 10, 13, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-19', '19 Oct', 'pending', ''),
-(8, 15, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-20', '20 Oct', 'pending', ''),
-(9, 6, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-20', '20 Oct', 'pending', ''),
-(10, 10, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00.000000', '2021-10-21', '21 Oct', 'pending', ''),
-(11, 13, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00.000000', '2021-10-21', '21 Oct', 'pending', ''),
-(12, 15, 12, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-22', '22 Oct', 'pending', ''),
-(13, 6, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-22', '22 Oct', 'pending', ''),
-(14, 3, 7, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-23', '23 Oct', 'pending', ''),
-(15, 5, 9, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-23', '23 Oct', 'pending', ''),
-(18, 6, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.948000', '2021-10-24', '24 Oct', 'pending', ''),
-(19, 1, 4, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-24', '24 Oct', 'pending', ''),
-(20, 8, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-25', '25 Oct', 'pending', ''),
-(21, 7, 9, 'Dubai International Stadium, Dubai', '15:30:00.000000', '2021-10-26', '26 Oct', 'pending', ''),
-(22, 4, 2, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-10-26', '26 Oct', 'pending', ''),
-(23, 5, 6, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-10-27', '27 Oct', 'pending', ''),
-(24, 11, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-10-27', '27 Oct', 'pending', ''),
-(25, 3, 12, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-28', '28 Oct', 'pending', ''),
-(26, 9, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-29', '29 Oct', 'pending', ''),
-(27, 8, 4, 'Dubai International Stadium, Dubai', '19:30:00.000000', '2021-10-29', '29 Oct', 'pending', ''),
-(28, 7, 6, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-10-30', '30 Oct', 'pending', ''),
-(29, 5, 3, 'Dubai', '19:30:00.000000', '2021-10-30', '30 Oct', 'pending', ''),
-(30, 8, 11, 'Zayed Cricket Stadium,Abu Dhabi', '15:30:00.000000', '2021-10-31', '31 Oct', 'pending', ''),
-(31, 1, 2, 'Dubai', '19:30:00.000000', '2021-10-31', '31 Oct', 'pending', ''),
-(32, 5, 12, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-01', '01 Nov', 'pending', ''),
-(33, 7, 11, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-02', '02 Nov', 'pending', ''),
-(34, 4, 6, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-02', '02 Nov', 'pending', ''),
-(35, 2, 11, 'Dubai', '15:30:00.000000', '2021-11-03', '03 Nov', 'pending', ''),
-(36, 1, 8, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-03', '03 Nov', 'pending', ''),
-(37, 3, 6, 'Dubai', '15:30:00.000000', '2021-11-04', '04 Nov', 'pending', ''),
-(38, 9, 11, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00.000000', '2021-11-04', '04 Nov', 'pending', ''),
-(39, 2, 11, 'Sharjah Cricket Stadium, Sharjah', '15:30:00.000000', '2021-11-05', '05 Nov', 'pending', ''),
-(40, 1, 6, 'Dubai', '19:30:00.000000', '2021-11-05', '05 Nov', 'pending', ''),
-(41, 3, 9, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-06', '06 Nov', 'pending', ''),
-(42, 5, 7, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-06', '06 Nov', 'pending', ''),
-(43, 2, 8, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00.000000', '2021-11-07', '07 Nov', 'pending', ''),
-(44, 4, 6, 'Sharjah Cricket Stadium, Sharjah', '19:30:00.000000', '2021-11-07', '07 Nov', 'pending', ''),
-(45, 1, 11, 'Dubai', '19:30:00.000000', '2021-11-08', '08 Nov', 'pending', '');
+(1, 13, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00', '2021-10-17', '17 Oct', 'completed', 'Oman Won by 10 Wickets (38 balls left)'),
+(2, 10, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00', '2021-10-17', '17 Oct', 'completed', 'Scotland Won by 6 Runs'),
+(3, 12, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00', '2021-10-18', '18 Oct', 'completed', 'Ireland won by 7 wickets (29 balls left)'),
+(4, 6, 15, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00', '2021-10-18', '18 Oct', 'completed', 'Sri Lanka won by 7 wickets (39 balls left)'),
+(5, 11, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00', '2021-10-19', '19 Oct', 'completed', 'Scotland won by 17 runs'),
+(6, 10, 13, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00', '2021-10-19', '19 Oct', 'completed', 'Bangladesh won by 26 Runs'),
+(8, 15, 16, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00', '2021-10-20', '20 Oct', 'completed', 'Namibia won by 6 wickets (6 balls left)'),
+(9, 6, 12, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00', '2021-10-20', '20 Oct', 'completed', 'Sri Lanka Won by 70 Runs'),
+(10, 10, 14, 'Oman Cricket Academy Ground, Al Amerat', '15:30:00', '2021-10-21', '21 Oct', 'completed', 'Bangladesh Won by 84 Runs'),
+(11, 13, 11, 'Oman Cricket Academy Ground, Al Amerat', '19:30:00', '2021-10-21', '21 Oct', 'completed', 'Scotland Won by 8 Wickets'),
+(12, 15, 12, 'Sharjah Cricket Stadium, Sharjah', '15:30:00', '2021-10-22', '22 Oct', 'completed', 'Namibia Won by 8 Wickets'),
+(13, 6, 16, 'Sharjah Cricket Stadium, Sharjah', '19:30:00', '2021-10-22', '22 Oct', 'completed', 'Sri Lanka Won by 8 Wickets'),
+(14, 3, 7, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00', '2021-10-23', '23 Oct', 'completed', 'Australia Won by 5 Wickets'),
+(15, 5, 9, 'Dubai International Stadium, Dubai', '19:30:00', '2021-10-23', '23 Oct', 'completed', 'England Won by 6 Wickets'),
+(18, 6, 10, 'Sharjah Cricket Stadium, Sharjah', '15:30:00', '2021-10-24', '24 Oct', 'completed', 'Sri Lanka won by 5 wickets'),
+(19, 1, 4, 'Dubai International Stadium, Dubai', '19:30:00', '2021-10-24', '24 Oct', 'completed\r\n', 'Pakistan won by 10 wickets'),
+(20, 8, 11, 'Sharjah Cricket Stadium, Sharjah', '19:30:00', '2021-10-25', '25 Oct', 'completed', 'Afghanistan Won by 130 Runs'),
+(21, 7, 9, 'Dubai International Stadium, Dubai', '15:30:00', '2021-10-26', '26 Oct', 'completed', 'South Africa Won by 8 wickets'),
+(22, 4, 2, 'Sharjah Cricket Stadium, Sharjah', '19:30:00', '2021-10-26', '26 Oct', 'completed', 'Pakistan Won by 5 wickets.'),
+(23, 5, 10, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00', '2021-10-27', '27 Oct', 'completed', 'England Won by 8 Wickets'),
+(24, 11, 15, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00', '2021-10-27', '27 Oct', 'completed', 'Namibia Won by 4 Wickets'),
+(25, 3, 6, 'Dubai International Stadium, Dubai', '19:30:00', '2021-10-28', '28 Oct', 'completed', 'Australia won by 7 wickets'),
+(26, 9, 10, 'Sharjah Cricket Stadium, Sharjah', '15:30:00', '2021-10-29', '29 Oct', 'completed', 'West Indies won by 3 runs'),
+(27, 8, 4, 'Dubai International Stadium, Dubai', '19:30:00', '2021-10-29', '29 Oct', 'completed', 'Pakistan won by 5 wickets'),
+(28, 7, 6, 'Sharjah Cricket Stadium, Sharjah', '15:30:00', '2021-10-30', '30 Oct', 'completed', 'South Africa Won by 4 Wickets (1 ball left)'),
+(29, 5, 3, 'Dubai', '19:30:00', '2021-10-30', '30 Oct', 'completed', 'England Won by 8 Wickets (50 balls left)'),
+(30, 8, 15, 'Zayed Cricket Stadium,Abu Dhabi', '15:30:00', '2021-10-31', '31 Oct', 'completed', 'Afghanistan Won by 62 runs'),
+(31, 1, 2, 'Dubai', '19:30:00', '2021-10-31', '31 Oct', 'completed', 'New Zealand Won by 8 Wickets'),
+(32, 5, 6, 'Sharjah Cricket Stadium, Sharjah', '19:30:00', '2021-11-01', '01 Nov', 'completed', 'England Won  by 26 runs'),
+(33, 7, 10, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00', '2021-11-02', '02 Nov', 'completed', 'South Africa won by 6 wickets'),
+(34, 4, 15, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00', '2021-11-02', '02 Nov', 'completed', 'Pakistan won by 45 runs'),
+(35, 2, 11, 'Dubai', '15:30:00', '2021-11-03', '03 Nov', 'completed', 'New Zealand won by 16 runs'),
+(36, 1, 8, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00', '2021-11-03', '03 Nov', 'completed', 'India won by 66 runs'),
+(37, 3, 10, 'Dubai', '15:30:00', '2021-11-04', '04 Nov', 'completed', 'Australia won by 8 wickets'),
+(38, 9, 6, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00', '2021-11-04', '04 Nov', 'completed', 'Sri Lanka won by 20 runs'),
+(39, 2, 15, 'Sharjah Cricket Stadium, Sharjah', '15:30:00', '2021-11-05', '05 Nov', 'completed', 'New Zealand won by 52 runs'),
+(40, 1, 11, 'Dubai', '19:30:00', '2021-11-05', '05 Nov', 'completed', 'India won by 8 wickets'),
+(41, 3, 9, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00', '2021-11-06', '06 Nov', 'completed', 'Australia won by 8 wickets'),
+(42, 5, 7, 'Sharjah Cricket Stadium, Sharjah', '19:30:00', '2021-11-06', '06 Nov', 'completed', 'South Africa won by 10 runs'),
+(43, 2, 8, 'Zayed Cricket Stadium, Abu Dhabi', '15:30:00', '2021-11-07', '07 Nov', 'completed', 'New Zealand won by 8 wickets'),
+(44, 4, 11, 'Sharjah Cricket Stadium, Sharjah', '19:30:00', '2021-11-07', '07 Nov', 'completed', 'Pakistan won by 72 runs'),
+(45, 1, 15, 'Dubai', '19:30:00', '2021-11-08', '08 Nov', 'completed', 'India won by 9 wickets'),
+(46, 5, 2, 'Zayed Cricket Stadium, Abu Dhabi', '19:30:00', '2021-11-10', '10 Nov', 'completed', 'New Zealand won by 5 wickets (6 balls left)'),
+(47, 4, 3, 'Dubai International Stadium, Dubai', '19:30:00', '2021-11-11', '11 Nov', 'completed', 'Australia won by 5 wickets (6 balls left)'),
+(48, 2, 3, 'Dubai International Stadium', '19:30:00', '2021-11-14', '14 Nov', 'completed', 'Australia won by 8 wickets(7 balls left)');
 
 -- --------------------------------------------------------
 
@@ -396,7 +404,16 @@ CREATE TABLE `subscribers` (
 --
 
 INSERT INTO `subscribers` (`id`, `email`) VALUES
-(1, 'aagam.sheth_19@sakec.ac.in');
+(1, 'shubham.shah2001.ss05@gmail.com'),
+(2, 'dhirajshetty91@yahoo.com'),
+(3, ''),
+(4, '1234@gmail.com'),
+(5, 'navchetanpackaging@hotmail.com'),
+(6, 'pratikmali986@gmail.com'),
+(7, 'gauravgondane1@gmail.com'),
+(8, 'yomanbringmesubs@gmail.com'),
+(9, 'arihant.sheth0802@gmail.com'),
+(10, 'kriteshborana265@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -437,29 +454,6 @@ INSERT INTO `teams` (`id`, `country_name`, `flag`) VALUES
 --
 
 --
--- Indexes for table `head_to_head`
---
-ALTER TABLE `head_to_head`
-  ADD PRIMARY KEY (`uid`),
-  ADD KEY `team_1` (`team_1`),
-  ADD KEY `team_2` (`team_2`);
-
---
--- Indexes for table `heat_of_the_game`
---
-ALTER TABLE `heat_of_the_game`
-  ADD PRIMARY KEY (`uid`),
-  ADD KEY `team_1` (`team_1`),
-  ADD KEY `team_2` (`team_2`);
-
---
--- Indexes for table `player_details`
---
-ALTER TABLE `player_details`
-  ADD PRIMARY KEY (`player_id`),
-  ADD KEY `player_country` (`player_country`);
-
---
 -- Indexes for table `points_table`
 --
 ALTER TABLE `points_table`
@@ -490,63 +484,32 @@ ALTER TABLE `teams`
 --
 
 --
--- AUTO_INCREMENT for table `head_to_head`
---
-ALTER TABLE `head_to_head`
-  MODIFY `uid` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
---
--- AUTO_INCREMENT for table `heat_of_the_game`
---
-ALTER TABLE `heat_of_the_game`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `player_details`
---
-ALTER TABLE `player_details`
-  MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=233;
---
 -- AUTO_INCREMENT for table `points_table`
 --
 ALTER TABLE `points_table`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
 -- AUTO_INCREMENT for table `schedule`
 --
 ALTER TABLE `schedule`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
 --
 -- AUTO_INCREMENT for table `subscribers`
 --
 ALTER TABLE `subscribers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
 --
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `head_to_head`
---
-ALTER TABLE `head_to_head`
-  ADD CONSTRAINT `head_to_head_ibfk_1` FOREIGN KEY (`team_1`) REFERENCES `teams` (`id`),
-  ADD CONSTRAINT `head_to_head_ibfk_2` FOREIGN KEY (`team_2`) REFERENCES `teams` (`id`);
-
---
--- Constraints for table `heat_of_the_game`
---
-ALTER TABLE `heat_of_the_game`
-  ADD CONSTRAINT `heat_of_the_game_ibfk_1` FOREIGN KEY (`team_1`) REFERENCES `teams` (`id`),
-  ADD CONSTRAINT `heat_of_the_game_ibfk_2` FOREIGN KEY (`team_2`) REFERENCES `teams` (`id`);
-
---
--- Constraints for table `player_details`
---
-ALTER TABLE `player_details`
-  ADD CONSTRAINT `player_details_ibfk_1` FOREIGN KEY (`player_country`) REFERENCES `teams` (`id`);
 
 --
 -- Constraints for table `schedule`
@@ -554,6 +517,7 @@ ALTER TABLE `player_details`
 ALTER TABLE `schedule`
   ADD CONSTRAINT `schedule_ibfk_1` FOREIGN KEY (`team_1`) REFERENCES `teams` (`id`),
   ADD CONSTRAINT `schedule_ibfk_2` FOREIGN KEY (`team_2`) REFERENCES `teams` (`id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

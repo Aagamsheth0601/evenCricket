@@ -33,7 +33,7 @@
 
     <?php
     $team_id = $_GET['team_id'];
-    $url = "http://localhost/evenCricket/apitest/index.php?team_id=$team_id";
+    $url = "http://localhost/evencricket/apitest/index.php?team_id=$team_id";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

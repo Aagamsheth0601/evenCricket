@@ -13,7 +13,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Place favicon.ico in the root directory -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VKQ6R0CHBH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-VKQ6R0CHBH');
+</script>
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css" />
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
@@ -101,7 +109,9 @@
         <div class="row">
             <!-- ===================== Left Side Start ========================== -->
             <div class="col-xl-9 col-lg-8" style="border-right:1px solid grey;padding:0px;">
+			
                 <!-- ===================== News Start ========================== -->
+                
                 <section id="news">
                     <!-- <div class="section-title text-center mb-55">
                         <span class="wow fadeInDown" data-wow-delay=".2s" style="font-size: 40px;">News</span>
@@ -110,51 +120,48 @@
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" style="height:400px;">
-                                    <a target="__blank" href="https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/t20-world-cup-team-india-needs-old-bhuvneshwar-kumar-with-the-new-ball/articleshow/87218064.cms">
+                                    <a target="__blank" href="https://sports.ndtv.com/icc-t20-world-cup-2021/watch-matthew-wade-marcus-stoinis-drink-from-a-shoe-after-t20-world-cup-triumph-2611342">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://static.toiimg.com/thumb/msid-87218053,imgsize-39272,width-400,resizemode-4/87218053.jpg" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://hashdotsports.com/wp-content/uploads/2021/11/20211115_150905.jpg" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>T20 World Cup: Team India needs old Bhuvneshwar Kumar with the new ball</h5>
-                                                    <p>
-                                                    The last time Bhuvneshwar Kumar and Jasprit Bumrah bowled in ..
-
-                                                    </p>
-                                                    <p style="color: black;">23 Oct 2021</p>
+                                                    <h5>Matthew Wade, Marcus Stoinis' 'Shoey' Celebration Will Make Your Stomach Turn</h5>
+                                                    <p>Australia's Formula One star Daniel Ricciardo introduced the F1 world to the 'shoey' celebration -- drinking the celebratory champagne from his shoe - 2016 at the German Grand Prix. It has now become a sort of tradition for the current McLaren driver and even the great Lewis Hamilton has given it shot.</p>
+                                                    <p style="color: black;">14 Nov 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a href="https://www.espncricinfo.com/story/t20-world-cup-2021-eng-vs-wi-west-indies-look-to-replicate-never-say-die-attitude-of-2016-1284647" target="__blank">
+                                    <a href="https://www.timesnownews.com/sports/cricket/article/when-will-india-pakistan-bilateral-cricket-ties-resume-bcci-president-sourav-ganguly-responds-to-million-dollar-question/832100" target="__blank">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/325000/325074.4.jpg" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/10/ganguly-akhtar-1571151427.jpg" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>West Indies look to replicate 'never-say-die attitude' of 2016</h5>
-                                                    <p style="font-size: 15px;">Captain Kieron Pollard denies that his team has a psychological edge over England as they go into a re-match of the final from five years ago</p>
-                                                    <p style="color: black;">22 Oct 2021</p>
+                                                    <h5> When will India-Pakistan bilateral cricket ties resume? BCCI president Sourav Ganguly responds to million-dollar question</h5>
+                                                    <p style="font-size: 15px;">After a long break of 28 months, India and Pakistan resumed their on-field rivalry when they squared off in the group stage fixture of the T20 World Cup 2021. The two teams locked horns in the 16th match of the ICC event in Dubai. The fixture was played in front of a packed crowd and shattered the viewership records. </p>
+                                                    <p style="color: black;">14 Nov 2021</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="carousel-item" style="height:400px;">
-                                    <a href="https://www.espncricinfo.com/story/aus-vs-sa-t20-world-cup-2021-tabraiz-shamsi-to-play-after-passing-fitness-test-1284617" target="__blank">
+                                    <a href="https://sports.ndtv.com/icc-t20-world-cup-2021/t20-world-cup-2021-shoaib-akhtar-feels-babar-azam-deserved-to-become-man-of-the-tournament-2611237" target="__blank">
                                         <div class="row">
                                             <div class="col-lg-8 news-image">
-                                                <img class="d-block w-100" style="height:25em;" src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/327300/327311.4.jpg" alt="First slide">
+                                                <img class="d-block w-100" style="height:25em;" src="https://c.ndtvimg.com/2021-11/l6tfavmk_babar-azam_625x300_15_November_21.jpg?output-quality=80&downsize=1278:*" alt="First slide">
                                             </div>
                                             <div class="col-lg-4 news-text">
                                                 <div>
-                                                    <h5>Tabraiz Shamsi to play South Africa's T20 World Cup opener after passing fitness test</h5>
-                                                    <p>Captain Temba Bavuma says South Africa could field three frontline spinners, but will take call on the morning of the match</p>
-                                                    <p style="color: black;">22 Oct 2021</p>
+                                                    <h5>"Unfair Decision": Shoaib Akhtar Feels Babar Azam Deserved To Become "Man Of The Tournament" In T20 World Cup 2021</h5>
+                                                    <p>Former Pakistan pacer Shoaib Akhtar made his feelings pretty clear about Babar Azam getting snubbed for the Player Of The Tournament award despite ending as the highest run-getter in the recently concluded T20 World Cup 2021. </p>
+                                                    <p style="color: black;">14 Nov 2021</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -182,6 +189,8 @@
                     <span class="wow fadeInDown" data-wow-delay=".2s" style="font-size: 40px;margin-top: 80px;">Points
                         Table</span>
                 </div>
+
+                
 
                 <?php for ($i = 1; $i < 3; $i++) { ?>
                 <section class="wrapper" style="margin-top: 50px;background: rgba(0, 0, 0, 0.9);font-family: 'Open Sans', sans-serif;">
@@ -232,7 +241,7 @@
                     if ($result->num_rows > 0) {
                         // output data of each row
                         $count = ($i - 1) * 6 + 1;
-                        while ($row = $result->fetch_assoc()) {
+                        for ($j = 1; ($row = $result->fetch_assoc()); $j++) {
 
                             $team = $row['team'];
                             $keyword = $row['keyword'];
@@ -252,9 +261,9 @@
                                 }
                             }
                             ?>
-                            <article class="point-row <?php
-                            //echo $keyword;
-                            ?>" id='<?php echo $count; ?>'>
+                            <article class="point-row"  <?php if ($j < 3) {
+                                echo "style='background: #1E90FF;'";
+                            } ?> id='<?php echo $count; ?>'>
                                 <ul style="text-align:center;">
                                     <li style="text-align:left;font-size:15px"><span style="color:white;"><img style="height:20px;width:30px;display:inline;margin-right:10px;margin-left:2px;" src="<?php echo $flag; ?>" alt="">
                                             <em><?php echo $team; ?></em>
@@ -305,6 +314,7 @@
 
                 </section>
                 <?php } ?>
+
                 <!-- Points table end -->
 
 
@@ -677,7 +687,7 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
                         </svg>
                     </summary>
-                    <p>We are a page that keeps you updated with the latest news, scores, and updates from the upcoming T20 Cricket World Cup.</p>
+                    <p>We are a page that keeps you updated with the latest news, scores, and updates from the ongoing T20 Cricket World Cup.</p>
                 </details>
 
                 <details>
@@ -804,10 +814,10 @@
                                 <a href="http://localhost/evencricket/index.php">Home</a>
                             </li>
                             <li>
-                                <a href="http://localhost/evenCricket/About%20EC/aboutEC.html">About Us</a>
+                                <a href="http://localhost/evencricket/About%20EC/aboutEC.html">About Us</a>
                             </li>
                             <li>
-                                <a href="http://localhost/evenCricket/SocialMedia/social.html">Social Media</a>
+                                <a href="http://localhost/evencricket/SocialMedia/social.html">Social Media</a>
                             </li>
                         </ul>
                     </div>
@@ -986,6 +996,9 @@
 
         let intervalF = setInterval(slider.nextSlide, interval);
         slider.init();
+    </script>
+		<script>
+        alert("Thank you for visiting our website! We hope you have a great experience and do not forget to go through all the functionalities! Only 2 days to go until we switch this off !");
     </script>
 </body>
 

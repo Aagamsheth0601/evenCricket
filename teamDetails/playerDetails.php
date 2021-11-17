@@ -36,7 +36,7 @@
 
     <?php
     $player_id = $_GET['player_id'];
-    $url = "http://localhost/evenCricket/apitest/index.php?player_id=$player_id";
+    $url = "http://localhost/evencricket/apitest/index.php?player_id=$player_id";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

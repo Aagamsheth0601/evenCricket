@@ -44,7 +44,7 @@
             <?php
             if (isset($_GET['playerone'])) {
                 $player_id1 = $_GET['playerone'];
-                $url1 = "http://localhost/evenCricket/apitest/index.php?player_id=$player_id1";
+                $url1 = "http://localhost/evencricket/apitest/index.php?player_id=$player_id1";
                 $ch1 = curl_init();
                 curl_setopt($ch1, CURLOPT_URL, $url1);
                 curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
@@ -57,7 +57,7 @@
 
             if (isset($_GET['playertwo'])) {
                 $player_id2 = $_GET['playertwo'];
-                $url2 = "http://localhost/evenCricket/apitest/index.php?player_id=$player_id2";
+                $url2 = "http://localhost/evencricket/apitest/index.php?player_id=$player_id2";
                 $ch2 = curl_init();
                 curl_setopt($ch2, CURLOPT_URL, $url2);
                 curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
@@ -131,12 +131,12 @@
                             background-color: #3399ff;
                         }
                     </style>
-                    <a style="color: white; background-color:grey" href="http://localhost/evenCricket/playerComparison/playercomparison.php">
+                    <a style="color: white; background-color:grey" href="http://localhost/evencricket/playerComparison/playercomparison.php">
                         <button class="btn" style="background-color:grey;width: 100px; height:40px;color:white">
                             Reset
                         </button>
                     </a>
-                    <!-- <button type="button" class="btn btn-secondary"><a style="color: white;" href="http://localhost/evenCricket/player%20comparison/playercomparison.php"> Reset </a></button> -->
+                    <!-- <button type="button" class="btn btn-secondary"><a style="color: white;" href="http://localhost/evencricket/player%20comparison/playercomparison.php"> Reset </a></button> -->
                     <td>
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One">Search</button>
                         <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@playerone" title="Player One"><i class="fa fa-search">&nbsp;&nbsp;Search</i></button> -->
